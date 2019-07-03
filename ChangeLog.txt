@@ -1,0 +1,85 @@
+Changes from Ygopro Percy 1.034 Links Beta to Edopro 1.034
+
+TEMPORARY:
+	*cdb entries for official cards merged into the main cdb:
+	fixmisc, fixot, fixstr, fixsetcode, official and prerelease, except cards with Beta IDs.
+	Removed Dark Magician 46986420
+	
+
+New core: updated version from 1.034 to 1.038
+
+1-Updated mandatory trigger effects handling
+	
+2-Replaced old replay recording system:
+	*current system is now unaffected by script changes from when the replay was recorded to when it is played.
+	*kept compatibility with the old replay system
+	
+3-Added support for "Flash Charge Dragon":
+	*updated old scripts of cards with effects that Summon or put themselves in the opponent's field.
+	
+4-Updated handling for live updates
+	*repositories can now be connected, disconnected, enabled or disabled via json file, in the main folder.
+	*different repositories now display their Update Logs separately.
+
+5-Updated many strings called with the game's dialogue box and/or activation prompt. 
+
+6-Updated music and sounds options.
+	*added "chants" support
+	*more details available in the txt file in the "sounds" folder
+	
+7-Updated skins handling.
+	*more details available in the txt file in the "skin" folder
+	
+8-Added option to set maximum FPS in the configuration file.
+	
+9-Added back automatic download of arts for Field Spell cards.
+
+10-Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
+
+11-"Watch Replay" menu now reads subdirectories in the `replay` folder.
+
+12-"Puzzle Mode" menu now reads subdirectories in the `puzzle folder`
+
+13-"single" folder renamed to "puzzle"
+
+14-Puzzles can now display a message while in the puzzle selection screen, in "Puzzle Mode"
+	-messages are added with the following syntax:
+	--[[message
+	text for your message here
+	]]
+
+15-Added a "Puzzle Creator" puzzle.
+
+16-Banlists now are kept in the `/lflists` directory.
+	*multiple banlists files are supported
+	
+17-Banlists now can be done by whitelisting:
+	*adding `$whitelist` to a list will automatically ban all the entries not set in that list
+
+18-Aliasing is now disabled in deck edit.
+
+19-Added support for GOAT Format.
+	*added 2005.4 Forbidden/Limited List, credits to EerieCode, Tugnon and Naim for preparing the file.
+
+20-Updated status of the following core bugs:
+	*fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
+	*changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
+	*fixed interaction of "Chaos Hunter" and "Macro Cosmos". (remind to check all the script to remove unecessary things).
+	*fixed "Formud Skipper" and "Zombie World" interactions.
+	*fixed Absolute Machine Angel Ritual vs Necrovalley interaction
+	*fixed "Super Polymerization" vs "Chain Material" interaction
+	
+21-Added suport to load other files from within a script (Duel.LoadScript)
+
+22-Fixed the dimensions of "field.png", the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
+
+23-Added shortcut for in game fullscreen toggle [F11]
+
+24-Added wildchar support.
+	@string: returns all cards that have "string" in their name only, ignoring the card text. Example: @Hero
+	$string: returns all cards that belong to the "string"  archetype. Example: $Heroic
+	string1+string2: returns all cards that have "string1" or "string2" in their name/text. Example: Trickstar+Bounzer
+You can also combine those functions.
+Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "Blue-Eyes" archetype or the ""Buster Blader" archetype
+
+25-Added asynchronous loading system for pictures in deck edit.
