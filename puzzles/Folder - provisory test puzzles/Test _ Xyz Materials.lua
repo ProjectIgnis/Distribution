@@ -5,7 +5,8 @@ Debug.SetPlayerInfo(1,8000,0,0)
 
 --Monster Zones
 Debug.AddCard(10443957,0,0,LOCATION_MZONE,1,1,true)
-Debug.AddCard(58069384,0,0,LOCATION_MZONE,1,1,true)
+Debug.AddCard(58069384,0,0,LOCATION_MZONE,3,1,true)
+Debug.AddCard(63767246,0,0,LOCATION_MZONE,2,1,true)
 --Extra Deck
 Debug.AddCard(1546123,0,0,LOCATION_EXTRA,0,8)
 --Spell & Trap Zones
