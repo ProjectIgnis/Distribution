@@ -4,7 +4,18 @@ TEMPORARY:
 	*cdb entries for official cards merged into the main cdb:
 	fixmisc, fixot, fixstr, fixsetcode, official and prerelease, except cards with Beta IDs.
 	Removed Dark Magician 46986420
-	
+
+New TCG/OCG and anime cards by:
+	-Eerie Code
+	-andre
+	-edo9300
+	-pyrQ
+	-AlphaKretin
+	-Naim
+	-Cybercatman
+	-Logical Nonsense
+	-Larry126
+	-Aht
 
 New core: updated version from 1.034 to 1.038
 
