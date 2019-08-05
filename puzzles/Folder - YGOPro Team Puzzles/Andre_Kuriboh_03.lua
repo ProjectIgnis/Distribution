@@ -1,3 +1,9 @@
+--Kuriboh Madness v3
+--Designed and implemented by Andre
+--[[message
+Kuribohs are everywhere!]]
+
+
 --function
 local f1=function (e,tp)
 	Duel.SetLP(0,0)
@@ -7,7 +13,7 @@ local f2=function (e,tp)
 	if Duel.GetLocationCount(tp,LOCATION_MZONE)>0 then
 		local tk=Duel.CreateToken(tp,90884404)
 		Duel.MoveToField(tk,tp,tp,LOCATION_MZONE,POS_FACEUP_ATTACK,true)
-		Debug.ShowHint("I love you")
+		Debug.ShowHint("I love you!")
 	end
 end
 local f3a=function (c)
@@ -77,18 +83,16 @@ local f4=function (e,tp,eg,ep,ev,re,r,rp,c)
 end
 --puzzle
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
-Debug.SetAIName("thief")
+Debug.SetAIName("Thief")
 Debug.SetPlayerInfo(0,100,0,0)
 Debug.SetPlayerInfo(1,10000,0,0)
---you side
---you szone
 
---you mzone
+--your mzone
 local pc1=Debug.AddCard(33776734,0,0,LOCATION_MZONE,0,POS_FACEUP_ATTACK,true)
 Debug.AddCard(4896788,0,0,LOCATION_MZONE,4,POS_FACEDOWN_ATTACK)
---you grave
+--your grave
 
---you hand
+--your hand
 Debug.AddCard(40640057,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 local pc4=Debug.AddCard(135598,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(21250202,0,0,LOCATION_HAND,0,POS_FACEDOWN)
@@ -97,7 +101,7 @@ Debug.AddCard(59368956,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(55144522,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(55144522,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(55144522,0,0,LOCATION_HAND,0,POS_FACEDOWN)
---you extra
+--your extra
 local c=Debug.AddCard(57116033,0,0,LOCATION_EXTRA,0,POS_FACEDOWN)
 	--what are you looking
 	local e6=Effect.CreateEffect(c)
@@ -190,30 +194,29 @@ aux.BeginPuzzle()
 Debug.PreEquip(pc2,pc1)
 --some effect
 local e1=Effect.CreateEffect(pc3)
-e1:SetType(EFFECT_TYPE_SINGLE)
-e1:SetCode(EFFECT_INDESTRUCTABLE)
-e1:SetValue(1)
+	e1:SetType(EFFECT_TYPE_SINGLE)
+	e1:SetCode(EFFECT_INDESTRUCTABLE)
+	e1:SetValue(1)
 pc3:RegisterEffect(e1)
 local e2=e1:Clone()
-e2:SetCode(EFFECT_UPDATE_ATTACK)
-e2:SetValue(function (e) return Duel.GetMatchingGroupCount(Card.GetControler,e:GetHandlerPlayer(),LOCATION_MZONE,LOCATION_GRAVE,nil)*100 end)
+	e2:SetCode(EFFECT_UPDATE_ATTACK)
+	e2:SetValue(function (e) return Duel.GetMatchingGroupCount(Card.GetControler,e:GetHandlerPlayer(),LOCATION_MZONE,LOCATION_GRAVE,nil)*100 end)
 pc3:RegisterEffect(e2)
 local e3=Effect.CreateEffect(pc4)
-e3:SetType(EFFECT_TYPE_TRIGGER_F+EFFECT_TYPE_SINGLE)
-e3:SetCode(EVENT_SUMMON_SUCCESS)
-e3:SetOperation(f1)
+	e3:SetType(EFFECT_TYPE_TRIGGER_F+EFFECT_TYPE_SINGLE)
+	e3:SetCode(EVENT_SUMMON_SUCCESS)
+	e3:SetOperation(f1)
 pc4:RegisterEffect(e3)
 local e4=Effect.GlobalEffect()
-e4:SetType(EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_FIELD)
-e4:SetCode(EVENT_SUMMON_SUCCESS)
-e4:SetCountLimit(1)
-e4:SetOperation(f2)
+	e4:SetType(EFFECT_TYPE_CONTINUOUS+EFFECT_TYPE_FIELD)
+	e4:SetCode(EVENT_SUMMON_SUCCESS)
+	e4:SetCountLimit(1)
+	e4:SetOperation(f2)
 Duel.RegisterEffect(e4,0)
 local e5=e4:Clone()
-e5:SetCode(EVENT_SPSUMMON_SUCCESS)
+	e5:SetCode(EVENT_SPSUMMON_SUCCESS)
 Duel.RegisterEffect(e5,0)
 --text
-Debug.ShowHint("Try can't beat the force of evil")
-Debug.ShowHint("Advise: Do not normal summon the key mouse, you alergic to normal summoned key mouse")
-Debug.ShowHint("This is not a normal puzzle")
-Debug.ShowHint("Setting is key")
+Debug.ShowHint("Try can't beat the force of evil!")
+Debug.ShowHint("Advice: Do not normal summon the Key Mouse. You are allergic to it.")
+Debug.ShowHint("This is not a normal puzzle, but setting a key for the victory.")
