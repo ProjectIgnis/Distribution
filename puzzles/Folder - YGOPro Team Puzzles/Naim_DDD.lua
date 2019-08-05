@@ -1,12 +1,13 @@
 --DDD Combos
---Created by Steelren for Ygopro Percy
+--Created by Naim
 
-Debug.SetAIName("AI_YgoproPercy")
+Debug.SetAIName("AI_Ygopro")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
 Debug.SetPlayerInfo(0,10,0,0)
 Debug.SetPlayerInfo(1,8800,0,0)
 --[[message
-This is a puzzle version of the "D/D (Advance Combo)" from the  RoadoftheDuelist, all credits go to the creators of it, in this page (http://roadoftheking.com/dd-advance-combo).]]
+This is a puzzle version of the "D/D (Advance Combo)" from the  RoadoftheDuelist.
+All credits go to the creators of it, in this page (http://roadoftheking.com/dd-advance-combo).]]
 
 
 Debug.ShowHint("Win this turn!!")
