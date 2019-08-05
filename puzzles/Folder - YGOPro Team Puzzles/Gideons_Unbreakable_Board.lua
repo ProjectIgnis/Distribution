@@ -30,7 +30,7 @@ e1:SetProperty(EFFECT_FLAG_NO_TURN_RESET)
 e1:SetCountLimit(1,57005)
 e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 	Debug.ShowHint("Choose 'Yes' to add cards to your hand. Choose 'No' to continue to the next location.")
-	while Duel.SelectYesNo(tp,0) do
+	while Duel.SelectYesNo(tp,1001) do
 		local ac=Duel.AnnounceCard(tp)
 		local c=Duel.CreateToken(tp,ac)
 		if c:IsType(TYPE_FUSION) or c:IsType(TYPE_SYNCHRO) or c:IsType(TYPE_XYZ) then
@@ -39,7 +39,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 		end
 	end
 	Debug.ShowHint("Choose 'Yes' to add cards to your Main Deck. Choose 'No' to continue to the next location.")
-	while Duel.SelectYesNo(tp,0) do
+	while Duel.SelectYesNo(tp,1000) do
 		local ac=Duel.AnnounceCard(tp)
 		local c=Duel.CreateToken(tp,ac)
 		if c:IsType(TYPE_FUSION) or c:IsType(TYPE_SYNCHRO) or c:IsType(TYPE_XYZ) then
@@ -48,13 +48,13 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 		end
 	end
 	Debug.ShowHint("Choose 'Yes' to add cards to your GY. Choose 'No' to continue to the next location.")
-	while Duel.SelectYesNo(tp,0) do
+	while Duel.SelectYesNo(tp,1004) do
 		local ac=Duel.AnnounceCard(tp)
 		local c=Duel.CreateToken(tp,ac)
 		Duel.SendtoGrave(c,nil,REASON_RULE)	
 	end
 	Debug.ShowHint("Choose 'Yes' to add cards face-down to your S/T Zone. Choose 'No' to continue to the next location.")
-	while Duel.SelectYesNo(tp,0) do
+	while Duel.SelectYesNo(tp,1003) do
 		local ac=Duel.AnnounceCard(tp)
 		local c=Duel.CreateToken(tp,ac)
 		if (c:IsType(TYPE_SPELL) or c:IsType(TYPE_TRAP)) or c:IsHasEffect(EFFECT_MONSTER_SSET) then
@@ -69,7 +69,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 		end
 	end
 	Debug.ShowHint("Choose 'Yes' to add cards to your Extra Deck. Choose 'No' to start the puzzle.")
-	while Duel.SelectYesNo(tp,0) do
+	while Duel.SelectYesNo(tp,1006) do
 		local ac=Duel.AnnounceCard(tp)
 		local c=Duel.CreateToken(tp,ac)
 		if c:IsType(TYPE_FUSION) or c:IsType(TYPE_SYNCHRO) or c:IsType(TYPE_XYZ) or c:IsType(TYPE_PENDULUM) then
