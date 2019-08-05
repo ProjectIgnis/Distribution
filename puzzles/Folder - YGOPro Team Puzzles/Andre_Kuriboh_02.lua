@@ -1,3 +1,5 @@
+--Kuriboh Madness v2
+--Designed and implemented by Andre
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
 Debug.SetAIName("Jaden?")
 Debug.SetPlayerInfo(0,100,0,0)
