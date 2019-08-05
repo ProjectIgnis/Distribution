@@ -1,8 +1,14 @@
-Debug.SetAIName("Gideon")
+--Designed by Gideon
+--Implemented by Gideon, Senpaizuri3
+Debug.SetAIName("Gideon's Twisted Mind")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
 
 Debug.SetPlayerInfo(0,2147483647,0,0)
 Debug.SetPlayerInfo(1,2147483647,0,0)
+--[[message
+This puzzle has an "unbreakable board".
+To win, you need to find a way to remove at least 1 of the cards on the field!]]
+
 
 local card=Debug.AddCard(35984222,0,0,LOCATION_MZONE,2,POS_FACEUP_ATTACK)
 
@@ -15,7 +21,6 @@ Debug.AddCard(29549364,1,1,LOCATION_SZONE,0,POS_FACEUP)
 
 Debug.ReloadFieldEnd()
 Debug.PreSetTarget(zone,bamboo)
-Debug.ShowHint("Try to defeat Gideon, you masochist. To win, you must remove at least 1 of the cards on the field from the field.")
 
 --Pre-draw
 local e1=Effect.CreateEffect(card)
