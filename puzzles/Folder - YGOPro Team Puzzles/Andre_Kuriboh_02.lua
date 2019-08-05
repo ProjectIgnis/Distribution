@@ -1,7 +1,11 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
-Debug.SetAIName("jaden?")
+Debug.SetAIName("Jaden?")
 Debug.SetPlayerInfo(0,100,0,0)
 Debug.SetPlayerInfo(1,4850,0,0)
+--[[message
+Even more Kuribohs!]]
+
+
 --op deck
 Debug.AddCard(21143940,1,1,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(24094653,1,1,LOCATION_DECK,0,POS_FACEDOWN)
@@ -74,5 +78,5 @@ Debug.AddCard(55144522,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(10117149,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(10117149,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.ReloadFieldEnd()
-Debug.ShowHint("win this turn")
+Debug.ShowHint("Win this turn!")
 aux.BeginPuzzle()
