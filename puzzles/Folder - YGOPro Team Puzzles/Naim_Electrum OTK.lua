@@ -6,7 +6,7 @@ Debug.SetPlayerInfo(0,10,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
 --[[message
-This puzzle demonstrates how Electrum OTK is performed, by using the effects of "Chain Material" to overuse "Fusion Gate" and "Elemental Hero Electrum".]]
+This puzzle demonstrates how Electrum OTK is performed, by using the effects of "Chain Material" to overuse "Fusion Gate" and "Elemental Hero Electrum" and continuously summon Superdreadnought Rail Cannon Gustav Max]]
 
 Debug.ShowHint("Win this turn!!")
 

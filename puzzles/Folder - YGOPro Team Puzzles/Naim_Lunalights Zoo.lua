@@ -1,14 +1,15 @@
 --Lunalights Zoodiac
---Created by Naim for Ygopro Percy
-Debug.SetAIName("AI_YgoproPercy")
+--Created by Naim
+Debug.SetAIName("AI_Ygopro")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
 Debug.SetPlayerInfo(0,10,0,0)
 Debug.SetPlayerInfo(1,56000,0,0)
-Debug.ShowHint("Win this turn!!")
+
 --[[message
-And this is one of the many reasons Rat and Broadbull should stay banned..]]
+And this is one of the many reasons Zoodiac Ratpier and Zoodiac Broadbull should stay banned...
+Try to inflict 56000 Damage with Lunalights.]]
 
-
+Debug.ShowHint("Win this turn!!")
 
 --your hand
 Debug.AddCard(1475311,0,0,LOCATION_HAND,0,POS_FACEUP_ATTACK)		--allure of darkness

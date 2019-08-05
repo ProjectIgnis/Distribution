@@ -1,11 +1,13 @@
---LyricalLusc
---Created by Naim for Ygopro Percy
-Debug.SetAIName("AI_YgoproPercy")
+--Lyrilusc
+--Created by Naim
+Debug.SetAIName("AI_Ygopro")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
-Debug.SetPlayerInfo(0,10,0,0)
+Debug.SetPlayerInfo(0,100,0,0)
 Debug.SetPlayerInfo(1,11200,0,0)
 --[[message
-Multiple attackers are fun when you can abuse them. Even funnier if they can attack directly.]]
+Multiple attackers are fun when you can abuse them. Even funnier if they can attack directly.
+In this puzzle you will do that by using Lyrilusc monsters.
+]]
 
 
 Debug.ShowHint("Win this turn!")
@@ -32,7 +34,7 @@ Debug.AddCard(65305468,0,0,LOCATION_EXTRA,0,POS_FACEUP_ATTACK)		--f0
 Debug.AddCard(48608796,0,0,LOCATION_EXTRA,0,POS_FACEUP_ATTACK)		--assembly nightingale
 
 --opponent's
-Debug.AddCard(44968687,1,1,LOCATION_MZONE,2,POS_FACEUP_ATTACK)		--legendary sigerman III
+Debug.AddCard(44968687,1,1,LOCATION_MZONE,2,POS_FACEUP_ATTACK)		--Legendary Fisherman III
 
 --Insert any message here
 --insert additional message here

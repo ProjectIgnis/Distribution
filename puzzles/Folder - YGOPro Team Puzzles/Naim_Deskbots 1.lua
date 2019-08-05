@@ -1,15 +1,15 @@
 --Deskbots
---Created by Naim for Ygopro Percy
-Debug.SetAIName("AI_YgoproPercy")
+--Created by Naim
+Debug.SetAIName("AI_Ygopro")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI)
 Debug.SetPlayerInfo(0,10,0,0)
 Debug.SetPlayerInfo(1,30000,0,0)
 
 --[[message
-This puzzle tries to demonstrate Deskbot's ability to output huge damage amount in a single turn.]]
+This puzzle demonstrates Deskbot's ability to output huge damage amount in a single turn!!!!]]
 
 
-Debug.ShowHint("Win this turn!!")
+Debug.ShowHint("Inflict 30000 damage to win this turn!!")
 
 --your hand
 Debug.AddCard(43898403,0,0,LOCATION_HAND,0,POS_FACEUP_ATTACK)		--twin twisters
