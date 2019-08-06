@@ -1,3 +1,6 @@
+--[[message
+Inspired by the video https://www.youtube.com/watch?v=l-RCcbfvo3Q by JebusMcAzn.
+]]
 --https://www.youtube.com/watch?v=l-RCcbfvo3Q
 Debug.SetAIName("Jebus McAzn")
 Debug.ReloadFieldBegin(DUEL_PSEUDO_SHUFFLE+DUEL_ATTACK_FIRST_TURN,3)

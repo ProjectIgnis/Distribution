@@ -1,3 +1,6 @@
+--[[message
+This one's just a meme. Did you know that Lullaby of Obedience ignores summoning conditions?
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_SIMPLE_AI+DUEL_PSEUDO_SHUFFLE,3)
 
@@ -34,7 +37,8 @@ Debug.AddCard(97077563,0,0,LOCATION_SZONE,1,POS_FACEDOWN) --CotH
 Debug.AddCard(77561728,0,0,LOCATION_SZONE,2,POS_FACEDOWN) --Disturbance strat
 
 --Player's GY
-Debug.AddCard(24221739,0,0,LOCATION_GRAVE,0,POS_FACEDOWN) --Protector of the Sanct
+Debug.AddCard(24221739,0,0,LOCATION_GRAVE,0,POS_FACEDOWN) --Protector of the Sanct
+
 Debug.ReloadFieldEnd()
 Debug.ShowHint("Win without attacking!")
 Debug.ShowHint("Holactie was taken from your opponent.") 

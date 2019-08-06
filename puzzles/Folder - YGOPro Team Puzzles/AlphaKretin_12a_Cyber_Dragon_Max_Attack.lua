@@ -1,3 +1,6 @@
+--[[message
+A very conveniently set-up single duel to give Cyber Dragon as much ATK as possible
+]]
 --Cyber Dragon Maximum Attack puzzle
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN + DUEL_SIMPLE_AI, 4)

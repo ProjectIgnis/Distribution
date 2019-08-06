@@ -1,3 +1,6 @@
+--[[message
+SPYRALs were broken even before Double Helix
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI+DUEL_PSEUDO_SHUFFLE,4)
 

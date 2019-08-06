@@ -1,3 +1,6 @@
+--[[message
+How much havoc can 1 Brilliant Fusion cause? Alternate combo
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_PSEUDO_SHUFFLE+DUEL_SIMPLE_AI+DUEL_ATTACK_FIRST_TURN,3)
 

@@ -1,3 +1,6 @@
+--[[message
+Converging wishes form a new shining star! Become the path that lights the way!
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 
@@ -100,7 +103,6 @@ Debug.AddCard(97021916,0,0,LOCATION_DECK,0,POS_FACEDOWN) --Dark R
 Debug.AddCard(97021916,0,0,LOCATION_DECK,0,POS_FACEDOWN) --Dark R
 
 Debug.ReloadFieldEnd()
-Debug.ShowHint("Converging wishes form a new shining star! Become the path that lights the way!")
 --Below makes it a one turn puzzle.
 aux.BeginPuzzle()
 

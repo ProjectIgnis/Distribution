@@ -1,3 +1,6 @@
+--[[message
+Ride the Road to Tomorrow as you relive an exaggeration of 5Ds' iconic finisher!
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_PSEUDO_SHUFFLE+DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 

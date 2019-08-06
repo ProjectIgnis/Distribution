@@ -1,3 +1,6 @@
+--[[message
+Rank-Up! Xyz change!
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_PSEUDO_SHUFFLE+DUEL_TEST_MODE,3)
 

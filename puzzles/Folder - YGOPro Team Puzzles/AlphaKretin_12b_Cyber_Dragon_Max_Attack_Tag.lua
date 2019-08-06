@@ -1,3 +1,6 @@
+--[[message
+A very conveniently set-up Tag duel to give Cyber Dragon as much ATK as possible
+]]
 --Cyber Dragon Maximum Attack puzzle
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN + DUEL_SIMPLE_AI + DUEL_TAG_MODE, 4) --tag mode shouldn't actually come up but justifies extra copies of cards

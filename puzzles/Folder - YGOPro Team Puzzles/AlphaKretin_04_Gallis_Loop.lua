@@ -1,3 +1,6 @@
+--[[message
+The good old-fashioned Gallis loop that got Birdman limited
+]]
 Debug.SetAIName("AlphaKretin")
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI+DUEL_PSEUDO_SHUFFLE,3)
 
