@@ -192,7 +192,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 					Duel.MoveToField(c,tp,p,LOCATION_MZONE,pos,true)
 					c:CompleteProcedure()
 					if c:IsType(TYPE_GEMINI) and Duel.SelectYesNo(tp,aux.Stringid(1546122,15)) then
-						c:EnableDualState()
+						c:EnableGeminiState()
 					end
 				elseif e:GetLabel()==1 then
 					Duel.SendtoGrave(c,REASON_RULE,p)
