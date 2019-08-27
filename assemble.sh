@@ -3,7 +3,6 @@
 # Expected directory setup in parent folder: edopro-config, edopro-cdb, edopro-media, edopro-script
 # edopro-bin, edopro-windows, edopro-osx, edopro-linux with appropriate upstream remote ONLY
 # Edopro_1034 with correct username and email setup without extraneous files
-# Pass the appropriate authentication in as $1
 
 set -euxo pipefail
 
@@ -23,10 +22,11 @@ for REPO in $TARGETS; do
     cd ..
 done
 
-if [[ NEEDS_UPDATE == 1 ]]; then
+if [[ $NEEDS_UPDATE == 1 ]]; then
     cd Edopro_1034
     git remote update
     git reset --hard @{u}
+    git reset --soft HEAD^
     for REPO in $SIMPLY_COPY; do
         rsync -ar ../$REPO/* .
     done
@@ -40,9 +40,7 @@ if [[ NEEDS_UPDATE == 1 ]]; then
     mv edopro.app/Contents/MacOS/ygoprodll edopro.app/Contents/MacOS/edopro
     cp ../edopro-osx/libocgcore.dylib .
     rsync -ar --exclude=.git ../edopro-script/ script
-    rm -rf .git
-    git init
     git add -A .
     git commit -m "EDOPro Automatic Assembly"
-    git push -f https://$1@github.com/YgoproStaff/Edopro_1034.git master:master
+    git push -f origin master:master
 fi
