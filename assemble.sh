@@ -34,7 +34,6 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     cp ../edopro-windows/ygoprodll.exe edopro.exe
     cp ../edopro-windows/ocgcore.dll .
     cp ../edopro-linux/ygoprodll edopro
-    cp ../edopro-linux/libocgcore.so ../edopro-linux/libgit2.so.26 .
     rm -rf edopro.app
     cp -r ../edopro-osx/ygoprodll.app edopro.app
     mv edopro.app/Contents/MacOS/ygoprodll edopro.app/Contents/MacOS/edopro
