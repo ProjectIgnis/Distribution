@@ -8,11 +8,11 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 Name | Description and usage 
 ------------ | -------------
 use_d3d |  directx's usage / boolean
-use_vsync |  vsync's usage for more accurate fps capping according to the refresh rate of teh monitor, if set, the max_fps option will be ignored / boolean
-max_fps | limits the framerate  / integer, 0=unlimted, 60=default
+use_vsync |  vsync's usage for more accurate fps capping according to the refresh rate of the monitor, if set, the max_fps option will be ignored / boolean
+max_fps | limits the framerate  / integer, 0=unlimited, 60=default
 fullscreen | enables full screen mode / boolean
 antialias | makes sharp/pixelated edges softer, but requires more performance (more details in Customization) / integer
-errorlog | how script errors are displayed / integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3= both in game messages and error.log
+errorlog | how script errors are displayed / integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
 nickname | sets the player name / should be less than 20 characters
 gamename | sets the game/room name / should be less than 20 characters
 lastdeck | last deck set in Deck Edit OR in duel
