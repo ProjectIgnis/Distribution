@@ -39,18 +39,17 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     rm assemble.sh
 
     cp ../edopro-linux/ygoprodll edopro
-    chmod +x edopro
     cp ../edopro-windows/ygoprodll.exe edopro.exe
     cp -r ../edopro-osx/ygoprodll.app edopro.app
     mv edopro.app/Contents/MacOS/ygoprodll edopro.app/Contents/MacOS/edopro
-    chmod +x edopro.app/Contents/MacOS/edopro
     cp ../core-osx/libocgcore.dylib .
     cp ../core-linux/libocgcore.so .
     cp ../core-windows/ocgcore.dll .
-
     rsync -ar --exclude=.git ../edopro-script/ script
 
     git add -A .
+    git update-index --chmod=+x -- edopro edopro.app/Contents/MacOS/edopro
+    git add -u .
     git commit -m "EDOPro Automatic Assembly"
     git push -f origin master:master
 fi
