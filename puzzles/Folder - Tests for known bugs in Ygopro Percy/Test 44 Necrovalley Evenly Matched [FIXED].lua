@@ -2,7 +2,10 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
-
+--[[message
+If Full Force Virus is chained to the activation of Evenly Matched by tributing a monster,
+Necrovalley then negates Evenly Matched, even though it's not banishing cards from the graveyard.
+]]
 --Spell & Trap Zones
 Debug.AddCard(15693423,1,1,LOCATION_SZONE,2,10)
 --Monster Zones

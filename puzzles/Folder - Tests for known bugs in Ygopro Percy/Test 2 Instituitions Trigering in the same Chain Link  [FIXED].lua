@@ -2,6 +2,9 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
+--[[message
+ Demonstrates the problem with SEGOC when the costs can only be paid once
+]]
 
 --Spell & Trap Zones
 Debug.AddCard(53582587,0,0,LOCATION_SZONE,1,10)

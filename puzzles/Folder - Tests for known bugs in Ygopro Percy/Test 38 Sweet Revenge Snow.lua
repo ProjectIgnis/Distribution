@@ -3,6 +3,11 @@ Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
+
+--[[message
+Have the AI attack you directly, then respond with Snow's effect in the Graveyard, banishing the 1 card on your field and all the cards in your Graveyard.
+Should then be able to Chain the effect of Goddess of Sweet Revenge.
+]]
 --Main Deck
 Debug.AddCard(4035199,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(4035199,0,0,LOCATION_DECK,0,POS_FACEDOWN)

@@ -2,6 +2,10 @@ Debug.ReloadFieldBegin(DUEL_TEST_MODE,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
+--[[message
+
+]]
+
 Debug.AddCard(16261341,0,0,LOCATION_MZONE,0,POS_FACEUP_ATTACK) --Parshath
 
 Debug.AddCard(49010598,0,0,LOCATION_SZONE,0,POS_FACEDOWN) --Wrath

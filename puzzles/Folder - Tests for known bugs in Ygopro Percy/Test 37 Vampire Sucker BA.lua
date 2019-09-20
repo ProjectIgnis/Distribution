@@ -3,6 +3,10 @@ Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
+--[[message
+If a Burning Abyss monster is special summoned by Vampire Sucker's effect, it should trigger Sucker's effect to draw, since the BA will be treated as a Zombie monster.
+Currently, it does not if the BA monster gets destroyed by its own effect.
+]]
 --Main Deck
 Debug.AddCard(32626733,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 --Monster Zones

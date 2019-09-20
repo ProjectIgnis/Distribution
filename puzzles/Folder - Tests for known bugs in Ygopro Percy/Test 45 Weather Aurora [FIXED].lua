@@ -3,6 +3,8 @@ Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 	--[[message
+	If the card added to the player's hand is Special Summoned on the field in the same timing that it was added to the hand, then the now Summoned on the field card is getting banished by Auroral's effect.
+	
 	Edit the file by removing the comments to swap the fields and test it from the other player's perspective
 	]]
 --[[
