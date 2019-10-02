@@ -7,7 +7,7 @@ Debug.SetPlayerInfo(1,8000,0,0)
 Ostinato cannot be activated.
 Maybe some other fusion Spells too?
 
-]]-
+]]
 --Main Deck
 Debug.AddCard(3395226,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(14763299,0,0,LOCATION_DECK,0,POS_FACEDOWN)

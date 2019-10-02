@@ -2,7 +2,7 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
---[[
+--[[message
 	Subterror Nemesis Warrior makes the game freeze during the selection of the tributes.
 ]]
 --Main Deck
