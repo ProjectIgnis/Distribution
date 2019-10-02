@@ -37,5 +37,21 @@
             "url": "https://raw.githubusercontent.com/Gideon9212/Livecustom/master/pics/field/{}.png",
             "type": "field"
         }
-    ]
+    ],
+	"servers": [
+	{
+		"name" : "21 Sussex",
+		"address" : "06.varsity.utoronto.ca",
+		"roomaddress" : "06.varsity.utoronto.ca",
+		"roomlistport" : 7922,
+		"duelport" : 7911
+	},
+	{
+		"name" : "localhost",
+		"address" : "127.0.0.1",
+		"roomaddress" : "127.0.0.1",
+		"roomlistport" : 7922,
+		"duelport" : 7911
+	}
+	]
 }
