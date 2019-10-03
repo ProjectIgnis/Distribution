@@ -30,6 +30,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     git reset --hard @{u}
     git reset --soft HEAD^
 
+    rm -rf puzzles
     rm edopro
     rm edopro.exe
     rm -rf edopro.app
