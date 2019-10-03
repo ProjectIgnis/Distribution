@@ -1,4 +1,4 @@
-Changes from Ygopro Percy 1.034 Links Beta to Edopro 1.034.8
+Changes from YGOPro Percy 1.034 Links Beta to EDOPro
 
 TEMPORARY:
 	*cdb entries for official cards merged into the main cdb:
@@ -17,7 +17,7 @@ New TCG/OCG and anime cards by:
 	-Larry126
 	-Aht
 
-New core: updated version from 1.034 to 1.038
+OCGCORE: updated from 1.034 to edo9300's 4.1
 
 
 1-Updated mandatory trigger effects handling.
@@ -119,3 +119,7 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 
 
 25-Added asynchronous loading system for pictures in deck edit.
+
+macOS:
+Cmd+Q quits the application. "Quit" menu item added to app menu.
+Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
