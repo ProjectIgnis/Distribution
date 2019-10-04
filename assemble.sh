@@ -31,18 +31,18 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     git reset --soft HEAD^
 
     rm -rf puzzles
-    rm edopro
-    rm edopro.exe
-    rm -rf edopro.app
+    rm -f edopro EDOPro
+    rm -f edopro.exe EDOPro
+    rm -rf edopro.app EDOPro.app
     for REPO in $SIMPLY_COPY; do
         rsync -ar ../$REPO/* .
     done
     rm assemble.sh
 
-    cp ../edopro-linux/ygoprodll edopro
-    cp ../edopro-windows/ygoprodll.exe edopro.exe
-    cp -r ../edopro-osx/ygoprodll.app edopro.app
-    mv edopro.app/Contents/MacOS/ygoprodll edopro.app/Contents/MacOS/edopro
+    cp ../edopro-linux/ygoprodll EDOPro
+    cp ../edopro-windows/ygoprodll.exe EDOPro.exe
+    cp -r ../edopro-osx/ygoprodll.app EDOPro.app
+    mv EDOPro.app/Contents/MacOS/ygoprodll EDOPro.app/Contents/MacOS/EDOPro
     cp ../core-osx/libocgcore.dylib .
     cp ../core-linux/libocgcore.so .
     cp ../core-windows/ocgcore.dll .
@@ -50,7 +50,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     rsync -ar --exclude=.git ../edopro-script-anime/ script
 
     git add -A .
-    git update-index --chmod=+x -- edopro edopro.app/Contents/MacOS/edopro
+    git update-index --chmod=+x -- EDOPro EDOPro.app/Contents/MacOS/EDOPro
     git add -u .
     git commit -m "EDOPro Automatic Assembly"
     git push -f origin master:master
