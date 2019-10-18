@@ -109,6 +109,7 @@ The client uses 2 json files to download and read updates.
 * git_repo.json: keeps track of the repositories used to download updates, which includes databases, lflists, scripts and other lua files.
 * pics_url.json: keeps track of the repositories used to download pictures, including the arts for Field Spell
 
+Forbidden/Limited lists now will be read from a `lflists` folder inside of any repository connected.
 ### Parameters:
 
 #### git_repo.json
@@ -124,16 +125,12 @@ The client uses 2 json files to download and read updates.
 * url: the complete url of the repository to check for updates. The url should have a `{}` on it, that will be replaced by the client with the card's id.
 * type: pic/field, if it's either a repository card pictures or if it is for field's art.
 	
-### Repositories currently connected:
+### Usage examples:
 
 git_repo.json
 ```javascript
 	{
 		"url" : "default",
-		"should_update" : false
-	},
-	{
-		"url" : "default_anime",
 		"should_update" : false
 	},
 	{
