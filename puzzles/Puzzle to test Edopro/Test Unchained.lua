@@ -34,6 +34,7 @@ c:RegisterEffect(e1)
 --Monster Zones
 Debug.AddCard(93084621,0,0,LOCATION_MZONE,1,1,true)
 Debug.AddCard(89019964,0,0,LOCATION_MZONE,4,4,true)
+Debug.AddCard(67680512,0,0,LOCATION_MZONE,2,1,true)
 --Spell & Trap Zones
 Debug.AddCard(19230407,0,0,LOCATION_SZONE,0,10)
 Debug.AddCard(83778600,0,0,LOCATION_SZONE,2,10)
@@ -43,4 +44,5 @@ Debug.AddCard(67680512,1,1,LOCATION_MZONE,2,1,true)
 Debug.AddCard(81983656,1,1,LOCATION_MZONE,3,1,true)
 Debug.AddCard(22835145,1,1,LOCATION_MZONE,4,1,true)
 Debug.AddCard(146746,1,1,LOCATION_MZONE,0,1,true)
+Debug.AddCard(30270176,1,1,LOCATION_MZONE,1,1,true)
 Debug.ReloadFieldEnd()
