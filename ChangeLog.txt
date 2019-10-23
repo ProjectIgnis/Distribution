@@ -41,8 +41,8 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 
 
 6-Updated music and sounds options:
-	*added "chants" support
-	*more details available in the txt file in the "sounds" folder
+	*added "chants" support.
+	*more details available in the txt file in the "sounds" folder.
 
 	
 7-Updated skins handling.
@@ -78,7 +78,8 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 
 
 16-Banlists now are kept in the `/lflists` directory:
-	*multiple banlists files are supported
+	*multiple banlists files are supported.
+	*banlists in live repositories are loaded from a `/lflists` in that repository.
 
 	
 17-Banlists now can be done by whitelisting:
@@ -97,8 +98,8 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 	*changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
 	*fixed interaction of "Chaos Hunter" and "Macro Cosmos". (remind to check all the script to remove unecessary things).
 	*fixed "Formud Skipper" and "Zombie World" interactions.
-	*fixed Absolute Machine Angel Ritual vs Necrovalley interaction
-	*fixed "Super Polymerization" vs "Chain Material" interaction
+	*fixed Absolute Machine Angel Ritual vs Necrovalley interaction.
+	*fixed "Super Polymerization" vs "Chain Material" interaction.
 
 	
 21-Added suport to load other files from within a script (Duel.LoadScript)
@@ -119,6 +120,8 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 
 
 25-Added asynchronous loading system for pictures in deck edit.
+
+25-The last banlist used is now remembered after leaving deck edit, a duel, or the client.
 
 macOS:
 Cmd+Q quits the application. "Quit" menu item added to app menu.
