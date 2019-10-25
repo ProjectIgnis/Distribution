@@ -8,6 +8,7 @@ Debug.AddCard(18993198,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(44088292,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 --Monster Zones
 Debug.AddCard(55100740,0,0,LOCATION_MZONE,1,1,true)
+Debug.AddCard(55100740,0,0,LOCATION_MZONE,2,1,true)
 --Spell & Trap Zones
 Debug.AddCard(65959844,0,0,LOCATION_SZONE,5,5)
 --Spell & Trap Zones
