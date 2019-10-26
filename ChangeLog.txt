@@ -123,6 +123,8 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 
 25-The last banlist used is now remembered after leaving deck edit, a duel, or the client.
 
-macOS:
+26-macOS
 Cmd+Q quits the application. "Quit" menu item added to app menu.
 Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
+Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 that will work as well. "Toggle Full Screen" menu item added to app and dock menus. This is remembered on app restart like on Windows and Linux.
+	Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
