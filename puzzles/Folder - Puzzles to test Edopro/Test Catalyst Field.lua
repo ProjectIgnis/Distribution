@@ -2,7 +2,9 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
-
+--[[message
+	Problems with cards with continuous effects to decrease the ammount of tributes
+]]
 --Hand
 Debug.AddCard(18993198,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(45960523,0,0,LOCATION_HAND,0,POS_FACEDOWN)

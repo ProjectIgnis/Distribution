@@ -2,7 +2,9 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
-
+--[[message
+	Rulings about Fusion tag vs Neos contact fusion
+]]
 --Extra Deck
 Debug.AddCard(78734254,0,0,LOCATION_EXTRA,0,8)
 Debug.AddCard(5128859,0,0,LOCATION_EXTRA,0,8)

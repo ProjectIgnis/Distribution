@@ -5,7 +5,9 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,5000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
-
+--[[message
+	To test the fusion materials handling and Edo's changes to the procedures
+]]
 
 --Extra Deck
 Debug.AddCard(100259001,0,0,LOCATION_EXTRA,0,8)

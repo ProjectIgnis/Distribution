@@ -2,7 +2,9 @@
 Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
-
+--[[message
+	To demonstrate that Linkuriboh's Link Summon procedure is incorrect
+]]
 --Extra Deck
 Debug.AddCard(94259633,0,0,LOCATION_EXTRA,0,8)
 Debug.AddCard(41999284,0,0,LOCATION_EXTRA,0,8)
