@@ -4,6 +4,12 @@ Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
 Debug.ReloadFieldEnd()
+--[[message
+	Known Issues:
+	-Incompatible with Ygopro Percy: the path for puzzles is different
+	-You cannot add cards to the Extra Monster Zone: prefer to add them to another zone, then edit the puzzle and change their sequences.
+	-Cards placed in the pendulum zone may not be displayed: prefer to add them to the hand instead
+]]
 
 local e1=Effect.GlobalEffect()
 e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
