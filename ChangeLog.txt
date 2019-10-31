@@ -21,51 +21,40 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 
 
 1-Updated mandatory trigger effects handling.
-
 	
 2-Replaced old replay recording system:
 	*current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	*kept compatibility with the old replay system.
-
 	
 3-Added support for "Flash Charge Dragon":
 	*updated old scripts of cards with effects that Summon or put themselves on the opponent's field.
-
 	
 4-Updated handling for live updates:
 	*repositories can now be connected, disconnected, enabled or disabled via json file, in the main folder.
 	*different repositories now display their Update Logs separately.
 
-
 5-Updated many strings called with dialogue boxes and activation prompts used by the client. 
-
+	-Update incorrect strings called in the Damage Step
 
 6-Updated music and sounds options:
 	*added "chants" support.
 	*more details available in the txt file in the "sounds" folder.
 
-	
 7-Updated skins handling.
 	*more details available in the txt file in the "skin" folder
-
 	
 8-Added option to set maximum FPS in the configuration file.
 
-	
 9-Added back automatic download of arts for Field Spell cards.
-
 
 10-Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
 
-
 11-"Watch Replay" menu now reads subdirectories in the `replay` folder.
-
 
 12-"Puzzle Mode" menu now reads subdirectories in the `puzzle folder`
 
-
 13-"single" folder renamed to "puzzle"
-
+	-updated puzzles that were unsolvable to use pre-errata cards.
 
 14-Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
 	-messages are added with the following syntax:
@@ -73,25 +62,19 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 	insert the text here
 	]]
 
-
 15-Added a "Puzzle Creator" puzzle.
-
 
 16-Banlists now are kept in the `/lflists` directory:
 	*multiple banlists files are supported.
 	*banlists in live repositories are loaded from a `/lflists` in that repository.
 
-	
 17-Banlists now can be done by whitelisting:
 	*adding `$whitelist` to a list will automatically ban all the entries not set in that list
 
-
 18-Aliasing is now disabled in deck edit.
-
 
 19-Added support for GOAT Format:
 	*added 2005.4 Forbidden/Limited List, credits to EerieCode, Tungnon and Naim for preparing the file.
-
 
 20-Updated status of the following core bugs:
 	*fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
@@ -100,16 +83,13 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 	*fixed "Formud Skipper" and "Zombie World" interactions.
 	*fixed Absolute Machine Angel Ritual vs Necrovalley interaction.
 	*fixed "Super Polymerization" vs "Chain Material" interaction.
-
+	*fixed problems with accumulated Additional Normal Summon effects.
 	
 21-Added suport to load other files from within a script (Duel.LoadScript)
 
-
 22-Fixed the dimensions of "field.png", the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
 
-
 23-Added shortcut for in game fullscreen toggle [F11]
-
 
 24-Added wildchar support.
 	@string: returns all cards that have "string" in their name only, ignoring the card text. Example: @Hero
@@ -117,7 +97,6 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 	string1+string2: returns all cards that have "string1" or "string2" in their name/text. Example: Trickstar+Bounzer
 You can also combine those functions.
 Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "Blue-Eyes" archetype or the ""Buster Blader" archetype
-
 
 25-Added asynchronous loading system for pictures in deck edit.
 
@@ -128,3 +107,7 @@ Cmd+Q quits the application. "Quit" menu item added to app menu.
 Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
 Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 that will work as well. "Toggle Full Screen" menu item added to app and dock menus. This is remembered on app restart like on Windows and Linux.
 	Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
+
+27-Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
+
+28-Removed complex handling of Continuous Traps for when it is possible to activate the card AND its effect in the same chain link
