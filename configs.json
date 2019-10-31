@@ -20,7 +20,7 @@
             "should_read": false
         }
     ],
-	"urls": [
+    "urls": [
         {
             "url": "default",
             "type": "pic"
@@ -38,20 +38,244 @@
             "type": "field"
         }
     ],
-	"servers": [
-	{
-		"name" : "21 Sussex",
-		"address" : "06.varsity.utoronto.ca",
-		"roomaddress" : "06.varsity.utoronto.ca",
-		"roomlistport" : 7922,
-		"duelport" : 7911
-	},
-	{
-		"name" : "localhost",
-		"address" : "127.0.0.1",
-		"roomaddress" : "127.0.0.1",
-		"roomlistport" : 7922,
-		"duelport" : 7911
-	}
-	]
+    "servers": [
+        {
+            "name": "21 Sussex",
+            "address": "06.varsity.utoronto.ca",
+            "roomaddress": "06.varsity.utoronto.ca",
+            "roomlistport": 7922,
+            "duelport": 7911
+        },
+        {
+            "name": "localhost",
+            "address": "127.0.0.1",
+            "roomaddress": "127.0.0.1",
+            "roomlistport": 7922,
+            "duelport": 7911
+        }
+    ],
+    "windbots": [
+        {
+            "name": "MokeyMokey",
+            "deck": "MokeyMokey",
+            "flags": [
+                "AI_LV1",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "MokeyMokeyKing",
+            "deck": "MokeyMokeyKing",
+            "flags": [
+                "AI_LV1",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Dragunity",
+            "deck": "Dragunity",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "'Level VIII'",
+            "deck": "'Level VIII'",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "'Rank V'",
+            "deck": "'Rank V'",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "'Zexal Weapons'",
+            "deck": "'Zexal Weapons'",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Rainbow",
+            "deck": "Rainbow",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "'Toadally Awesome'",
+            "deck": "'Toadally Awesome'",
+            "flags": [
+                "SUPPORT_MASTER_RULE_3"
+            ]
+        },
+        {
+            "name": "Blue-Eyes",
+            "deck": "Blue-Eyes",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Zoodiac",
+            "deck": "Zoodiac",
+            "flags": [
+                "SUPPORT_MASTER_RULE_3"
+            ]
+        },
+        {
+            "name": "Yosenju",
+            "deck": "Yosenju",
+            "flags": [
+                "AI_ANTI_META",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Qliphort",
+            "deck": "Qliphort",
+            "flags": [
+                "AI_ANTI_META",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Trickstar",
+            "deck": "Trickstar",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Altergeist",
+            "deck": "Altergeist",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "SkyStriker",
+            "deck": "SkyStriker",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Orcust",
+            "deck": "Orcust",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Salamangreat",
+            "deck": "Salamangreat",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Burn",
+            "deck": "Burn",
+            "flags": [
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Frog",
+            "deck": "Frog",
+            "flags": [
+                "AI_LV1",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "Horus",
+            "deck": "Horus",
+            "flags": [
+                "AI_LV1",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "ST1732",
+            "deck": "ST1732",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "LightswornShaddoldinosour",
+            "deck": "LightswornShaddoldinosour",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "DarkMagician",
+            "deck": "DarkMagician",
+            "flags": [
+                "AI_LV3",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "BlueEyesMaxDragon",
+            "deck": "BlueEyesMaxDragon",
+            "flags": [
+                "AI_LV2",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "ChainBurn",
+            "deck": "ChainBurn",
+            "flags": [
+                "AI_ANTI_META",
+                "SUPPORT_MASTER_RULE_3",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        },
+        {
+            "name": "GrenMajuThunderBoarder",
+            "deck": "GrenMajuThunderBoarder",
+            "flags": [
+                "AI_ANTI_META",
+                "SUPPORT_NEW_MASTER_RULE"
+            ]
+        }
+    ]
 }
