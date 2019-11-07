@@ -61,7 +61,7 @@
             "flags": [
                 "AI_LV1",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -70,7 +70,7 @@
             "flags": [
                 "AI_LV1",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -79,7 +79,7 @@
             "flags": [
                 "AI_LV2",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -88,7 +88,7 @@
             "flags": [
                 "AI_LV2",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -97,7 +97,7 @@
             "flags": [
                 "AI_LV2",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -106,7 +106,7 @@
             "flags": [
                 "AI_LV2",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -115,7 +115,7 @@
             "flags": [
                 "AI_LV2",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -131,7 +131,7 @@
             "flags": [
                 "AI_LV3",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -147,7 +147,7 @@
             "flags": [
                 "AI_ANTI_META",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -156,7 +156,7 @@
             "flags": [
                 "AI_ANTI_META",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -164,7 +164,7 @@
             "deck": "Trickstar",
             "flags": [
                 "AI_LV3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -172,7 +172,7 @@
             "deck": "Altergeist",
             "flags": [
                 "AI_LV3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -180,7 +180,7 @@
             "deck": "SkyStriker",
             "flags": [
                 "AI_LV3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -188,7 +188,7 @@
             "deck": "Orcust",
             "flags": [
                 "AI_LV3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -196,7 +196,7 @@
             "deck": "Salamangreat",
             "flags": [
                 "AI_LV3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -204,7 +204,7 @@
             "deck": "Burn",
             "flags": [
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -213,7 +213,7 @@
             "flags": [
                 "AI_LV1",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -222,7 +222,7 @@
             "flags": [
                 "AI_LV1",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -230,7 +230,7 @@
             "deck": "ST1732",
             "flags": [
                 "AI_LV2",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -239,7 +239,7 @@
             "flags": [
                 "AI_LV3",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -248,7 +248,7 @@
             "flags": [
                 "AI_LV3",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -257,7 +257,7 @@
             "flags": [
                 "AI_LV2",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -266,7 +266,7 @@
             "flags": [
                 "AI_ANTI_META",
                 "SUPPORT_MASTER_RULE_3",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         },
         {
@@ -274,7 +274,7 @@
             "deck": "GrenMajuThunderBoarder",
             "flags": [
                 "AI_ANTI_META",
-                "SUPPORT_NEW_MASTER_RULE"
+                "SUPPORT_MASTER_RULE_4"
             ]
         }
     ]
