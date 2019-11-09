@@ -111,3 +111,11 @@ Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 t
 27-Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
 
 28-Removed complex handling of Continuous Traps for when it is possible to activate the card AND its effect in the same chain link
+
+29-The following functions have been renamed:
+	Card.IsLinkState -> Card.IsLinked
+	Card.IsExtraLinkState -> Card.IsExtraLinked (this one also no longer requires the workarounds that were once used)
+	Card.IsAttackable -> Card.CanAttack
+	Card.IsChainAttackable -> Card.CanChainAttack
+
+
