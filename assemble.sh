@@ -30,7 +30,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     git reset --hard @{u}
     git reset --soft HEAD^
 
-    rm -rf EDOPro EDOPro.exe EDOPro.app puzzles *.conf *.json
+    rm -rf EDOPro EDOPro.exe EDOPro.app puzzles *.conf *.json WindBot
     for REPO in $SIMPLY_COPY; do
         rsync -ar ../$REPO/* .
     done
@@ -44,7 +44,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     cp ../core-osx/libocgcore.dylib .
     cp ../core-linux/libocgcore.so .
     cp ../core-windows/ocgcore.dll .
-    rsync -ar --exclude=.git ../windbot-ignite WindBot
+    rsync -ar --exclude=.git ../windbot-ignite/ WindBot
     rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script/ script
     rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script-anime/ script
 
