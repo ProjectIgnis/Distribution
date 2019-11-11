@@ -9,7 +9,7 @@ set -euxo pipefail
 cd $(dirname $0)/..
 
 NEEDS_UPDATE=0
-TARGETS="edopro-config edopro-cdb edopro-media edopro-script edopro-script-anime edopro-bin edopro-windows edopro-osx edopro-linux core-windows core-osx core-linux"
+TARGETS="edopro-config edopro-cdb edopro-media edopro-script edopro-script-anime edopro-bin edopro-windows edopro-osx edopro-linux core-windows core-osx core-linux windbot-ignite"
 SIMPLY_COPY="edopro-config edopro-cdb edopro-media edopro-bin"
 
 for REPO in $TARGETS; do
@@ -30,14 +30,12 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     git reset --hard @{u}
     git reset --soft HEAD^
 
-    rm -rf puzzles
-    rm -f edopro EDOPro
-    rm -f edopro.exe EDOPro
-    rm -rf edopro.app EDOPro.app
+    rm -rf puzzles EDOPro EDOPro.exe EDOPro.app
     for REPO in $SIMPLY_COPY; do
         rsync -ar ../$REPO/* .
     done
     rm assemble.sh
+    rm -f .travis.yml script/.travis.yml
 
     cp ../edopro-linux/ygoprodll EDOPro
     cp ../edopro-windows/ygoprodll.exe EDOPro.exe
@@ -46,6 +44,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     cp ../core-osx/libocgcore.dylib .
     cp ../core-linux/libocgcore.so .
     cp ../core-windows/ocgcore.dll .
+    rsync -ar --exclude=.git ../windbot-ignite WindBot
     rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script/ script
     rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script-anime/ script
 
