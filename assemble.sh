@@ -30,7 +30,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     git reset --hard @{u}
     git reset --soft HEAD^
 
-    rm -rf puzzles EDOPro EDOPro.exe EDOPro.app
+    rm -rf EDOPro EDOPro.exe EDOPro.app puzzles *.conf *.json
     for REPO in $SIMPLY_COPY; do
         rsync -ar ../$REPO/* .
     done
