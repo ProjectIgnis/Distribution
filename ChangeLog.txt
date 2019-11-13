@@ -1,4 +1,4 @@
-Changes from YGOPro Percy 1.034 Links Beta to EDOPro
+Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
 
 TEMPORARY:
 	*cdb entries for official cards merged into the main cdb:
@@ -17,7 +17,7 @@ New TCG/OCG and anime cards by:
 	-Larry126
 	-Aht
 
-OCGCORE: updated from 1.034 to edo9300's 4.1
+OCGCORE: updated from 1.034 to edo9300's 4.2
 
 
 1-Updated mandatory trigger effects handling.
@@ -39,6 +39,7 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 6-Updated music and sounds options:
 	*added "chants" support.
 	*more details available in the txt file in the "sounds" folder.
+	*music and sound volume controls separated
 
 7-Updated skins handling.
 	*more details available in the txt file in the "skin" folder
@@ -98,15 +99,16 @@ OCGCORE: updated from 1.034 to edo9300's 4.1
 You can also combine those functions.
 Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "Blue-Eyes" archetype or the ""Buster Blader" archetype
 
-25-Added asynchronous loading system for pictures in deck edit.
+25-Added asynchronous loading system for card images.
 
 25-The last banlist used is now remembered after leaving deck edit, a duel, or the client.
 
 26-macOS
-Cmd+Q quits the application. "Quit" menu item added to app menu.
-Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
-Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 that will work as well. "Toggle Full Screen" menu item added to app and dock menus. This is remembered on app restart like on Windows and Linux.
-	Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
+	*Cmd+Q quits the application. "Quit" menu item added to app menu.
+	*Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
+	*Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 that will work as well. "Toggle Full Screen" menu item added to app and dock menus. This is remembered on app restart like on Windows and Linux.
+		Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
+	*Shift+Right Click to add to side deck in Deck Edit now works like on Windows and Linux
 
 27-Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
 
