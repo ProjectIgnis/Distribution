@@ -30,7 +30,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     git reset --hard @{u}
     git reset --soft HEAD^
 
-    rm -rf EDOPro EDOPro.exe EDOPro.app puzzles *.conf *.json WindBot/Decks WindBot/Dialogs
+    rm -rf EDOPro EDOPro.exe EDOPro.app deck puzzles *.conf *.json WindBot/Decks WindBot/Dialogs
     for REPO in $SIMPLY_COPY; do
         rsync -ar ../$REPO/* .
     done
