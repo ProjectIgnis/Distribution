@@ -16,6 +16,7 @@ New TCG/OCG and anime cards by:
 	-Logical Nonsense
 	-Larry126
 	-Aht
+	-Hel
 
 OCGCORE: updated from 1.034 to edo9300's 4.2
 
@@ -34,7 +35,7 @@ OCGCORE: updated from 1.034 to edo9300's 4.2
 	*different repositories now display their Update Logs separately.
 
 5-Updated many strings called with dialogue boxes and activation prompts used by the client. 
-	-Update incorrect strings called in the Damage Step
+	*Update incorrect strings called in the Damage Step
 
 6-Updated music and sounds options:
 	*added "chants" support.
@@ -55,10 +56,10 @@ OCGCORE: updated from 1.034 to edo9300's 4.2
 12-"Puzzle Mode" menu now reads subdirectories in the `puzzle folder`
 
 13-"single" folder renamed to "puzzle"
-	-updated puzzles that were unsolvable to use pre-errata cards.
+	*updated puzzles that were unsolvable to use pre-errata cards.
 
 14-Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
-	-messages are added with the following syntax:
+	*messages are added with the following syntax:
 	--[[message
 	insert the text here
 	]]
@@ -120,4 +121,9 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 	Card.IsAttackable -> Card.CanAttack
 	Card.IsChainAttackable -> Card.CanChainAttack
 
+30-Added Discord Integration via Rich Presence
+	*Features:
+		*Your status will be set to "Playing Ygopro", with the elapsed time included
+		*You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
+		*Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
 
