@@ -65,11 +65,14 @@
 	</Button>
 
 	<MenuBar texture="MenuBar.png">
+		<!-- Changes the size of the image used in for the top bar in the main menu.
+		Changes are visible only when setting brx and bry are set to higher values-->
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 		<DstBorder tlx="3" tly="3" brx="3" bry="3" />
 		<MenuPane texture="MenuPane.png">
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
+			<!-- Changes the color used in the background panel for the menus in the main screen, like the "Repository Status" menu -->
 			<Color r="255" g="255" b="255" a="255" />
 		</MenuPane>
 		<MenuPressed texture="MenuPressed.png">
@@ -80,6 +83,8 @@
 	</MenuBar>
 
 	<CheckBox texture="CheckBox.png">
+		<!-- Changes the size of the image used in the checkboxes like the ones used
+			in Deck Edit's "Show unofficial cards" or the "Effect" boxes -->
 		<SrcBorder tlx="1" tly="1" brx="1" bry="1" />
 		<DstBorder tlx="1" tly="1" brx="1" bry="1" />
 		<CheckBoxDisabled texture="CheckBoxDisabled.png">
@@ -103,6 +108,8 @@
 	</SunkenPane>
 
 	<TabControl texture="TabControl.png">
+		<!-- Changes the thickness of the image used in the menus in Deck Edit: Card Info, Log, Settings, etc
+			if you set the values to high, it will become not visible -->
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
 		<TabButton texture="TabButton.png">
@@ -130,4 +137,4 @@
 			<Color a="255" r="255" g="255" b="255" />
 		</Filled>
   </ProgressBar>
-</Skin>
+</Skin>
