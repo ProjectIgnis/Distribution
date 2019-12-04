@@ -45,8 +45,8 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     cp ../core-linux/libocgcore.so .
     cp ../core-windows/ocgcore.dll .
     rsync -ar --exclude=.git ../windbot-ignite/ WindBot
-    rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script/ script
-    rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script-anime/ script
+    rsync -ar --exclude=.git --exclude=.travis.yml --exclude=.github ../edopro-script/ script
+    rsync -ar --exclude=.git --exclude=.travis.yml --exclude=.github ../edopro-script-anime/ script
 
     git add -A .
     git update-index --chmod=+x -- EDOPro EDOPro.app/Contents/MacOS/EDOPro update.sh
