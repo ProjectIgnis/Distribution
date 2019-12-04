@@ -49,7 +49,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     rsync -ar --exclude=.git --exclude=.travis.yml ../edopro-script-anime/ script
 
     git add -A .
-    git update-index --chmod=+x -- EDOPro EDOPro.app/Contents/MacOS/EDOPro
+    git update-index --chmod=+x -- EDOPro EDOPro.app/Contents/MacOS/EDOPro update.sh
     git add -u .
     git commit -m "EDOPro Automatic Assembly"
     git push -f origin master:master
