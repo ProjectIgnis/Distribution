@@ -14,7 +14,7 @@ SIMPLY_COPY="edopro-config edopro-cdb edopro-media edopro-bin"
 
 for REPO in $TARGETS; do
     cd $REPO
-    git remote update
+    git fetch --prune
     LOCAL=$(git rev-parse HEAD)
     UPSTREAM=$(git rev-parse @{u})
     if [[ $LOCAL != $UPSTREAM ]]; then
@@ -26,7 +26,7 @@ done
 
 if [[ $NEEDS_UPDATE == 1 ]]; then
     cd Edopro_1034
-    git remote update
+    git fetch --prune
     git reset --hard @{u}
     git reset --soft HEAD^
 
@@ -35,7 +35,7 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
         rsync -ar ../$REPO/* .
     done
     rm assemble.sh
-    rm -f .travis.yml script/.travis.yml
+    rm -f .travis.yml
 
     cp ../edopro-linux/ygoprodll EDOPro
     cp ../edopro-windows/ygoprodll.exe EDOPro.exe

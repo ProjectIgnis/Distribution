@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git fetch && git reset --hard @{u}
+git fetch --prune && git reset --hard @{u}
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     git checkout origin/windbot-linux -- ygoprodll
 elif [[ "$OSTYPE" == "darwin"* ]]; then
