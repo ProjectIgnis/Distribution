@@ -10,7 +10,7 @@ cd $(dirname $0)/..
 
 NEEDS_UPDATE=0
 TARGETS="edopro-config edopro-cdb edopro-media edopro-script edopro-script-anime edopro-bin edopro-windows edopro-osx edopro-linux core-windows core-osx core-linux windbot-ignite"
-SIMPLY_COPY="edopro-config edopro-cdb edopro-media edopro-bin"
+SIMPLY_COPY="edopro-config edopro-cdb edopro-media"
 
 for REPO in $TARGETS; do
     cd $REPO
