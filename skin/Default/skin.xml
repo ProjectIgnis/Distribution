@@ -23,36 +23,33 @@
 		<EGDC_3D_DARK_SHADOW a="255" r="140" g="140" b="140" />
 		<EGDC_3D_SHADOW a="255" r="255" g="255" b="255" />
 		<EGDC_3D_FACE a="255" r="255" g="255" b="255" />
+		<!-- Changes the color used as background in dropdown menus like the banlist selection one and the deck selection dropdown -->
 		<EGDC_3D_HIGH_LIGHT a="255" r="250" g="250" b="250" />
 		<EGDC_3D_LIGHT a="255" r="255" g="255" b="255" />
 		<EGDC_ACTIVE_BORDER a="255" r="200" g="200" b="200" />
-		
 		<!-- Changes the color of the text used infor the version name and/or title of menus, WHILE they are enabled. -->
 		<EGDC_ACTIVE_CAPTION a="255" r="35" g="45" b="95" />
 		<EGDC_APP_WORKSPACE a="255" r="255" g="255" b="255" />
-		
 		<!-- Changes the color of the text used in buttons. Also change the color of the text displayed in "Card Info"-->
 		<EGDC_BUTTON_TEXT a="0" r="0" g="0" b="0" />
+		<!-- Changes the color of the text used in box that are "grey", usually. Examples: the phase buttons when-->
+		<!--pressed, the thext in the "Attribute" and "type" menus, while the "monster" category is not selected-->
 		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" />
 		<EGDC_HIGH_LIGHT a="0" r="0" g="0" b="0" />
-		
 		<!-- Changes the color of the text used in the main screen's top left menus-->
 		<EGDC_HIGH_LIGHT_TEXT a="255" r="255" g="255" b="255" />
 		<EGDC_INACTIVE_BORDER a="0" r="255" g="255" b="255" />
-		
 		<!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled
 			test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
 		<EGDC_INACTIVE_CAPTION a="255" r="75" g="75" b="95" />
 		<EGDC_TOOLTIP a="255" r="40" g="40" b="40" />
 		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
-		
 		<!-- Changes the color of the scroll bar used in Deck edit's search results-->
 		<EGDC_SCROLLBAR a="255" r="200" g="200" b="200" />
 		<EGDC_WINDOW a="255" r="255" g="255" b="255" />
 		<EGDC_WINDOW_SYMBOL a="255" r="0" g="0" b="0" />
 		<EGDC_ICON a="255" r="45" g="70" b="135" />
 		<EGDC_ICON_HIGH_LIGHT a="255" r="70" g="190" b="240" />
-		
 		<Caption tbardistancex="4" tbardistancey="8" />
 		<WindowButton width="24" />
 		<CheckBoxColor a="255" r="33" g="161" b="33" />
