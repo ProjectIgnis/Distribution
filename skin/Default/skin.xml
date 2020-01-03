@@ -53,7 +53,7 @@
 		<EGDC_ICON_HIGH_LIGHT a="255" r="70" g="190" b="240" />
 		<!-- Changes the coordinates used for the text in the Version name, Update Log, etc-->
 		<Caption tbardistancex="4" tbardistancey="8" />
-		<!-- Changes the with in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc-->
+		<!-- Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc-->
 		<WindowButton width="24" />
 		<!-- Changes the color used for the check markers in the checkboxes, like the "Show unofficial card" -->
 		<CheckBoxColor a="255" r="33" g="161" b="33" />
