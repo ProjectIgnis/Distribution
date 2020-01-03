@@ -47,11 +47,15 @@
 		<!-- Changes the color of the scroll bar used in Deck edit's search results-->
 		<EGDC_SCROLLBAR a="255" r="200" g="200" b="200" />
 		<EGDC_WINDOW a="255" r="255" g="255" b="255" />
+		<!-- Changes the color 'arrows' used in the deck selection dropdown menu and the arrows used when you need to scroll to see more results for something in a selection-->
 		<EGDC_WINDOW_SYMBOL a="255" r="0" g="0" b="0" />
 		<EGDC_ICON a="255" r="45" g="70" b="135" />
 		<EGDC_ICON_HIGH_LIGHT a="255" r="70" g="190" b="240" />
+		<!-- Changes the coordinates used for the text in the Version name, Update Log, etc-->
 		<Caption tbardistancex="4" tbardistancey="8" />
+		<!-- Changes the with in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc-->
 		<WindowButton width="24" />
+		<!-- Changes the color used for the check markers in the checkboxes, like the "Show unofficial card" -->
 		<CheckBoxColor a="255" r="33" g="161" b="33" />
 
 
@@ -63,6 +67,7 @@
 		<Pressed texture="ButtonPressed.png">
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
+			<!-- Changes the background color used when a button is pressed." -->
 			<Color r="255" g="255" b="255" a="255" />
 		</Pressed>
 		<ButtonDisabled texture="ButtonDisabled.png">
@@ -111,6 +116,12 @@
 	</ComboBox>
 
 	<SunkenPane texture="sunkenpane.png">
+	<!--This file is used as "background" for areas of the client, including:
+	-the area where the card name and its ID is displayed, in deck edit
+	-the area where texts are displayed in LAN mode
+	-the are where the card picture is displayed
+	-the area where a replay name is typed, when savinng it
+	-the area in deck edit where all the multiple filters and menus are placed-->
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
 	</SunkenPane>
