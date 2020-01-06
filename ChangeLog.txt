@@ -18,7 +18,7 @@ New TCG/OCG and anime cards by:
 	-Aht
 	-Hel
 
-OCGCORE: updated from 1.034 to edo9300's 4.2
+OCGCORE: updated from 1.034 standard to edo9300's 4.3
 
 
 1-Updated mandatory trigger effects handling.
@@ -126,4 +126,18 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 		*Your status will be set to "Playing Ygopro", with the elapsed time included
 		*You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
 		*Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
+		
+31-Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
+
+32-Scripts now load from one subdirectory level in the script folder only.
+
+33-Prereleases are supported. Use the 0x100 OT bit.
+	*Prereleases appear by default in deck edit and can be filtered specifically for
+	*Prereleases can be permitted in duels in addition to "OCG/TCG" mode
+	*All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
+
+34-Localhost AI added with up to four bots per duel in the first four player slots.
+	*Uses custom WindBot Ignite
+	*Bots incompatible with the current Master Rule are not displayed
+
 
