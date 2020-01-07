@@ -9,7 +9,7 @@ set -euxo pipefail
 cd $(dirname $0)/..
 
 NEEDS_UPDATE=0
-TARGETS="edopro-config edopro-cdb edopro-media edopro-script edopro-script-anime edopro-bin edopro-windows edopro-osx edopro-linux core-windows core-osx core-linux windbot-ignite"
+TARGETS="edopro-config edopro-cdb edopro-media edopro-script edopro-bin edopro-windows edopro-osx edopro-linux core-windows core-osx core-linux windbot-ignite"
 SIMPLY_COPY="edopro-config edopro-cdb edopro-media"
 
 for REPO in $TARGETS; do
@@ -46,7 +46,6 @@ if [[ $NEEDS_UPDATE == 1 ]]; then
     cp ../core-windows/ocgcore.dll .
     rsync -ar --exclude=.git ../windbot-ignite/ WindBot
     rsync -ar --exclude=.git --exclude=.travis.yml --exclude=.github ../edopro-script/ script
-    rsync -ar --exclude=.git --exclude=.travis.yml --exclude=.github ../edopro-script-anime/ script
 
     git add -A .
     git update-index --chmod=+x -- EDOPro EDOPro.app/Contents/MacOS/EDOPro update.sh feature.sh
