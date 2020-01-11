@@ -3,6 +3,7 @@ replay/
 screenshots/
 WindBot/
 error.log
+EDOPro*
 *.exe
 *.app
 *.dll
