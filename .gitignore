@@ -1,0 +1,11 @@
+pics/
+replay/
+screenshots/
+WindBot/
+error.log
+*.exe
+*.app
+*.dll
+*.so
+*.dylib
+.DS_Store
