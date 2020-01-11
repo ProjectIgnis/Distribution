@@ -1,3 +1,6 @@
 [submodule "script"]
 	path = script
 	url = https://github.com/kevinlul/edopro-script.git
+[submodule "expansions"]
+	path = expansions
+	url = https://github.com/kevinlul/edopro-cdb.git
