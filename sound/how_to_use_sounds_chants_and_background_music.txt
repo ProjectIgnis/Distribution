@@ -56,7 +56,7 @@ To change your background music
 
 Chants are sound effects played when a certain monster is summoned. To add a chant:
 	1 - Go to your "/sounds/chants/" folder (if you don't have a "chants" folder, create it)
-	2 - Add the sound file for your chant here. Only `.wav` format is supported
+	2 - Add the sound file for your chant here. Only `.wav` and `.ogg` formats are supported
 	3 - Rename the file to match the ID/passcode of the monster that will use it.
 		An example: Lunalight Leo Dancer's ID is 24550676. To have a chant for its summon you will need a file named `24550676.wav`
 	The chants are applied when that monster is summoned in a duel or in a puzzle, after the client is restarted.
