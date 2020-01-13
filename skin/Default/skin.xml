@@ -57,10 +57,54 @@
 		<WindowButton width="24" />
 		<!-- Changes the color used for the check markers in the checkboxes, like the "Show unofficial card" -->
 		<CheckBoxColor a="255" r="33" g="161" b="33" />
-
-
-    	</Global>
-  
+	</Global>
+	
+		<Custom>
+		<!-- Changes the color used for the text with the types (Card Type, Attribute, monster type) in the "Card Info" area-->
+		<CARDINFO_TYPES_COLOR a="255" r="0" g="0" b="255" />
+		<!-- Changes the color used for the text with the stats (level, rank, atk, def) in the "Card Info" area-->
+		<CARDINFO_STATS_COLOR a="255" r="0" g="0" b="255" />
+		<!-- Changes the color used for the Archetype Name in the "Card Info" area -->
+		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="0" g="0" b="255" />
+		<!-- Changes the color used as background for the area where the card picture is displayed in Deck Edit -->
+		<CARDINFO_IMAGE_BACKGROUND a="255" r="200" g="200" b="255" />
+		<DUELFIELD_ANNOUNCE_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
+		<!-- Changes the color of the color used in the box after a card is announced. Example: Psi-Blocker -->
+		<DUELFIELD_ANNOUNCE_TEXT_COLOR a="255" r="30" g="30" b="30" />
+		<!-- Changes the color of the color used as background in the tooltip box, the area with the card details when you hover the mouse over it in the field -->
+		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
+		<!-- Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it in the field -->
+		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="30" g="30" b="30" />
+		<!-- Changes the color for the zones you are hovering on the field -->
+		<DUELFIELD_HOVERED a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for the zones where a link monster points to -->
+		<DUELFIELD_LINKED a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for the zones where mosters co-linked with the monster that you hover the mouse over are -->
+		<DUELFIELD_MUTUAL_LINKED a="255" r="30" g="255" b="30" />
+		<!-- Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon -->
+		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it-->
+		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming-->
+		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="230" g="230" b="230" />
+		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="255" g="1" b="255" />
+		<!-- Changes the color for area around the caption text when you are selection cards from a group. 
+			Example: when you are selecting what monsters to banish by Block Dragon-->
+		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="230" g="230" b="230" />
+		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="255" g="0" b="0" />
+		<!-- Changes the color for the caption text when you have to select cards from a location.
+			Example: the "Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming-->
+		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="20" g="20" b="20" />
+		<!-- Changes the color for the texts in the room list menu. Examples: the "Server", "Nickname", "show locked rooms" texts-->
+		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for a room that didn't have any of its settings changed from the default ones-->
+		<ROOMLIST_NORMAL_ROOM a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for a room that has any of its settings changed from the default ones. Example: different LP, different starting hand, etc-->
+		<ROOMLIST_CUSTOM_ROOM a="255" r="230" g="230" b="230" />
+		<!-- Changes the color for a room, in the room list, that has already started its duel.-->
+		<ROOMLIST_STARTED_ROOM a="255" r="230" g="230" b="230" />
+	</Custom>
+	
 	<Button texture="button.png">
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 		<DstBorder tlx="3" tly="3" brx="3" bry="3" />
