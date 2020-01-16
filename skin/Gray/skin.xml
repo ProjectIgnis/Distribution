@@ -24,10 +24,10 @@
 		<EGDC_3D_SHADOW a="255" r="255" g="255" b="255" />
 		<EGDC_3D_FACE a="255" r="255" g="255" b="255" />
 		<!-- Changes the color used as background in dropdown menus like the banlist selection one and the deck selection dropdown -->
-		<EGDC_3D_HIGH_LIGHT a="255" r="10" g="40" b="40" />
+		<EGDC_3D_HIGH_LIGHT a="255" r="218" g="212" b="250" />
 		<EGDC_3D_LIGHT a="255" r="255" g="0" b="0" />
 		<EGDC_ACTIVE_BORDER a="255" r="200" g="200" b="200" />
-		<!-- Changes the color of the text used infor the version name and/or title of menus, WHILE they are enabled. -->
+		<!-- Changes the color of the text used for the version name and/or title of menus, WHILE they are enabled. -->
 		<EGDC_ACTIVE_CAPTION a="255" r="35" g="45" b="95" />
 		<EGDC_APP_WORKSPACE a="255" r="255" g="255" b="255" />
 		<!-- Changes the color of the text used in buttons. Also change the color of the text displayed in "Card Info"-->
@@ -45,7 +45,7 @@
 		<EGDC_TOOLTIP a="255" r="40" g="40" b="40" />
 		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
 		<!-- Changes the color of the scroll bar used in Deck edit's search results-->
-		<EGDC_SCROLLBAR a="255" r="200" g="200" b="200" />
+		<EGDC_SCROLLBAR a="255" r="30" g="30" b="30" />
 		<EGDC_WINDOW a="255" r="255" g="255" b="255" />
 		<!-- Changes the color 'arrows' used in the deck selection dropdown menu and the arrows used when you need to scroll to see more results for something in a selection-->
 		<EGDC_WINDOW_SYMBOL a="255" r="0" g="0" b="0" />
@@ -61,11 +61,11 @@
 	
 		<Custom>
 		<!-- Changes the color used for the text with the types (Card Type, Attribute, monster type) in the "Card Info" area-->
-		<CARDINFO_TYPES_COLOR a="255" r="19" g="110" b="34" />
+		<CARDINFO_TYPES_COLOR a="255" r="13" g="13" b="13" />
 		<!-- Changes the color used for the text with the stats (level, rank, atk, def) in the "Card Info" area-->
-		<CARDINFO_STATS_COLOR a="255" r="19" g="110" b="34" />
+		<CARDINFO_STATS_COLOR a="255" r="13" g="13" b="13" />
 		<!-- Changes the color used for the Archetype Name in the "Card Info" area -->
-		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="89" g="20" b="100" />
+		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="14" g="0" b="94" />
 		<!-- Changes the color used as background for the area where the card picture is displayed in Deck Edit -->
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="245" g="245" b="245" />
 		<DUELFIELD_ANNOUNCE_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
