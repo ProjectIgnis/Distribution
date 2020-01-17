@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
-<!-- Config file for the GUI Skin (CImageGUISkin)					-->
-<!-- Source border is the border width (in pixels) on the texture	-->
-<!-- Dest border is the border width on the screen (also in pixels)	-->
-<!-- Order of elements dosn't matter								-->
-<!-- <NodeNames> are not case sensitive								-->
-<!-- attribute	= ARE case sensitive								-->
-<!-- Texture	= filename											-->
-<!-- SrcBorder	= top,left,bottom,right								-->
-<!-- DstBorder	= top,left,bottom,right								-->
+<!-- This file is read by the GUI Skin (CImageGUISkin)
+The order of elements/nodes does not matter. 
+Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels)
+<NodeNames> are not case sensitive, but  Attributes are. "Texture" takes the file name as input
+SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
+
+<!--The comment line bellow always describe what the following line does. -->
+
 <Skin>
 	<Properties>
 		<Name data="Edopro Black and Gray Skin" />
@@ -16,7 +15,8 @@
 		<Date data="15-Jan-2020"/>
 		<Desc data="A skin that uses white, black and grey elements"/>
 		<Fallback skin="" />
-		<Font texture="fontTahoma.png" />
+		<!--If you plan to use a different font for the current Skin. Warning: Edopro will overwritte this, making it useless, so it is commented out.-->> 
+		<!--<Font texture="fontTahoma.png" /> -->
 	</Properties>
 	
 	<Global guialpha="255">
@@ -41,11 +41,11 @@
 		<EGDC_INACTIVE_BORDER a="0" r="255" g="30" b="0" />
 		<!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled
 			test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
-		<EGDC_INACTIVE_CAPTION a="255" r="255" g="255" b="255" />
+		<EGDC_INACTIVE_CAPTION a="255" r="26" g="0" b="0" />
 		<EGDC_TOOLTIP a="255" r="40" g="40" b="40" />
 		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
 		<!-- Changes the color of the scroll bar used in Deck edit's search results-->
-		<EGDC_SCROLLBAR a="255" r="30" g="30" b="30" />
+		<EGDC_SCROLLBAR a="255" r="153" g="153" b="153" />
 		<EGDC_WINDOW a="255" r="255" g="255" b="255" />
 		<!-- Changes the color 'arrows' used in the deck selection dropdown menu and the arrows used when you need to scroll to see more results for something in a selection-->
 		<EGDC_WINDOW_SYMBOL a="255" r="0" g="0" b="0" />
@@ -61,11 +61,11 @@
 	
 		<Custom>
 		<!-- Changes the color used for the text with the types (Card Type, Attribute, monster type) in the "Card Info" area-->
-		<CARDINFO_TYPES_COLOR a="255" r="0" g="0" b="255" />
+		<CARDINFO_TYPES_COLOR a="255" r="179" g="0" b="0" />
 		<!-- Changes the color used for the text with the stats (level, rank, atk, def) in the "Card Info" area-->
-		<CARDINFO_STATS_COLOR a="255" r="0" g="0" b="255" />
+		<CARDINFO_STATS_COLOR a="255" r="179" g="0" b="0" />
 		<!-- Changes the color used for the Archetype Name in the "Card Info" area -->
-		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="0" g="0" b="255" />
+		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="179" g="0" b="0" />
 		<!-- Changes the color used as background for the area where the card picture is displayed in Deck Edit -->
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="245" g="245" b="245" />
 		<DUELFIELD_ANNOUNCE_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
@@ -87,10 +87,11 @@
 		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="230" g="230" b="230" />
 		<!-- Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming-->
 		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="230" g="230" b="230" />
-		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="255" g="1" b="255" />
+		<!-- Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck-->
+		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="201" g="201" b="201" />
 		<!-- Changes the color for area around the caption text when you are selection cards from a group. 
 			Example: when you are selecting what monsters to banish by Block Dragon-->
-		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="255" g="1" b="255" />
+		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="201" g="201" b="201" />
 		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="255" g="0" b="0" />
 		<!-- Changes the color for the caption text when you have to select cards from a location.
 			Example: the "Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming-->
@@ -122,7 +123,7 @@
 	</Button>
 
 	<MenuBar texture="MenuBar.png">
-		<!-- Changes the size of the image used in for the top bar in the main menu.
+		<!-- Changes the size of the image used for the top bar in the main menu.
 		Changes are visible only when setting brx and bry are set to higher values-->
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 		<DstBorder tlx="3" tly="3" brx="3" bry="3" />
