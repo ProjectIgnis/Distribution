@@ -18,7 +18,7 @@ New TCG/OCG and anime cards by:
 	-Aht
 	-Hel
 
-OCGCORE: updated from 1.034 standard to edo9300's 4.3
+OCGCORE: updated from 1.034 standard to edo9300's 5.1
 
 
 1-Updated mandatory trigger effects handling.
@@ -43,7 +43,7 @@ OCGCORE: updated from 1.034 standard to edo9300's 4.3
 	*music and sound volume controls separated
 
 7-Updated skins handling.
-	*more details available in the txt file in the "skin" folder
+	*more details available in the "skin.xml" file in the default skin folder.
 	
 8-Added option to set maximum FPS in the configuration file.
 
@@ -123,7 +123,13 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 
 30-Added Discord Integration via Rich Presence
 	*Features:
-		*Your status will be set to "Playing Ygopro", with the elapsed time included
+		*Your status will be set to "Playing Ygopro", with the elapsed time included.
+		Actions that will have description:
+			-Dueling
+			-In menu
+			-Playing a Puzzle
+			-Watching a Replay
+			-Editing a deck
 		*You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
 		*Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
 		
@@ -133,11 +139,18 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 
 33-Prereleases are supported. Use the 0x100 OT bit.
 	*Prereleases appear by default in deck edit and can be filtered specifically for
-	*Prereleases can be permitted in duels in addition to "OCG/TCG" mode
+	*Prereleases can be permitted in duels in addition to "OCG/TCG" mode.
+		Setting the Allowed Card list to TCG allows only cards that are released in TCG.
+		Setting the Allowed Card list to OCG allows only cards that are released in OCG.
+		Setting the Allowed Card list to TCG/OCG allows only cards that are released both in TCG and OCG but not pre-releases.
+		Setting the Allowed Card list to Pre-release allows only cards that are released both in TCG and OCG.
+		Setting the Allowed Card list to Anything goes allows any cards that are released both in TCG and OCG.
+	
 	*All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
-
+	
+	
 34-Localhost AI added with up to four bots per duel in the first four player slots.
 	*Uses custom WindBot Ignite
 	*Bots incompatible with the current Master Rule are not displayed
 
-
+35-Added support for "Mischief of the Time Goddess"
