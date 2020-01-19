@@ -5,7 +5,7 @@ The game supports three types of audio:
 - background music
 - chants, which override certain sound effects
 
-Audio files are loaded when the game starts, so restart the game if you make customizations while it is running.
+Audio files are loaded when the game starts. You can force a refresh by pressing F9.
 
 ## Sound effects (no subfolder)
 
@@ -47,7 +47,7 @@ Add any number of files to the following folders (create if missing).
 	lose         : music played when you lose the duel, until leaving that room.
 	menu         : music played in the other game menus, like the home screen.
 	win          : music played when you lose the duel, until leaving that room.
-The current track for the situation is selected randomly from the files in the corresponding folder.
+The current track for the situation is selected randomly from the files in the corresponding folder. Loose files not in one of these subfolders are treated as additional duel music.
 
 ## Chants (activate, attack, summon folders)
 
