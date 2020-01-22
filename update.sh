@@ -19,13 +19,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     git checkout bin/$BRANCH-osx -- ygoprodll.app
     git checkout bin/travis-core-osx -- libocgcore.dylib
-    sed -i "" 's/use_vsync = 1/use_vsync = 0/g' config/system.conf
     git reset -q ygoprodll.app libocgcore.dylib
     rm -rf EDOPro.app
     mv ygoprodll.app EDOPro.app
     mv EDOPro.app/Contents/MacOS/ygoprodll EDOPro.app/Contents/MacOS/EDOPro
 else
-    git checkout bin/travis-windows -- ygoprodll.exe
+    git checkout bin/$BRANCH-windows -- ygoprodll.exe
     git checkout bin/travis-core-windows -- ocgcore.dll
     git reset -q ygoprodll.exe ocgcore.dll
     mv ygoprodll.exe EDOPro.exe
