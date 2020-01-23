@@ -16,8 +16,8 @@
             "data_path": "",
             "script_path": "script",
             "pics_path": "pics",
-            "should_update": false,
-            "should_read": false
+            "should_update": true,
+            "should_read": true
         }
     ],
     "urls": [
