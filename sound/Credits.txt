@@ -1,5 +1,9 @@
-addcounter.wav: Ping.wav by edsward. License: Creative Commons 0 License.
+addcounter.wav: "Ping.wav" by edsward. License: Creative Commons 0 License.
 Available at  https://freesound.org/people/edsward/sounds/341871/
 
-coin.wav : Coin Flip by bone666138. License: Creative Commons Attribution 3.0 Unported
+coin.wav : "Coin Flip" by bone666138. License: Creative Commons Attribution 3.0 Unported
 Available at https://freesound.org/people/bone666138/sounds/198877/
+
+
+equip.wav  "Single Iron hit hard.wav" by Mrthenoronha. License: Creative Commons 0 License.
+Available athttps://freesound.org/people/Mrthenoronha/sounds/371922/ 
