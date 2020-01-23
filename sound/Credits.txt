@@ -17,3 +17,9 @@ Source: athttps://freesound.org/people/Mrthenoronha/sounds/371922/
 Original: "breaking glass_2.wav" by ElenZack.
 License: Creative Commons Attribution-NonCommercial 3.0 Unported
 Source: https://freesound.org/people/ElenZack/sounds/500604/
+
+
+--set.wav:
+Original: "Sci fi door" by peepholecircus.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/peepholecircus/sounds/171705/
