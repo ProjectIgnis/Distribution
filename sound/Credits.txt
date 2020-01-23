@@ -1,9 +1,19 @@
-addcounter.wav: "Ping.wav" by edsward. License: Creative Commons 0 License.
-Available at  https://freesound.org/people/edsward/sounds/341871/
+--addcounter.wav:
+Original: "Ping.wav" by edsward.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/edsward/sounds/341871/
 
-coin.wav : "Coin Flip" by bone666138. License: Creative Commons Attribution 3.0 Unported
-Available at https://freesound.org/people/bone666138/sounds/198877/
+--coin.wav:
+Original: "Coin Flip" by bone666138.
+License: Creative Commons Attribution 3.0 Unported
+Source: https://freesound.org/people/bone666138/sounds/198877/
 
+--equip.wav:
+Original: "Single Iron hit hard.wav" by Mrthenoronha.
+License: Creative Commons 0 License.
+Source: athttps://freesound.org/people/Mrthenoronha/sounds/371922/ 
 
-equip.wav  "Single Iron hit hard.wav" by Mrthenoronha. License: Creative Commons 0 License.
-Available athttps://freesound.org/people/Mrthenoronha/sounds/371922/ 
+--destroyed.wav
+Original: "breaking glass_2.wav" by ElenZack.
+License: Creative Commons Attribution-NonCommercial 3.0 Unported
+Source: https://freesound.org/people/ElenZack/sounds/500604/
