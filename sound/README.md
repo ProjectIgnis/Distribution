@@ -46,7 +46,7 @@ Add any number of files to the following folders (create if missing).
 	duel		     : music played in a duel, while neither advantage nor disadvantage are played.
 	lose         : music played when you lose the duel, until leaving that room.
 	menu         : music played in the other game menus, like the home screen.
-	win          : music played when you lose the duel, until leaving that room.
+	win          : music played when you win the duel, until leaving that room.
 The current track for the situation is selected randomly from the files in the corresponding folder. Loose files not in one of these subfolders are treated as additional duel music.
 
 ## Chants (activate, attack, summon folders)
