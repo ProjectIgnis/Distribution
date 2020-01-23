@@ -1,2 +1,5 @@
-coin.wav : Coin Flip by bone666138. License: Creative Commons's Attribution 3.0 Unported
+addcounter.wav: Ping.wav by edsward. License: Creative Commons 0 License.
+Available at  https://freesound.org/people/edsward/sounds/341871/
+
+coin.wav : Coin Flip by bone666138. License: Creative Commons Attribution 3.0 Unported
 Available at https://freesound.org/people/bone666138/sounds/198877/
