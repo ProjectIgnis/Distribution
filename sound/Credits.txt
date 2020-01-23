@@ -16,7 +16,12 @@ Source: https://freesound.org/people/ElenZack/sounds/500604/
 --equip.wav:
 Original: "Single Iron hit hard.wav" by Mrthenoronha.
 License: Creative Commons 0 License.
-Source: athttps://freesound.org/people/Mrthenoronha/sounds/371922/ 
+Source: athttps://freesound.org/people/Mrthenoronha/sounds/371922
+
+--gainlp.wav
+Original: "Choir One-Shot" by majoranman
+License: Creative Commons 0 License.
+https://freesound.org/people/majoranman/sounds/240745/
 
 --set.wav:
 Original: "Sci fi door" by peepholecircus.
