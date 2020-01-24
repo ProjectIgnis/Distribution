@@ -9,7 +9,7 @@ playerenter.wav
 removecounter.wav
 shuffle.wav
 specialsummon.wav
-summon.wav
+
 
 --addcounter.wav:
 Original: "Ping.wav" by edsward.
@@ -61,4 +61,8 @@ Original: "Sci fi door" by peepholecircus.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/peepholecircus/sounds/171705/
 
+--summon.wav:
+Original: "Vocal_chord.wav" by cellokratzer.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/cellokratzer/sounds/502947/
 
