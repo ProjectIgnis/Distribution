@@ -96,6 +96,10 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<!-- Changes the color for the caption text when you have to select cards from a location.
 			Example: the "Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming-->
 		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="20" g="20" b="20" />
+		<!-- Changes the color for progress bar for repositories-->
+		<PROGRESSBAR_FILL_COLOR  a="255" r="30" g="30" b="30" />
+		<!-- Changes the color for progress bar for repositories-->
+		<PROGRESSBAR_EMPTY_COLOR  a="255" r="230" g="230" b="230" />
 		<!-- Changes the color for the texts in the room list menu. Examples: the "Server", "Nickname", "show locked rooms" texts-->
 		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
 		<!-- Changes the color for a room that didn't have any of its settings changed from the default ones-->
