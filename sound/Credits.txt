@@ -5,7 +5,6 @@ damage.wav
 flip.wav
 nextturn.wav
 phase.wav
-playerenter.wav
 removecounter.wav
 shuffle.wav
 specialsummon.wav
@@ -55,6 +54,11 @@ Source: https://freesound.org/people/Mrthenoronha/sounds/371922
 Original: "Choir One-Shot" by majoranman
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/majoranman/sounds/240745/
+
+--playerenter.wav
+Original: "scale e6" by Leszek_Szary
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/Leszek_Szary/sounds/171646/
 
 --set.wav:
 Original: "Sci fi door" by peepholecircus.
