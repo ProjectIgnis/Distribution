@@ -2,8 +2,6 @@ The following files were not changed yet and need to be replaced:
 
 damage.wav
 flip.wav
-phase.wav
-removecounter.wav
 shuffle.wav
 specialsummon.wav
 
@@ -62,10 +60,20 @@ Original: "synthesizer sequence 42" by PhonosUPF
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/PhonosUPF/sounds/503445/
 
+--phase.wav
+Original: "Fast swipe.wav" by ParadoxTheSock
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/ParadoxTheSock/sounds/412595/
+
 --playerenter.wav
 Original: "scale e6" by Leszek_Szary
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/Leszek_Szary/sounds/171646/
+
+--removecounter.wav
+Original: "BLANHKKK MMV.wav" by MikeOscarFoxtrot
+License: Creative Commons Attribution 3.0 Unported.
+Source: https://freesound.org/people/MikeOscarFoxtrot/sounds/484380/
 
 --set.wav:
 Original: "Sci fi door" by peepholecircus.
