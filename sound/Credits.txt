@@ -2,7 +2,6 @@ The following files were not changed yet and need to be replaced:
 
 damage.wav
 flip.wav
-shuffle.wav
 specialsummon.wav
 
 --activate.wav:
@@ -79,6 +78,11 @@ Source: https://freesound.org/people/MikeOscarFoxtrot/sounds/484380/
 Original: "Sci fi door" by peepholecircus.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/peepholecircus/sounds/171705/
+
+--shuffle.wav:
+Original: "Riffle Card Shuffle" by Kodack.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/Kodack/sounds/256508/
 
 --summon.wav:
 Original: "Vocal_chord.wav" by cellokratzer.
