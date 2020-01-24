@@ -3,7 +3,6 @@ The following files were not changed yet and need to be replaced:
 activate.wav
 attack.wav
 damage.wav
-draw.wav
 flip.wav
 nextturn.wav
 phase.wav
@@ -37,6 +36,11 @@ Source: https://freesound.org/people/ElenZack/sounds/500604/
 Original: "Dices 3.wav" by Aiwha.
 License: Creative Commons Attribution 3.0 Unported
 Source: https://freesound.org/people/Aiwha/sounds/250714/
+
+--draw.wav
+Original: "Dices 3.wav" by Paul Sinnett.
+License: Creative Commons Attribution 3.0 Unported
+Source: https://freesound.org/people/Paul%20Sinnett/sounds/404015/
 
 --equip.wav:
 Original: "Single Iron hit hard.wav" by Mrthenoronha.
