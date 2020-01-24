@@ -1,6 +1,5 @@
 The following files were not changed yet and need to be replaced:
 
-activate.wav
 damage.wav
 flip.wav
 phase.wav
@@ -8,6 +7,10 @@ removecounter.wav
 shuffle.wav
 specialsummon.wav
 
+--activate.wav:
+Original: "VolCa SaMple ModulaR EfecTo 40" by DJ_SoMaR.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/DJ_SoMaR/sounds/503358/
 
 --addcounter.wav:
 Original: "Ping.wav" by edsward.
