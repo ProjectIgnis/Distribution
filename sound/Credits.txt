@@ -3,7 +3,6 @@ The following files were not changed yet and need to be replaced:
 activate.wav
 damage.wav
 flip.wav
-nextturn.wav
 phase.wav
 removecounter.wav
 shuffle.wav
@@ -54,6 +53,11 @@ Source: https://freesound.org/people/Mrthenoronha/sounds/371922
 Original: "Choir One-Shot" by majoranman
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/majoranman/sounds/240745/
+
+--nextturn.wav
+Original: "synthesizer sequence 42" by PhonosUPF
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/PhonosUPF/sounds/503445/
 
 --playerenter.wav
 Original: "scale e6" by Leszek_Szary
