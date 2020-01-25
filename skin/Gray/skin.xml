@@ -37,7 +37,7 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" />
 		<EGDC_HIGH_LIGHT a="0" r="0" g="230" b="0" />
 		<!-- Changes the color of the text used in the main screen's top left menus-->
-		<EGDC_HIGH_LIGHT_TEXT a="255" r="51" g="133" b="255" />
+		<EGDC_HIGH_LIGHT_TEXT a="255" r="0" g="204" b="0" />
 		<EGDC_INACTIVE_BORDER a="0" r="255" g="30" b="0" />
 		<!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled
 			test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
