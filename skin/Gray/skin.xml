@@ -31,14 +31,14 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<EGDC_ACTIVE_CAPTION a="255" r="35" g="45" b="95" />
 		<EGDC_APP_WORKSPACE a="255" r="255" g="255" b="255" />
 		<!-- Changes the color of the text used in buttons. Also change the color of the text displayed in "Card Info"-->
-		<EGDC_BUTTON_TEXT a="0" r="0" g="0" b="0" />
+		<EGDC_BUTTON_TEXT a="240" r="0" g="0" b="0" />
 		<!-- Changes the color of the text used in box that are "grey", usually. Examples: the phase buttons when-->
 		<!--pressed, the thext in the "Attribute" and "type" menus, while the "monster" category is not selected-->
 		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" />
-		<EGDC_HIGH_LIGHT a="0" r="0" g="230" b="0" />
+		<EGDC_HIGH_LIGHT a="255" r="0" g="230" b="0" />
 		<!-- Changes the color of the text used in the main screen's top left menus-->
-		<EGDC_HIGH_LIGHT_TEXT a="255" r="0" g="204" b="0" />
-		<EGDC_INACTIVE_BORDER a="0" r="255" g="30" b="0" />
+		<EGDC_HIGH_LIGHT_TEXT a="255" r="230" g="230" b="230" />
+		<EGDC_INACTIVE_BORDER a="255" r="255" g="30" b="0" />
 		<!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled
 			test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
 		<EGDC_INACTIVE_CAPTION a="255" r="26" g="0" b="0" />
@@ -138,6 +138,7 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 			<Color r="255" g="255" b="255" a="255" />
 		</MenuPane>
 		<MenuPressed texture="MenuPressed.png">
+		<!-- This button is displayed when clicking in the top left options in the main screen-->
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
 			<Color r="255" g="255" b="255" a="255" />
