@@ -18,9 +18,9 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<!--<Font texture="fontTahoma.png" /> --><!--If you plan to use a different font for the current Skin. Warning: Edopro will overwritte this, making it useless, so it is commented out.-->
 	</Properties>
 	<Global guialpha="255">
-		<EGDC_3D_DARK_SHADOW a="255" r="140" g="140" b="140" />
+		<EGDC_3D_DARK_SHADOW a="255" r="255" g="255" b="255" />
 		<EGDC_3D_SHADOW a="255" r="255" g="255" b="255" />
-		<EGDC_3D_FACE a="255" r="255" g="255" b="255" />
+		<EGDC_3D_FACE a="255" r="255" g="255" b="255" /><!--Face color for three-dimensional display elements and for dialog box backgrounds.-->
 		<EGDC_3D_HIGH_LIGHT a="255" r="218" g="212" b="250" /><!-- Changes the color used as background in dropdown menus like the banlist selection one and the deck selection dropdown -->
 		<EGDC_3D_LIGHT a="255" r="255" g="0" b="0" />
 		<EGDC_ACTIVE_BORDER a="255" r="200" g="200" b="200" />
@@ -39,6 +39,10 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<EGDC_WINDOW_SYMBOL a="255" r="0" g="0" b="0" /><!-- Changes the color 'arrows' used in the deck selection dropdown menu and the arrows used when you need to scroll to see more results for something in a selection-->
 		<EGDC_ICON a="255" r="45" g="70" b="135" />
 		<EGDC_ICON_HIGH_LIGHT a="255" r="70" g="190" b="240" />
+		<EGDC_GRAY_WINDOW_SYMBOL a="255" r="255" g="0" b="0" />
+		<EGDC_EDITABLE a="255" r="255" g="0" b="0" />
+		<EGDC_GRAY_EDITABLE a="255" r="255" g="0" b="0" />
+		<EGDC_FOCUSED_EDITABLE a="255" r="255" g="0" b="0" />
 		<Caption tbardistancex="4" tbardistancey="8" /><!-- Changes the coordinates used for the text in the Version name, Update Log, etc-->
 		<WindowButton width="24" /><!-- Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc-->
 		<CheckBoxColor a="255" r="30" g="30" b="30" /><!-- Changes the color used for the check markers in the checkboxes, like the "Show unofficial card" -->
