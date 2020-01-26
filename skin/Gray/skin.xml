@@ -22,27 +22,27 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<EGDC_3D_SHADOW a="255" r="255" g="255" b="255" />
 		<EGDC_3D_FACE a="255" r="255" g="255" b="255" /><!--Face color for three-dimensional display elements and for dialog box backgrounds.-->
 		<EGDC_3D_HIGH_LIGHT a="255" r="218" g="212" b="250" /><!-- Changes the color used as background in dropdown menus like the banlist selection one and the deck selection dropdown -->
-		<EGDC_3D_LIGHT a="255" r="255" g="0" b="0" />
+		<EGDC_3D_LIGHT a="255" r="255" g="255" b="255" />
 		<EGDC_ACTIVE_BORDER a="255" r="200" g="200" b="200" />
 		<EGDC_ACTIVE_CAPTION a="255" r="35" g="45" b="95" /><!-- Changes the color of the text used for the version name and/or title of menus, WHILE they are enabled. -->
 		<EGDC_APP_WORKSPACE a="255" r="255" g="255" b="255" />
 		<EGDC_BUTTON_TEXT a="240" r="0" g="0" b="0" /><!-- Changes the color of the text used in buttons. Also change the color of the text displayed in "Card Info"-->
 		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" /><!-- Changes the color of the text used in box that are "grey", usually. Examples: the phase buttons when pressed, the thext in the "Attribute" and "type" menus, while the "monster" category is not selected-->
-		<EGDC_HIGH_LIGHT a="255" r="0" g="230" b="0" />
-		<EGDC_HIGH_LIGHT_TEXT a="255" r="230" g="230" b="230" /><!-- Changes the color of the text used in the main screen's top left menus-->
-		<EGDC_INACTIVE_BORDER a="255" r="255" g="30" b="0" />
+		<EGDC_HIGH_LIGHT a="255" r="153" g="153" b="153" /><!-- Changes the color used as highlight/background for the item you are currently seeing in a drop down selection menu, like the banlist.-->
+		<EGDC_HIGH_LIGHT_TEXT a="255" r="20" g="20" b="20" /><!-- Changes the color of the text used in the main screen's top left menus-->
+		<EGDC_INACTIVE_BORDER a="255" r="255" g="255" b="0" />
 		<EGDC_INACTIVE_CAPTION a="255" r="26" g="0" b="0" /><!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
-		<EGDC_TOOLTIP a="255" r="40" g="40" b="40" />
+		<EGDC_TOOLTIP a="255" r="255" g="40" b="40" />
 		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
 		<EGDC_SCROLLBAR a="255" r="153" g="153" b="153" /><!-- Changes the color of the scroll bar used in Deck edit's search results-->
 		<EGDC_WINDOW a="255" r="0" g="255" b="0" />
 		<EGDC_WINDOW_SYMBOL a="255" r="0" g="0" b="0" /><!-- Changes the color 'arrows' used in the deck selection dropdown menu and the arrows used when you need to scroll to see more results for something in a selection-->
-		<EGDC_ICON a="255" r="45" g="70" b="135" />
+		<EGDC_ICON a="255" r="255" g="0" b="0" />
 		<EGDC_ICON_HIGH_LIGHT a="255" r="70" g="190" b="240" />
-		<EGDC_GRAY_WINDOW_SYMBOL a="255" r="255" g="0" b="0" />
-		<EGDC_EDITABLE a="255" r="255" g="0" b="0" />
-		<EGDC_GRAY_EDITABLE a="255" r="255" g="0" b="0" />
-		<EGDC_FOCUSED_EDITABLE a="255" r="255" g="0" b="0" />
+		<EGDC_GRAY_WINDOW_SYMBOL a="255" r="10" g="10" b="10" /><!-- Changes the color for the arrows in dropdown menus-->
+		<EGDC_EDITABLE a="255" r="255" g="255" b="255" /><!-- Changes the color for the search boxes while they are available to accept text-->
+		<EGDC_GRAY_EDITABLE a="255" r="51" g="51" b="51" /><!-- Changes the color for the search boxes while they are disabled-->
+		<EGDC_FOCUSED_EDITABLE a="255" r="190" g="190" b="190" /><!-- Changes the color for the search boxes when they are enabled [when you click on them]-->
 		<Caption tbardistancex="4" tbardistancey="8" /><!-- Changes the coordinates used for the text in the Version name, Update Log, etc-->
 		<WindowButton width="24" /><!-- Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc-->
 		<CheckBoxColor a="255" r="30" g="30" b="30" /><!-- Changes the color used for the check markers in the checkboxes, like the "Show unofficial card" -->
