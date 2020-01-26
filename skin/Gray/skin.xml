@@ -30,7 +30,7 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" /><!-- Changes the color of the text used in box that are "grey", usually. Examples: the phase buttons when pressed, the thext in the "Attribute" and "type" menus, while the "monster" category is not selected-->
 		<EGDC_HIGH_LIGHT a="255" r="153" g="153" b="153" /><!-- Changes the color used as highlight/background for the item you are currently seeing in a drop down selection menu, like the banlist.-->
 		<EGDC_HIGH_LIGHT_TEXT a="255" r="20" g="20" b="20" /><!-- Changes the color of the text used in the main screen's top left menus-->
-		<EGDC_INACTIVE_BORDER a="255" r="255" g="255" b="0" />
+		<EGDC_INACTIVE_BORDER a="255" r="0" g="255" b="0" />
 		<EGDC_INACTIVE_CAPTION a="255" r="26" g="0" b="0" /><!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
 		<EGDC_TOOLTIP a="255" r="255" g="40" b="40" />
 		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
