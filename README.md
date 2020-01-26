@@ -15,7 +15,9 @@ antialias | makes sharp/pixelated edges softer, but requires more performance (m
 errorlog | how script errors are displayed / integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
 nickname | sets the player name / should be less than 20 characters
 gamename | sets the game/room name / should be less than 20 characters
-lastdeck | last deck set in Deck Edit OR in duel
+lastdeck | last deck set in Deck Edit OR in a duel
+lastlflist | last banlist selected set in Deck Edit OR in a duel
+lastallowedcards | last allowed card list set in Deck Edit OR in a duel
 textfont | path for the font used for texts and its size / example: *fonts/simhei.ttf 14*
 numfont | path for the font used for numbers / example: *fonts/arialbd.ttf*
 serverport | port of the last server accessed by the client
@@ -23,7 +25,7 @@ lasthost | last IP accessed by the client
 automonsterpos | chooses automatically the zones for Monsters / boolean
 autospellpos | chooses automatically the zones for Spell/Traps / boolean
 randompos | chooses randomly the zones/positions / boolean
-autochain | / boolean
+autochain | if enable, makes the client choose automatically the chain order/ boolean
 waitchain | / boolean
 mute_opponent | hides opponent's messages from the chat / boolean
 mute_spectators | hides spectators's messages from the chat / boolean
@@ -32,10 +34,12 @@ draw_field_spell | applies the art of the current field spell, if any availabe, 
 hide_hint_button | / boolean
 quick_animation | animations won't take more than 12 frames to complete (at 60 fps)
 show_unoficial | shows the unofficial cards in deck edit, which includes anime, customs, etc / boolean
-skin | current skin or `none`
+dpi_scale | the scale currently applied
+skin | name of the current skin
 enable_sound | enables sounds effects  / boolean
 enable_music | enables background music / boolean
-volume | volume of sounds and musics / integer, between 0 and 100
+music_volume | volume of musics / integer, between 0 and 100
+sound_volume | volume of sounds / integer, between 0 and 100
 
 
 ## Shortcuts available in the client
@@ -99,15 +103,15 @@ For the above, PNG files with the same name will be preferentially loaded first;
 ### Skins:
 Editable by addings subfolders to **skin**, in the main Ygopro folder.
 For each folder, provide an unique `skin.xml` file, with the changes you want.
-Set the `<skin = >` line in `system.conf` to the corresponding folder name or `none`.
+The skin can be changed in the settings, or defined directly in the `<skin = >` line in `system.conf`
+For instruction on what each field does, See README in `skin`. 
 
 ### Audio:
 See README in `sound`.
 
 ## Updates
-`config/configs.json` 
+`config/configs.json`
 
-Forbidden/Limited lists now will be read from a `lflists` folder inside of any repository connected.
 ### Parameters:
 
 #### repos (array)
@@ -125,130 +129,94 @@ Forbidden/Limited lists now will be read from a `lflists` folder inside of any r
 
 ## Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
 
-TEMPORARY:
-	*cdb entries for official cards merged into the main cdb:
-	fixmisc, fixot, fixstr, fixsetcode, official and prerelease, except cards with Beta IDs.
+### TEMPORARY:
+	*cdb entries for official cards merged into the main cdb: fixmisc, fixot, fixstr, fixsetcode, official and prerelease, except cards with Beta IDs.
 	Removed Dark Magician 46986420
 
-New TCG/OCG and anime cards by:
-	-Eerie Code
-	-andre
-	-edo9300
-	-pyrQ
-	-AlphaKretin
-	-Naim
-	-Cybercatman
-	-Logical Nonsense
-	-Larry126
-	-Aht
-	-Hel
+## New TCG/OCG and anime cards by:
+	* Eerie Code
+	* andre
+	* edo9300
+	* pyrQ
+	* AlphaKretin
+	* Naim
+	* Cybercatman
+	* Logical Nonsense
+	* Larry126
+	* Aht
+	* Hel
 
-OCGCORE: updated from 1.034 standard to edo9300's 5.1
+### Client
 
-
-1-Updated mandatory trigger effects handling.
-	
-2-Replaced old replay recording system:
+* Replaced old replay recording system:
 	*current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	*kept compatibility with the old replay system.
-	
-3-Added support for "Flash Charge Dragon":
-	*updated old scripts of cards with effects that Summon or put themselves on the opponent's field.
-	
-4-Updated handling for live updates:
+
+* Updated many strings called with dialogue boxes and activation prompts used by the client. 
+	*Update incorrect strings called in the Damage Step
+
+* Updated handling for live updates:
 	*repositories can now be connected, disconnected, enabled or disabled via json file, in the main folder.
 	*different repositories now display their Update Logs separately.
 
-5-Updated many strings called with dialogue boxes and activation prompts used by the client. 
-	*Update incorrect strings called in the Damage Step
-
-6-Updated music and sounds options:
+* Updated music and sounds options:
 	*added "chants" support.
 	*more details available in the txt file in the "sounds" folder.
 	*music and sound volume controls separated
 
-7-Updated skins handling.
+* Updated skins handling.
 	*more details available in the "skin.xml" file in the default skin folder.
 	
-8-Added option to set maximum FPS in the configuration file.
+* Added option to set maximum FPS in the configuration file.
 
-9-Added back automatic download of arts for Field Spell cards.
+* Added back automatic download of arts for Field Spell cards.
 
-10-Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
+* Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
 
-11-"Watch Replay" menu now reads subdirectories in the `replay` folder.
+* "Watch Replay" menu now reads subdirectories in the `replay` folder.
 
-12-"Puzzle Mode" menu now reads subdirectories in the `puzzle folder`
+* "Puzzle Mode" menu now reads subdirectories in the `puzzle folder`
 
-13-"single" folder renamed to "puzzle"
+* "single" folder renamed to "puzzle"
 	*updated puzzles that were unsolvable to use pre-errata cards.
+	
+* Forbidden/Limited lists  now are kept in the `/lflists` directory:
+	*multiple files are supported, each containing any number of lists.
+	*Forbidden/Limited lists now will be read from a `lflists` folder inside of any repository connected.
 
-14-Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
-	*messages are added with the following syntax:
-	--[[message
-	insert the text here
-	]]
-
-15-Added a "Puzzle Creator" puzzle.
-
-16-Banlists now are kept in the `/lflists` directory:
-	*multiple banlists files are supported.
-	*banlists in live repositories are loaded from a `/lflists` in that repository.
-
-17-Banlists now can be done by whitelisting:
+* Forbidden/Limited lists now can be done by whitelisting:
 	*adding `$whitelist` to a list will automatically ban all the entries not set in that list
+	
+* Aliasing is now disabled in deck edit.
 
-18-Aliasing is now disabled in deck edit.
-
-19-Added support for GOAT Format:
+* Added support for GOAT Format:
 	*added 2005.4 Forbidden/Limited List, credits to EerieCode, Tungnon and Naim for preparing the file.
 
-20-Updated status of the following core bugs:
-	*fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
-	*changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
-	*fixed interaction of "Chaos Hunter" and "Macro Cosmos". (remind to check all the script to remove unecessary things).
-	*fixed "Formud Skipper" and "Zombie World" interactions.
-	*fixed Absolute Machine Angel Ritual vs Necrovalley interaction.
-	*fixed "Super Polymerization" vs "Chain Material" interaction.
-	*fixed problems with accumulated Additional Normal Summon effects.
-	
-21-Added suport to load other files from within a script (Duel.LoadScript)
+* Fixed the dimensions of "field.png", the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
 
-22-Fixed the dimensions of "field.png", the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
+* Added shortcut for in game fullscreen toggle [F11]
 
-23-Added shortcut for in game fullscreen toggle [F11]
-
-24-Added wildchar support.
+* Added wildchar support.
 	@string: returns all cards that have "string" in their name only, ignoring the card text. Example: @Hero
 	$string: returns all cards that belong to the "string"  archetype. Example: $Heroic
 	string1+string2: returns all cards that have "string1" or "string2" in their name/text. Example: Trickstar+Bounzer
 You can also combine those functions.
 Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "Blue-Eyes" archetype or the ""Buster Blader" archetype
 
-25-Added asynchronous loading system for card images.
+* Added asynchronous loading system for card images.
 
-25-The last banlist used is now remembered after leaving deck edit, a duel, or the client.
+* The last banlist used is now remembered after leaving deck edit, a duel, or the client.
 
-26-macOS
+* macOS
 	*Cmd+Q quits the application. "Quit" menu item added to app menu.
 	*Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
 	*Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 that will work as well. "Toggle Full Screen" menu item added to app and dock menus. This is remembered on app restart like on Windows and Linux.
 		Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
 	*Shift+Right Click to add to side deck in Deck Edit now works like on Windows and Linux
 
-27-Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
-
-28-Removed complex handling of Continuous Traps for when it is possible to activate the card AND its effect in the same chain link
-
-29-The following functions have been renamed:
-	Card.IsLinkState -> Card.IsLinked
-	Card.IsExtraLinkState -> Card.IsExtraLinked (this one also no longer requires the workarounds that were once used)
-	Card.IsAttackable -> Card.CanAttack
-	Card.IsChainAttackable -> Card.CanChainAttack
-
-30-Added Discord Integration via Rich Presence
+* Added Discord Integration via Rich Presence
 	*Features:
-		*Your status will be set to "Playing Ygopro", with the elapsed time included.
+		* Your status will be set to "Playing Ygopro", with the elapsed time included.
 		Actions that will have description:
 			-Dueling
 			-In menu
@@ -258,24 +226,68 @@ Example: $blue-eyes+$buster blader returns all cards that belong to eiher the "B
 		*You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
 		*Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
 		
-31-Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
+* Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
 
-32-Scripts now load from one subdirectory level in the script folder only.
+* Scripts now load from one subdirectory level in the script folder only.
 
-33-Prereleases are supported. Use the 0x100 OT bit.
-	*Prereleases appear by default in deck edit and can be filtered specifically for
-	*Prereleases can be permitted in duels in addition to "OCG/TCG" mode.
-		Setting the Allowed Card list to TCG allows only cards that are released in TCG.
-		Setting the Allowed Card list to OCG allows only cards that are released in OCG.
-		Setting the Allowed Card list to TCG/OCG allows only cards that are released both in TCG and OCG but not pre-releases.
-		Setting the Allowed Card list to Pre-release allows only cards that are released both in TCG and OCG.
-		Setting the Allowed Card list to Anything goes allows any cards that are released both in TCG and OCG.
+* Prereleases are supported. Use the 0x100 OT bit.
+	* Prereleases appear by default in deck edit and can be filtered specifically for
+	* Prereleases can be permitted in duels in addition to "OCG/TCG" mode.
+		* Setting the Allowed Card list to TCG allows only cards that are released in TCG.
+		* Setting the Allowed Card list to OCG allows only cards that are released in OCG.
+		* Setting the Allowed Card list to TCG/OCG allows only cards that are released both in TCG and OCG but not pre-releases.
+		* Setting the Allowed Card list to Pre-release allows only cards that are released both in TCG and OCG.
+		* Setting the Allowed Card list to Anything goes allows any cards that are released both in TCG and OCG.
 	
-	*All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
-	
-	
-34-Localhost AI added with up to four bots per duel in the first four player slots.
+	* All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
+
+* Localhost AI added with up to four bots per duel in the first four player slots.
 	*Uses custom WindBot Ignite
 	*Bots incompatible with the current Master Rule are not displayed
+	
+### Core, Scripts and functions and other
 
-35-Added support for "Mischief of the Time Goddess"
+#### OCGCORE: updated from 1.034 standard to edo9300's 5.1
+
+* Updated mandatory trigger effects handling.
+	
+* Added support for "Flash Charge Dragon":
+	*updated old scripts of cards with effects that Summon or put themselves on the opponent's field.
+
+* Added support for "Mischief of the Time Goddess"
+
+
+* Updated status of the following core bugs:
+	* fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
+	*changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
+	*fixed interaction of "Chaos Hunter" and "Macro Cosmos". (remind to check all the script to remove unecessary things).
+	*fixed "Formud Skipper" and "Zombie World" interactions.
+	*fixed Absolute Machine Angel Ritual vs Necrovalley interaction.
+	*fixed "Super Polymerization" vs "Chain Material" interaction.
+	*fixed problems with accumulated Additional Normal Summon effects.
+
+* Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
+
+* Removed complex handling of Continuous Traps for when it is possible to activate the card AND its effect in the same chain link
+
+* The following functions have been renamed:
+	Card.IsLinkState -> Card.IsLinked
+	Card.IsExtraLinkState -> Card.IsExtraLinked (this one also no longer requires the workarounds that were once used)
+	Card.IsAttackable -> Card.CanAttack
+	Card.IsChainAttackable -> Card.CanChainAttack
+
+* Added suport to load other files from within a script (Duel.LoadScript)
+
+* Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
+	*messages are added with the following syntax:
+	--[[message
+	insert the text here
+	]]
+
+* Added a "Puzzle Creator" puzzle.
+
+
+	
+
+
+
