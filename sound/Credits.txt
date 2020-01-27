@@ -29,6 +29,11 @@ Original: "Coin Flip" by bone666138.
 License: Creative Commons Attribution 3.0 Unported
 Source: https://freesound.org/people/bone666138/sounds/198877/
 
+--damage.wav:
+Original: "Nasty Knife Stab 2.wav" by Aris621.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/Aris621/sounds/478145/
+
 --destroyed.wav
 Original: "breaking glass_2.wav" by ElenZack.
 License: Creative Commons Attribution-NonCommercial 3.0 Unported
@@ -40,19 +45,44 @@ License: Creative Commons Attribution 3.0 Unported
 Source: https://freesound.org/people/Aiwha/sounds/250714/
 
 --draw.wav
+Original: "Sliding Envelope.wav" by MTJohnson.
+License: Creative Commons Attribution 3.0 Unported
+Source: https://freesound.org/people/MTJohnson/sounds/444431/
+
+--------------------------------------------------------------------|
+--draw.wav
 Original: "Dices 3.wav" by Paul Sinnett.
 License: Creative Commons Attribution 3.0 Unported
 Source: https://freesound.org/people/Paul%20Sinnett/sounds/404015/
+--------------------------------------------------------------------|
+
+
 
 --equip.wav:
 Original: "Single Iron hit hard.wav" by Mrthenoronha.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/Mrthenoronha/sounds/371922
 
+
+--flip.wav:
+Original: "flipCard.wav" by Splashdust.
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/Splashdust/sounds/84322/
+
+
+--gainlp.wav
+Original: "jingle2" by soneproject
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/soneproject/sounds/255101/
+
+---------------------------------------------------------------|
 --gainlp.wav
 Original: "Choir One-Shot" by majoranman
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/majoranman/sounds/240745/
+---------------------------------------------------------------|
+
+
 
 --nextturn.wav
 Original: "synthesizer sequence 42" by PhonosUPF
