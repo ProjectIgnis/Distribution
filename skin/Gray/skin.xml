@@ -108,52 +108,53 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 	<Button texture="button.png">
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 		<DstBorder tlx="3" tly="3" brx="3" bry="3" />
-		<Color r="255" g="255" b="255" a="255" />
+		<Color a="255" r="255" g="255" b="255" />
 		<Pressed texture="ButtonPressed.png">
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
-			<Color r="255" g="255" b="255" a="255" /><!-- Changes the background color used when a button is pressed." -->
+			<Color a="255" r="255" g="255" b="255" /><!-- Changes the background color used when a button is pressed." -->
 		</Pressed>
 		<ButtonDisabled texture="ButtonDisabled.png">
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
-			<Color r="255" g="255" b="255" a="255" />
+			<Color a="255" r="255" g="255" b="255" />
 		</ButtonDisabled>
 	</Button>
 	<MenuBar texture="MenuBar.png">
 		<!-- Changes the size of the image used for the top bar in the main menu. Changes are visible only when setting brx and bry are set to higher values-->
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 		<DstBorder tlx="3" tly="3" brx="3" bry="3" />
-		<Color r="255" g="255" b="255" a="255" />
+		<Color a="255" r="255" g="255" b="255" />
 		<MenuPane texture="MenuPane.png">
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
-			<Color r="255" g="255" b="255" a="255" /><!-- Changes the color used in the background panel for the menus in the main screen, like the "Repository Status" menu -->
+			<Color a="255" r="255" g="255" b="255" /><!-- Changes the color used in the background panel for the menus in the main screen, like the "Repository Status" menu -->
 		</MenuPane>
 		<MenuPressed texture="MenuPressed.png"><!-- This button is displayed when clicking in the top left options in the main screen-->
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
-			<Color r="255" g="255" b="255" a="255" />
+			<Color a="255" r="255" g="255" b="255" />
 		</MenuPressed>
 	</MenuBar>
 	<CheckBox texture="CheckBox.png">
 		<!-- Changes the size of the image used in the checkboxes like the ones used in Deck Edit's "Show unofficial cards" or the "Effect" boxes -->
 		<SrcBorder tlx="1" tly="1" brx="1" bry="1" />
 		<DstBorder tlx="1" tly="1" brx="1" bry="1" />
-		<Color r="255" g="255" b="255" a="255" />
+		<Color a="255" r="255" g="255" b="255" />
 		<CheckBoxDisabled texture="CheckBoxDisabled.png">
 			<SrcBorder tlx="1" tly="1" brx="1" bry="1" />
 			<DstBorder tlx="1" tly="1" brx="1" bry="1" />
-			<Color r="255" g="255" b="255" a="255" />
+			<Color a="255" r="255" g="255" b="255" />
 		</CheckBoxDisabled>
 	</CheckBox>
 	<ComboBox texture="ComboBox.png">
 		<SrcBorder tlx="1" tly="1" brx="1" bry="1" />
 		<DstBorder tlx="1" tly="1" brx="1" bry="1" />
+		<Color a="255" r="255" g="255" b="255" />
 		<ComboBoxDisabled texture="ComboBoxDisabled.png">
 			<SrcBorder tlx="1" tly="1" brx="1" bry="1" />
 			<DstBorder tlx="1" tly="1" brx="1" bry="1" />
-			<Color r="255" g="255" b="255" a="255" />
+			<Color a="255" r="255" g="255" b="255" />
 		</ComboBoxDisabled>
 	</ComboBox>
 	<SunkenPane texture="sunkenpane.png">
