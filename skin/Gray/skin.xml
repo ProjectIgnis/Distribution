@@ -166,32 +166,33 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 	-the area in deck edit where all the multiple filters and menus are placed-->
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
-		<Color r="255" g="255" b="255" a="255" />
+		<Color a="255" r="255" g="255" b="255" />
 	</SunkenPane>
 	<TabControl texture="TabControl.png">
 		<!-- Changes the thickness of the image used in the menus in Deck Edit: Card Info, Log, Settings, etc. If you set the values to high, it will become not visible -->
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
-		<Color r="255" g="255" b="255" a="255" />
+		<Color a="255" r="255" g="255" b="255" />
 		<TabButton texture="TabButton.png">
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
+			<Color a="255" r="255" g="255" b="255" />
 		</TabButton>
 		<TabButtonPressed texture="TabButtonPressed.png">
-			<Color r="255" g="255" b="255" a="255" />
 			<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 			<DstBorder tlx="10" tly="10" brx="10" bry="10" />
+			<Color a="255" r="255" g="255" b="255" />
 		</TabButtonPressed>
 	</TabControl>
 	<Window texture="windowbg.png">
 		<SrcBorder tlx="25" tly="5" brx="5" bry="1" />
 		<DstBorder tlx="25" tly="5" brx="5" bry="1" />
-		<Color r="255" g="255" b="255" a="255" />
+		<Color a="255" r="255" g="255" b="255" />
 	</Window>
 	<ProgressBar texture="gauge1.png">
 		<SrcBorder tlx="16" tly="16" brx="16" bry="16" />
 		<DstBorder tlx="16" tly="16" brx="16" bry="16" />
-		<Color a="150" r="255" g="255" b="255"/>
+		<Color a="255" r="255" g="255" b="255" />
 		<Filled texture="gauge2.png">
 			<SrcBorder tlx="16" tly="16" brx="16" bry="16" />
 			<DstBorder tlx="16" tly="16" brx="16" bry="16" />
