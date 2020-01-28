@@ -1,5 +1,5 @@
-A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter. -Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels). Groups are not case sensitive, but the field available on them are.
-If loading imagens (optional) SrcBorder and DstBorder are in order: top,left,bottom,right
+A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter. Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels). Groups are not case sensitive, but the field available on them are.
+If loading imagens (optional) SrcBorder and DstBorder are in order: top, left, bottom, right.
 
 Scroll down to see a template
 
@@ -45,8 +45,8 @@ Elements here are all optional
 * EGDC_GRAY_EDITABLE // Grayed (disabled) window background for editable field (editbox, checkbox-field).  Changes the color for the search boxes while they are disabled
 * EGDC_FOCUSED_EDITABLE // Show focus of window background for editable field (editbox or when checkbox-field is pressed). Changes the color for the search boxes when they are enabled [when you click on them]
 * CheckBoxColor // Changes the color used for the check markers in the checkboxes, like the "Show unofficial card"
-* Caption // takes tbardistancex and tbardistancey : Changes the coordinates used for the text in the Version name, Update Log, etc-->
-* WindowButton // take a width: Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc-->
+* Caption // takes tbardistancex and tbardistancey : Changes the coordinates used for the text in the Version name, Update Log, etc
+* WindowButton // take a width: Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc
 
 
 ## Custom
@@ -101,7 +101,7 @@ Elements here are all optional
 * DUELFIELD_MUTUAL_LINKED // Changes the color for the zones where mosters co-linked with the monster that you hover the mouse over are
 * DUELFIELD_SELECTABLE_CARD_OUTLINE // Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it
 * DUELFIELD_SELECTABLE_FIELD_OUTLINE // Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon
-* DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR // Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it in the field -->
+* DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR // Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it in the field
 * DUELFIELD_TOOLTIP_TEXT_COLOR
 * LPBAR_1_BOTTOM_LEFT
 * LPBAR_1_BOTTOM_RIGHT
@@ -124,51 +124,51 @@ Elements here are all optional
 If provided, these load files from the same directory as the `skin.xml` file.
 
 * Button
-** Color
-** SrcBorder
-** DstBorder
-** Pressed
-*** Color // Changes the background color used when a button is pressed.
-*** SrcBorder
-*** DstBorder
-** ButtonDisabled
-*** Color
-*** SrcBorder
-*** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
+	* Pressed
+		* Color // Changes the background color used when a button is pressed.
+		* SrcBorder
+		* DstBorder
+	* ButtonDisabled
+		* Color
+		* SrcBorder
+		* DstBorder
 
 
 * MenuBar 
-** Color
-** SrcBorder // Changes the size of the image used for the top bar in the main menu. Changes are visible only when setting brx and bry are set to higher values
-** DstBorder
-** MenuPane
-*** Color // Changes the color used in the background panel for the menus in the main screen, like the "Repository Status" menu
-*** SrcBorder
-*** DstBorder
-** MenuPressed // This button is displayed when clicking in the top left options in the main screen
-*** Color
-*** SrcBorder
-*** DstBorder
+	* Color
+	* SrcBorder // Changes the size of the image used for the top bar in the main menu. Changes are visible only when setting brx and bry are set to higher values
+	* DstBorder
+	* MenuPane
+		* Color // Changes the color used in the background panel for the menus in the main screen, like the "Repository Status" menu
+		* SrcBorder
+		* DstBorder
+	* MenuPressed // This button is displayed when clicking in the top left options in the main screen
+		* Color
+		* SrcBorder
+		* DstBorder
 
 
 * CheckBox // Changes the size of the image used in the checkboxes like the ones used in Deck Edit's "Show unofficial cards" or the "Effect" boxes
-** Color
-** SrcBorder
-** DstBorder
-** CheckBoxDisabled
-*** Color
-*** SrcBorder
-*** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
+	* CheckBoxDisabled
+		* Color
+		* SrcBorder
+		* DstBorder
 
 
 * ComboBox
-** Color
-** SrcBorder
-** DstBorder
-** ComboBoxDisabled
-*** Color
-*** SrcBorder
-*** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
+	* ComboBoxDisabled
+		* Color
+		* SrcBorder
+		* DstBorder
 
 
 * SunkenPane:
@@ -178,43 +178,45 @@ This file is used as "background" for areas of the client, including:
 	3-the are where the card picture is displayed
 	4-the area where a replay name is typed, when savinng it
 	5-the area in deck edit where all the multiple filters and menus are placed-->
-** Color
-** SrcBorder
-** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
 
 
 * TabControl:
 Changes the thickness of the image used in the menus in Deck Edit: Card Info, Log, Settings, etc. If you set the values to high, it will become not visible
-** Color
-** SrcBorder
-** DstBorder
-** TabButton
-*** Color
-*** SrcBorder
-*** DstBorder
-** TabButtonPressed
-*** Color
-*** SrcBorder
-*** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
+	* TabButton
+		* Color
+		* SrcBorder
+		* DstBorder
+	* TabButtonPressed
+		* Color
+		* SrcBorder
+		* DstBorder
 
 
 * Window
-** Color
-** SrcBorder
-** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
 
 
 * ProgressBar
-** Color
-** SrcBorder
-** DstBorder
-** Filled
-*** Color
-*** SrcBorder
-*** DstBorder
+	* Color
+	* SrcBorder
+	* DstBorder
+	* Filled
+		* Color
+		* SrcBorder
+		* DstBorder
 
 
 # Template
+
+```xml
 <Skin>
 	<Properties>
 		<Name data="egopro's skin" />
@@ -410,3 +412,4 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 </Skin>
 
 
+```
