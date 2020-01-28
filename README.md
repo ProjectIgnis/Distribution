@@ -5,41 +5,41 @@ All assets for the game, except card images.
 `config/system.conf` handles most of the configurations available in the game.
 Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enabled'.
 
-Name | Description and usage 
------------- | -------------
-use_d3d |  directx's usage / boolean
-use_vsync |  vsync's usage for more accurate fps capping according to the refresh rate of the monitor, if set, the max_fps option will be ignored / boolean
-max_fps | limits the framerate  / integer, 0=unlimited, 60=default
-fullscreen | enables full screen mode / boolean
-antialias | makes sharp/pixelated edges softer, but requires more performance (more details in Customization) / integer
-errorlog | how script errors are displayed / integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
-nickname | sets the player name / should be less than 20 characters
-gamename | sets the game/room name / should be less than 20 characters
-lastdeck | last deck set in Deck Edit OR in a duel
-lastlflist | last banlist selected set in Deck Edit OR in a duel
-lastallowedcards | last allowed card list set in Deck Edit OR in a duel
-textfont | path for the font used for texts and its size / example: *fonts/simhei.ttf 14*
-numfont | path for the font used for numbers / example: *fonts/arialbd.ttf*
-serverport | port of the last server accessed by the client
-lasthost | last IP accessed by the client
-automonsterpos | chooses automatically the zones for Monsters / boolean
-autospellpos | chooses automatically the zones for Spell/Traps / boolean
-randompos | chooses randomly the zones/positions / boolean
-autochain | if enable, makes the client choose automatically the chain order / boolean
-waitchain | / boolean
-mute_opponent | hides opponent's messages from the chat / boolean
-mute_spectators | hides spectators's messages from the chat / boolean
-hide_setname  | hides the archetype names for the cards in the card details / boolean
-draw_field_spell | applies the art of the current field spell, if any availabe, as the field background / boolean
-hide_hint_button | / boolean
-quick_animation | animations won't take more than 12 frames to complete (at 60 fps)
-show_unoficial | shows the unofficial cards in deck edit, which includes anime, customs, etc / boolean
-dpi_scale | the scale currently applied
-skin | name of the current skin
-enable_sound | enables sounds effects  / boolean
-enable_music | enables background music / boolean
-music_volume | volume of musics / integer, between 0 and 100
-sound_volume | volume of sounds / integer, between 0 and 100
+| Name | Description and usage | Usage |
+|------------ | -------------| --------|
+|use_d3d |  directx's usage | boolean|
+|use_vsync  | vsync's usage for more accurate fps capping according to the refresh rate of the monitor. If set, the max_fps option will be ignored | boolean
+|max_fps | limits the framerate  | integer, 0=unlimited, 60=default|
+|fullscreen | enables full screen mode | boolean|
+|antialias | makes sharp/pixelated edges softer, but requires more performance  (more details in Customization) | integer|
+|errorlog | how script errors are displayed | integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
+|nickname | sets the player name | should be less than 20 characters|
+|gamename | sets the game/room name | should be less than 20 characters|
+|lastdeck | last deck set in Deck Edit OR in a duel| string |
+|lastlflist | last banlist selected set in Deck Edit OR in a duel| string |
+|lastallowedcards | last allowed card list set in Deck Edit OR in a duel |string |
+|textfont | path for the font used for texts and its size | example: *fonts/simhei.ttf 14*|
+| numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
+|serverport | port of the last server accessed by the client| |
+|lasthost | last IP accessed by the client | |
+|automonsterpos | chooses automatically the zones for Monsters | boolean|
+|autospellpos | chooses automatically the zones for Spell/Traps | boolean|
+|randompos | chooses randomly the zones/positions | boolean|
+|autochain | if enable, makes the client choose automatically the chain order | boolean|
+|waitchain | | boolean|
+|mute_opponent | hides opponent's messages from the chat | boolean|
+|mute_spectators | hides spectators's messages from the chat | boolean|
+|hide_setname  | hides the archetype names for the cards in the card details | boolean|
+|draw_field_spell | applies the art of the current field spell, if any availabe, as the field background | boolean|
+|hide_hint_button | | boolean|
+|quick_animation | animations won't take more than 12 frames to complete (at 60 fps)|boolean|
+|show_unoficial | shows the unofficial cards in deck edit, which includes anime, customs, etc | boolean|
+|dpi_scale | the scale currently applied | a rational value|
+|skin | name of the current skin|string|
+|enable_sound | enables sounds effects | boolean|
+|enable_music | enables background music | boolean|
+|music_volume | volume of musics | integer, between 0 and 100|
+|sound_volume | volume of sounds | integer, between 0 and 100|
 
 
 ## Shortcuts available in the client
@@ -287,14 +287,10 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 * Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
 
 	* messages are added with the following syntax:
+```lua
 	--[[message
 	insert the text here
 	]]
-
+```
 * Added a "Puzzle Creator" puzzle.
-
-
-	
-
-
 

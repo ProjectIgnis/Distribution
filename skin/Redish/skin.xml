@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Skin>
+	<Properties>
+		<Name data="Edopro redish Skin" />
+		<Author data="Naim" />
+		<Version data="0.1" />
+		<Date data="28-Jan-2020"/>
+		<Desc data="A redish skin"/>
+	</Properties>
+	<Custom>
+		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="9" g="2" b="41" />
+		<DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR a="200" r="162" g="160" b="255" />
+		<CARDINFO_TYPES_COLOR a="255" r="255" g="255" b="0" />
+		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="0" />
+		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="255" b="0" />
+		<ROOMLIST_TEXTS_COLOR a="255" r="255" g="255" b="255" />
+	</Custom>
+	<Global guialpha="224">
+		<EGDC_3D_DARK_SHADOW a="255" r="0" g="0" b="0" />
+		<EGDC_3D_SHADOW a="200" r="255" g="0" b="0" />
+		<EGDC_3D_LIGHT a="150" r="255" g="0" b="0" />
+		<EGDC_3D_FACE a="50" r="204" g="0" b="0" /><!--Face color for three-dimensional display elements and for dialog box backgrounds.-->
+		<EGDC_3D_HIGH_LIGHT a="180" r="255" g="255" b="255" />
+		<EGDC_ACTIVE_BORDER a="128" r="17" g="17" b="61" />
+		<EGDC_ACTIVE_CAPTION a="255" r="255" g="255" b="255" /><!-- Changes the color of the text used for the version name and/or title of menus, WHILE they are enabled. -->
+		<EGDC_APP_WORKSPACE a="0" r="255" g="0" b="0" />
+		<EGDC_BUTTON_TEXT a="255" r="255" g="255" b="255" /><!-- Changes the color of the text used in buttons. Also change the color of the text displayed in "Card Info"-->
+		<EGDC_GRAY_TEXT a="255" r="220" g="220" b="220" /><!-- Changes the color of the text used in box that are "grey", usually. Examples: the phase buttons when pressed, the thext in the "Attribute" and "type" menus, while the "monster" category is not selected-->
+		<EGDC_HIGH_LIGHT a="255" r="255" g="51" b="0" /><!-- Changes the color used as highlight/background for the item you are currently seeing in a drop down selection menu, like the banlist.-->
+		<EGDC_HIGH_LIGHT_TEXT a="255" r="10" g="10" b="10" /><!-- Changes the color of the text used in the main screen's top left menus-->
+		<EGDC_INACTIVE_BORDER a="16" r="0" g="0" b="0" />
+		<EGDC_INACTIVE_CAPTION a="255" r="255" g="255" b="255" /><!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
+		<EGDC_TOOLTIP a="96" r="255" g="0" b="0" />
+		<EGDC_TOOLTIP_BACKGROUND a="96" r="17" g="17" b="61" />
+		<EGDC_SCROLLBAR a="255" r="255" g="255" b="255" /><!-- Changes the color of the scroll bar used in Deck edit's search results-->
+		<EGDC_WINDOW a="255" r="0" g="0" b="57" />
+		<EGDC_WINDOW_SYMBOL a="255" r="0" g="255" b="255" /><!-- Changes the color 'arrows' used in the deck selection dropdown menu and the arrows used when you need to scroll to see more results for something in a selection-->
+		<EGDC_ICON a="255" r="255" g="0" b="0" />
+		<EGDC_ICON_HIGH_LIGHT a="255" r="255" g="0" b="0" />
+		<EGDC_GRAY_WINDOW_SYMBOL a="255" r="183" g="183" b="245" /><!-- Changes the color for the arrows in dropdown menus-->
+		<EGDC_EDITABLE a="96" r="4" g="95" b="106" /><!-- Changes the color for the search boxes while they are available to accept text-->
+		<EGDC_GRAY_EDITABLE a="96" r="90" g="90" b="90" /><!-- Changes the color for the search boxes while they are disabled-->
+		<EGDC_FOCUSED_EDITABLE a="255" r="4" g="95" b="106" /><!-- Changes the color for the search boxes when they are enabled [when you click on them]-->
+	</Global>
+</Skin>
