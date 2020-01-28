@@ -91,28 +91,28 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<DUELFIELD_HOVERED a="255" r="230" g="230" b="230" /><!-- Changes the color for the zones you are hovering on the field -->
 		<DUELFIELD_LINKED a="255" r="230" g="230" b="230" /><!-- Changes the color for the zones where a link monster points to -->
 		<DUELFIELD_MUTUAL_LINKED a="255" r="30" g="255" b="30" /><!-- Changes the color for the zones where mosters co-linked with the monster that you hover the mouse over are -->
-		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="230" g="230" b="230" /><!-- Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon -->
-		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="230" g="230" b="230" />	<!-- Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it-->
-		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="230" g="230" b="230" /><!-- Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming-->
-		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="201" g="201" b="201" /><!-- Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck-->
-		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="201" g="201" b="201" /><!-- Changes the color for area around the caption text when you are selection cards from a group. Example: when you are selecting what monsters to banish by Block Dragon-->
-		<DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND a="255" r="255" g="0" b="0" />
-		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="255" g="0" b="0" />
-		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="20" g="20" b="20" /><!-- Changes the color for the caption text when you have to select cards from a location. Example: the "Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming-->
+		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="0" g="0" b="0" /><!-- Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon -->
+		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="255" g="255" b="255" />	<!-- Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it-->
+		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="255" g="255" b="255" /><!-- Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming-->
+		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="255" g="255" b="255" /><!-- Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck-->
+		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="240" g="240" b="240" /><!-- Changes the color for area around the caption text when you are selection cards from a group. Example: when you are selecting what monsters to banish by Block Dragon-->
+		<DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND a="255" r="0" g="200" b="200" />
+		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="0" g="0" b="255" />
+		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="10" g="10" b="10" /><!-- Changes the color for the caption text when you have to select cards from a location. Example: the "Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming-->
 		<PROGRESSBAR_FILL_COLOR  a="255" r="179" g="179" b="179" /><!-- Changes the color for progress bar for repositories-->
 		<PROGRESSBAR_EMPTY_COLOR  a="255" r="242" g="242" b="242" /><!-- Changes the color for progress bar for repositories-->
 		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" /><!-- Changes the color for the texts in the room list menu. Examples: the "Server", "Nickname", "show locked rooms" texts-->
 		<ROOMLIST_NORMAL_ROOM a="255" r="0" g="255" b="0" /><!-- Changes the color for a room that didn't have any of its settings changed from the default ones-->
 		<ROOMLIST_CUSTOM_ROOM a="255" r="255" g="255" b="0" /><!-- Changes the color for a room that has any of its settings changed from the default ones. Example: different LP, different starting hand, etc-->
 		<ROOMLIST_STARTED_ROOM a="255" r="230" g="230" b="230" /><!-- Changes the color for a room, in the room list, that has already started its duel.-->
-		<LPBAR1__TOP_LEFT a="0" r="0" g="0" b="255" />
-		<LPBAR1__TOP_RIGHT a="255" r="0" g="0" b="255" />
-		<LPBAR1__BOTTOM_LEFT a="0" r="0" g="0" b="255" />
-		<LPBAR1__BOTTOM_RIGHT a="255" r="0" g="0" b="255" />
-		<LPBAR2__TOP_LEFT a="0" r="0" g="0" b="255" />
-		<LPBAR2__TOP_RIGHT a="255" r="0" g="0" b="255" />
-		<LPBAR2__BOTTOM_LEFT a="0" r="0" g="0" b="255" />
-		<LPBAR2__BOTTOM_RIGHT a="255" r="0" g="0" b="255" />
+		<LPBAR_1_TOP_LEFT a="255" r="255" g="0" b="0" />
+		<LPBAR_1_TOP_RIGHT a="255" r="0" g="0" b="255" />
+		<LPBAR_1_BOTTOM_LEFT a="255" r="255" g="0" b="0" />
+		<LPBAR_1_BOTTOM_RIGHT a="255" r="0" g="0" b="255" />
+		<LPBAR_2_TOP_LEFT a="255" r="0" g="0" b="255" />
+		<LPBAR_2_TOP_RIGHT a="255" r="255" g="0" b="0" />
+		<LPBAR_2_BOTTOM_LEFT a="255" r="0" g="0" b="255" />
+		<LPBAR_2_BOTTOM_RIGHT a="255" r="255" g="0" b="0" />
 	</Custom>	
 	<Button texture="button.png">
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
