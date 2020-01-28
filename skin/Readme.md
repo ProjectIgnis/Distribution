@@ -1,4 +1,4 @@
-A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter. Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels). Groups are not case sensitive, but the field available on them are.
+A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter. Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels). Groups and the field available  are not case sensitive.
 If loading imagens (optional) SrcBorder and DstBorder are in order: top, left, bottom, right.
 
 Scroll down to see a template
