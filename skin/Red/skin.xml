@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Skin>
 	<Properties>
-		<Name data="Edopro redish Skin" />
-		<Author data="Naim" />
+		<Name data="Red" />
+		<Author data="NaimSantos" />
 		<Version data="0.1" />
-		<Date data="28-Jan-2020"/>
-		<Desc data="A redish skin"/>
+		<Date data="2020-01-28"/>
+		<Desc data="A red skin for EDOPro by Project Ignis."/>
 	</Properties>
 	<Custom>
 		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="9" g="2" b="41" />

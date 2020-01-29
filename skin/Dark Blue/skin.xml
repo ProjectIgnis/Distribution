@@ -4,8 +4,8 @@
 		<Name data="Dark Blue" />
 		<Author data="Icematoro" />
 		<Version data="1.0" />
-		<Date data="29th Jan 2020"/>
-		<Desc data="A dark blue skin for Edopro"/>
+		<Date data="2020-01-29"/>
+		<Desc data="A dark blue skin for EDOPro by Project Ignis."/>
 		<Fallback skin="EGST_WINDOWS_CLASSIC" />
 	</Properties>
   

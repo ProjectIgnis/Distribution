@@ -9,11 +9,11 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 
 <Skin>
 	<Properties>
-		<Name data="Edopro purplish Skin" />
+		<Name data="Purple" />
 		<Author data="edo9300" />
 		<Version data="0.1" />
-		<Date data="28-Jan-2020"/>
-		<Desc data="A purplish skin"/>
+		<Date data="2020-01-28"/>
+		<Desc data="A purple skin for EDOPro by Project Ignis."/>
 	</Properties>
 	<Custom>
 		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="9" g="2" b="41" />

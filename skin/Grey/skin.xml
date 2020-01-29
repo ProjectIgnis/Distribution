@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Skin>
 	<Properties>
-		<Name data="Edopro Black and Gray Skin" />
-		<Author data="Naim" />
+		<Name data="Grey" />
+		<Author data="NaimSantos" />
 		<Version data="0.1" />
-		<Date data="15-Jan-2020"/>
-		<Desc data="A skin that uses white, black and grey elements"/>
+		<Date data="2020-01-15"/>
+		<Desc data="A grey skin with black borders for EDOPro by Project Ignis."/>
 	</Properties>
 	<Global guialpha="255">
 		<EGDC_3D_DARK_SHADOW a="255" r="255" g="255" b="255" />
