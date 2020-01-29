@@ -11,3 +11,4 @@ EDOPro*
 *.so
 *.dylib
 .DS_Store
+Thumbs.db
