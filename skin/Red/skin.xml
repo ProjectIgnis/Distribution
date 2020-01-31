@@ -14,6 +14,14 @@
 		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="0" />
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="255" b="0" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="255" g="255" b="255" />
+		<LPBAR_1_TOP_LEFT a="255" r="255" g="0" b="0" />
+		<LPBAR_1_TOP_RIGHT a="77" r="255" g="0" b="0" />
+		<LPBAR_1_BOTTOM_LEFT a="255" r="255" g="0" b="0" />
+		<LPBAR_1_BOTTOM_RIGHT a="77" r="255" g="0" b="0" />
+		<LPBAR_2_TOP_LEFT a="255" r="77" g="0" b="0" />
+		<LPBAR_2_TOP_RIGHT a="255" r="255" g="0" b="0" />
+		<LPBAR_2_BOTTOM_LEFT a="255" r="77" g="0" b="0" />
+		<LPBAR_2_BOTTOM_RIGHT a="255" r="255" g="0" b="0" />
 	</Custom>
 	<Global guialpha="224">
 		<EGDC_3D_DARK_SHADOW a="255" r="0" g="0" b="0" />
