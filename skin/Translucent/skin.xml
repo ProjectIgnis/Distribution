@@ -8,12 +8,12 @@
 		<Desc data="A translucent skin for EDOPro by Project Ignis."/>
 	</Properties>
 	<Custom>
-		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="9" g="2" b="41" />
-		<DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR a="200" r="162" g="160" b="255" />
-		<CARDINFO_TYPES_COLOR a="255" r="255" g="255" b="0" />
-		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="0" />
-		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="255" b="0" />
-		<CARDINFO_IMAGE_BACKGROUND a="255" r="255" g="0" b="0" />
+		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="255" g="255" b="255" />
+		<DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR a="0" r="255" g="255" b="255" />
+		<CARDINFO_TYPES_COLOR a="255" r="255" g="255" b="255" />
+		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="255" />
+		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="0" b="0" />
+		<CARDINFO_IMAGE_BACKGROUND a="0" r="255" g="255" b="255" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="255" g="255" b="255" />
 		<DECK_WINDOW_EXTRA_BOTTOM_LEFT a="0" r="255" g="255" b="255" />
 		<DECK_WINDOW_EXTRA_BOTTOM_RIGHT  a="0" r="255" g="255" b="255" />
@@ -48,6 +48,14 @@
 		<DECK_WINDOW_SIDE_INFO_TOP_RIGHT  a="0" r="255" g="255" b="255" />
 		<DECK_WINDOW_SIDE_TOP_LEFT a="0" r="255" g="255" b="255" />
 		<DECK_WINDOW_SIDE_TOP_RIGHT  a="0" r="255" g="255" b="255" />
+		<LPBAR_1_TOP_LEFT a="150" r="255" g="255" b="255" />
+		<LPBAR_1_TOP_RIGHT a="255" r="0" g="0" b="255" />
+		<LPBAR_1_BOTTOM_LEFT a="150" r="255" g="255" b="255" />
+		<LPBAR_1_BOTTOM_RIGHT a="255" r="0" g="0" b="255" />
+		<LPBAR_2_TOP_LEFT a="255" r="0" g="0" b="255" />
+		<LPBAR_2_TOP_RIGHT a="150" r="255" g="255" b="255" />
+		<LPBAR_2_BOTTOM_LEFT a="255" r="0" g="0" b="255" />
+		<LPBAR_2_BOTTOM_RIGHT a="150" r="255" g="255" b="255" />
 	</Custom>
 	<Global guialpha="224">
 		<EGDC_3D_DARK_SHADOW a="0" r="255" g="255" b="255" />
