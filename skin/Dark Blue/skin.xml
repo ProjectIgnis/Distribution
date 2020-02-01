@@ -31,12 +31,21 @@
 		<EGDC_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />		  					<!-- Window symbols like on close buttons, scroll bars and check boxes.  -->
 		<!--<EGDC_ICON a="255" r="255" g="255" b="255" />				-->			<!-- Icons in a list or tree. -->  
 		<!--<EGDC_ICON_HIGH_LIGHT a="255" r="255" g="255" b="255" />	-->			<!-- Selected icons in a list or tree. -->
-		
+
 		<Caption tbardistancex="2" tbardistancey="9" />
 		<WindowButton width="24" />
 		<CheckBoxColor a="255" r="255" g="255" b="255" />
 	</Global>
-  
+  		<Custom>
+			<LPBAR_1_BOTTOM_LEFT a="255" r="134" g="0" b="179" />
+			<LPBAR_1_BOTTOM_RIGHT a="255" r="26" g="0" b="26" />
+			<LPBAR_1_TOP_LEFT a="255" r="134" g="0" b="179" />
+			<LPBAR_1_TOP_RIGHT a="255" r="26" g="0" b="26" />
+			<LPBAR_2_BOTTOM_LEFT a="255" r="26" g="0" b="26" />
+			<LPBAR_2_BOTTOM_RIGHT a="255" r="134" g="0" b="179" />
+			<LPBAR_2_TOP_LEFT a="255" r="26" g="0" b="26" />
+			<LPBAR_2_TOP_RIGHT a="255" r="134" g="0" b="179" />
+	</Custom>
 	<Button texture="button.png">
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 		<DstBorder tlx="3" tly="3" brx="3" bry="3" />
