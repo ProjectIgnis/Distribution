@@ -13,7 +13,7 @@
 		<Name data="Purple - Obsessed" />
 		<Author data="Icematoro" />
 		<Version data="1.0" />
-		<Date data="2020-01-30"/>
+		<Date data="2020-02-01"/>
 		<Desc data="Icematoro isn't all that good at this."/>
 		<Fallback skin="" />
 	</Properties>
@@ -33,14 +33,14 @@
 		<EGDC_BUTTON_TEXT a="255" r="255" g="255" b="255" />
 		<!-- Changes the color of the text used in box that are "grey", usually. Examples: the phase buttons when-->
 		<!--pressed, the thext in the "Attribute" and "type" menus, while the "monster" category is not selected-->
-		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" />
+		<EGDC_GRAY_TEXT a="255" r="255" g="255" b="255" />
 		<EGDC_HIGH_LIGHT a="0" r="0" g="0" b="0" />
 		<!-- Changes the color of the text used in the main screen's top left menus-->
 		<EGDC_HIGH_LIGHT_TEXT a="255" r="255" g="255" b="255" />
 		<EGDC_INACTIVE_BORDER a="0" r="255" g="255" b="255" />
 		<!-- Changes the color of the text used in for the version name and/or title of menus, WHILE they are disabled
 			test changing it, then go to the main menu and click in a free are, so the menu becomes "inactive"  -->
-		<EGDC_INACTIVE_CAPTION a="255" r="75" g="75" b="95" />
+		<EGDC_INACTIVE_CAPTION a="255" r="255" g="255" b="255" />
 		<EGDC_TOOLTIP a="255" r="40" g="40" b="40" />
 		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
 		<!-- Changes the color of the scroll bar used in Deck edit's search results-->
@@ -69,7 +69,7 @@
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="200" g="200" b="255" />
 		<DUELFIELD_ANNOUNCE_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
 		<!-- Changes the color of the color used in the box after a card is announced. Example: Psi-Blocker -->
-		<DUELFIELD_ANNOUNCE_TEXT_COLOR a="255" r="30" g="30" b="30" />
+		<DUELFIELD_ANNOUNCE_TEXT_COLOR a="255" r="255" g="255" b="255" />
 		<!-- Changes the color of the color used as background in the tooltip box, the area with the card details when you hover the mouse over it in the field -->
 		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
 		<!-- Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it in the field -->
