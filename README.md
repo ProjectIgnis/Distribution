@@ -19,7 +19,7 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 |lastlflist | last banlist selected set in Deck Edit OR in a duel| string |
 |lastallowedcards | last allowed card list set in Deck Edit OR in a duel |string |
 |textfont | path for the font used for texts and its size | example: *fonts/simhei.ttf 14*|
-| numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
+|numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
 |serverport | port of the last server accessed by the client| |
 |lasthost | last IP accessed by the client | |
 |automonsterpos | chooses automatically the zones for Monsters | boolean|
@@ -92,13 +92,12 @@ Default value: 0 - disabled.
 Change up your **textures**, **sounds** and/or **skin** folder!
 
 ### Background and other visual elements:
-Editable by changing the contents of the **textures** folder. PNG and JPEG are supported but do not change the file extensions: if a picture is *.jpg* you can only replace it for another *.jpg* file.
-* bg.jpg: background used during a duel
-* bg_deck.jpg: background used while in Deck Edit
-* bg_menu.jpg: background used in the other screens
-* cover.jpg: the back of your cards
-* cover2.jpg: the back of your opponent's cards
-For the above, PNG files with the same name will be preferentially loaded first; JPG extension support is only kept for legacy purposes and is discouraged.
+Editable by changing the contents of the **textures** folder. PNG and JPG are supported with those extensions only. PNG files with the same name will be preferentially loaded first; JPG extension support is only kept for legacy purposes and is highly discouraged.
+* bg: background used during a duel
+* bg_deck: background used while in Deck Edit
+* bg_menu: background used in the other screens
+* cover: the back of your cards
+* cover2: the back of your opponent's cards
 
 ### Skins:
 Editable by addings subfolders to **skin**, in the main Ygopro folder.
@@ -140,17 +139,18 @@ See README in `sound`.
 
 #### New TCG/OCG and anime cards by:
 
-* Eerie Code
-* andre
-* edo9300
-* pyrQ
+* aht
 * AlphaKretin
-* Naim
+* andré
 * Cybercatman
-* Logical Nonsense
-* Larry126
-* Aht
+* edo9300
+* Eerie Code
+* Hatter
 * Hel
+* Larry126
+* Logical Nonsense
+* Naim
+* pyrQ
 
 ### Client
 
@@ -253,7 +253,7 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	
 ### Core, Scripts and functions and other
 
-#### OCGCORE: updated from 1.034 standard to edo9300's 5.1
+#### OCGCORE: updated from 1.034 standard to edo9300's 6.0
 
 * Updated mandatory trigger effects handling.
 	

@@ -40,6 +40,7 @@ Played any time while the client is open. You can disable them in the settings. 
 
 To change your background music, go to the BGM subfolder in this folder or create it.
 Add any number of files to the following folders (create if missing).
+
 	advantage    : music played when you have an LP advantage over your opponent.
 	deck         : music played while you are in the "Deck Edit" menu.
 	disadvantage : music played when you have an LP disadvantage compared to your opponent.
@@ -54,6 +55,7 @@ The current track for the situation is selected randomly from the files in the c
 Chants override certain sound effects and are controlled by the same settings. `.wav`, `.ogg`, `.mp3`, and `.flac` files are supported.
 
 Files are loaded from these subfolders if and only if their name matches the passcode of a card. For example, Lunalight Leo Dancer's passcode is 24550676, so you will need to name the file `24550676.wav` (file extension may vary) and put it in one of these folders:
+
 	activate:   overrides `activate.wav` when the effect of the corresponding card is activated.
 	attack:			overrides `attack.wav` when the corresponding monster attacks.
 	summon:     overrides `flip.wav`, `summon.wav`, and `specialsummon.wav` when the corresponding monster is summoned.
