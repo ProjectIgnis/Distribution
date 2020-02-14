@@ -53,5 +53,6 @@
             "roomlistport": 7922,
             "duelport": 7911
         }
-    ]
+		],
+		"posixPathExtension": "/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands"
 }
