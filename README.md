@@ -243,7 +243,7 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		* Setting the Allowed Card list to OCG allows only cards that are released in OCG.
 		* Setting the Allowed Card list to TCG/OCG allows only cards that are released both in TCG and OCG but not pre-releases.
 		* Setting the Allowed Card list to Pre-release allows only cards that are released both in TCG and OCG.
-		* Setting the Allowed Card list to Anything goes allows any cards that are released both in TCG and OCG.
+		* Setting the Allowed Card list to Anything goes allows any cards that are released in either TCG or OCG.
 	
 	* All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
 
@@ -293,4 +293,11 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	]]
 ```
 * Added a "Puzzle Creator" puzzle.
+
+* Added support for translation for system strings.
+	* inside the `config/languages` folder, add a folder for your language and add a `strings.conf` file there, with the strings translated to your desired language.
+	* Credits for the current translations:
+		french: Hel
+		italian: edo9300
+		portuguese: Naim
 
