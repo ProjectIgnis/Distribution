@@ -4,43 +4,19 @@ All assets for the game, except card images.
 ## Configuration
 `config/system.conf` handles most of the configurations available in the game.
 Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enabled'.
+Only options not directly configurable in-game are listed here.
+
 
 | Name | Description and usage | Usage |
 |------------ | -------------| --------|
 |use_d3d |  directx's usage | boolean|
 |use_vsync  | vsync's usage for more accurate fps capping according to the refresh rate of the monitor. If set, the max_fps option will be ignored | boolean
 |max_fps | limits the framerate  | integer, 0=unlimited, 60=default|
-|fullscreen | enables full screen mode | boolean|
 |antialias | makes sharp/pixelated edges softer, but requires more performance  (more details in Customization) | integer|
 |errorlog | how script errors are displayed | integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
-|nickname | sets the player name | should be less than 20 characters|
-|gamename | sets the game/room name | should be less than 20 characters|
-|lastdeck | last deck set in Deck Edit OR in a duel| string |
-|lastlflist | last banlist selected set in Deck Edit OR in a duel| string |
-|lastallowedcards | last allowed card list set in Deck Edit OR in a duel |string |
 |textfont | path for the font used for texts and its size | example: *fonts/simhei.ttf 14*|
 |numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
-|serverport | port of the last server accessed by the client| |
-|lasthost | last IP accessed by the client | |
-|automonsterpos | chooses automatically the zones for Monsters | boolean|
-|autospellpos | chooses automatically the zones for Spell/Traps | boolean|
-|randompos | chooses randomly the zones/positions | boolean|
-|autochain | if enable, makes the client choose automatically the chain order | boolean|
-|waitchain | | boolean|
-|mute_opponent | hides opponent's messages from the chat | boolean|
-|mute_spectators | hides spectators's messages from the chat | boolean|
-|hide_setname  | hides the archetype names for the cards in the card details | boolean|
-|draw_field_spell | applies the art of the current field spell, if any availabe, as the field background | boolean|
-|hide_hint_button | | boolean|
-|quick_animation | animations won't take more than 12 frames to complete (at 60 fps)|boolean|
-|show_unoficial | shows the unofficial cards in deck edit, which includes anime, customs, etc | boolean|
 |dpi_scale | the scale currently applied | a rational value|
-|skin | name of the current skin|string|
-|enable_sound | enables sounds effects | boolean|
-|enable_music | enables background music | boolean|
-|music_volume | volume of musics | integer, between 0 and 100|
-|sound_volume | volume of sounds | integer, between 0 and 100|
-
 
 ## Shortcuts available in the client
 
@@ -100,10 +76,8 @@ Editable by changing the contents of the **textures** folder. PNG and JPG are su
 * cover2: the back of your opponent's cards
 
 ### Skins:
-Editable by addings subfolders to **skin**, in the main Ygopro folder.
-For each folder, provide an unique `skin.xml` file, with the changes you want.
-The skin can be changed in the settings, or defined directly in the `<skin = >` line in `system.conf`
-For instruction on what each field does, See README in `skin`. 
+Editable by addings subfolders to **skin**, in the main Ygopro folder. For each folder, provide an unique `skin.xml` file, with the changes you want.
+The skin can be changed in the settings. For instruction on the supported field and their effects, see README in `skin`. 
 
 ### Audio:
 See README in `sound`.
@@ -124,7 +98,8 @@ See README in `sound`.
 
 #### pics (urls)
 * url: the complete url of the repository to check for updates. The url should have a `{}` on it, that will be replaced by the client with the card's id.
-* type: pic/field, if it's either a repository card pictures or if it is for field's art.
+* type: pic/field, if it's either a repository for card pictures or if it is for field spell's art.
+
 
 ## Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
 
@@ -154,16 +129,42 @@ See README in `sound`.
 
 ### Client
 
+* Localhost AI added with up to four bots per duel in the first four player slots.
+	* Uses custom WindBot Ignite
+	* Bots incompatible with the current Master Rule are not displayed
+
+* Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
+
 * Replaced old replay recording system:
 	* current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	* kept compatibility with the old replay system.
+		* old replay mode plays the replay while running the scripts. Use this if you are debugging a card.
+	* replays are still subjected to changed in the database entry for a card.
 
-* Updated many strings called with dialogue boxes and activation prompts used by the client. 
-	* Update incorrect strings called in the Damage Step
-
+* Added the option to export the decks used in a replay.
+	* decks with be stored in the default deck files and contain the name of the players in the replay.
+	
 * Updated handling for live updates:
 	* repositories can now be connected, disconnected, enabled or disabled via json file, in the main folder.
 	* different repositories now display their Update Logs separately.
+
+* Added an option to rename a deck in Deck Edit, without the user needing to edit the file directly
+	* added a mechanism to prevent the user from using characters not allowed in file names.
+
+* Added a "Quick Animation" option
+
+* Added the following new settings:
+	* indepeendent volume controls for music and sound effects.
+	* hide/show archetype names.
+	* hide passcodes and scopes. Passcodes are the unique number each card has. Scopes are the region where the card is available and/or its origin.
+	* hide FPS.
+	* enable fullscreen.
+	* fit the background.
+	* accurate resize for backgrounds.
+
+* Added shortcut for in game fullscreen toggle [F11]
+
+* Added shortcut for in game acess to the additiona settings [CTRL + O]
 
 * Updated music and sounds options:
 	* added "chants" support.
@@ -171,6 +172,9 @@ See README in `sound`.
 	* music and sound volume controls separated
 
 * Updated skins handling.
+	* 10 sample skins and a template are provided.
+	* skins can now be applied with the game running, without restarting.
+	* skins will also support a `textures` folder to make those itens more customizable.
 	* more details available in the README in your `skin` folder. 
 
 * Added option to set maximum FPS in the configuration file.
@@ -199,8 +203,6 @@ See README in `sound`.
 	* added 2005.4 Forbidden/Limited List, credits to EerieCode, Tungnon and Naim for preparing the file.
 
 * Fixed the dimensions of `field.png`, the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
-
-* Added shortcut for in game fullscreen toggle [F11]
 
 * Added wildchar support.
 	* @string: returns all cards that have `string` in their name only, ignoring the card text. Example: `@Hero`
@@ -231,8 +233,6 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 			* Editing a deck
 		* You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
 		* Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
-		
-* Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
 
 * Scripts now load from one subdirectory level in the script folder only.
 
@@ -247,9 +247,23 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	
 	* All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
 
-* Localhost AI added with up to four bots per duel in the first four player slots.
-	* Uses custom WindBot Ignite
-	* Bots incompatible with the current Master Rule are not displayed
+* Updated many strings called with dialogue boxes and activation prompts used by the client.
+	* Update incorrect strings called in the Damage Step
+	* All the strings used in the client are now controlled by the `strings.conf` file, being editable, which allows translations for all these elements.
+
+* Added support for translation for system strings.
+	* inside the `config/languages` folder, add a folder for your language and add a `strings.conf` file there, with the strings translated to your desired language.
+	* Credits for the current translations:
+		french: Hel
+		italian: edo9300
+		portuguese: Naim
+
+* Added support for skills and characters
+
+* Added support for an arbitrary number of cards in a deck (main, side, extra.)
+	* requires editing the deck file, might be tied with the server's 
+	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck.
+
 	
 ### Core, Scripts and functions and other
 
@@ -262,15 +276,42 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 
 * Added support for **Mischief of the Time Goddess**
 
-
-* Updated status of the following core bugs:
+* Updated status of the following bugs:
 	* fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
 	* changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
 	* fixed interaction of "Chaos Hunter" and "Macro Cosmos". (remind to check all the script to remove unecessary things).
 	* fixed "Formud Skipper" and "Zombie World" interactions.
-	* fixed Absolute Machine Angel Ritual vs Necrovalley interaction.
+	* fixed "Absolute Machine Angel Ritual" vs "Necrovalley" interaction.
 	* fixed "Super Polymerization" vs "Chain Material" interaction.
-	* fixed problems with accumulated Additional Normal Summon effects.
+	* fixed problems with accumulated Additional Normal Summon effects, like "Gem-Knight Seraphinite" and "Knightmare Goblin"
+	* fixed a bug where "Vampire Sucker" would not be able to tribute more than 1 monster controlled by the opponent.
+	* fixed a bug where "Servant of the Endymion" would be able to activate the effect once again even if "Ash Blossom & Joyous Spring" negated it.
+	* fixed the bugs with incorrect interactions of "Fantastic Striborg" with "Degenerate Circuit" and "Macro Cosmos"
+	* due to updates in segoc rules, the bug where two "Mythical Instutuion" could activate the effect in the same chain was fixed.
+	* due to the changes on how mandatory trigger effects were handled, the bug with using the effect of "Heavymetalfoes Electrumite" while the player controlled 2 and 1 of those was negated was fixed.
+	* fixed the incorrect damage evaluation for "Trickstar Lycoris" and "Trickstar Lightstage" vs "Preparation of rites" and similar cards.
+	* fixed a bug related with being unable to get some properties with triggering location:
+		* main interaction is "Doomking Balerdroch" vs an "Orcust" monster activating its effect in the GY while "Zombie World" was in play.
+	* fixed a bug with "Partian Shot" and its interaction with "Timelord" or "Gladiator Beast" monsters.
+	* fixed an incorrect evalution for the ATK of monster equipped with "Megamorph" and "Sword of Toxic Solitude" to match rulings.
+	* fixed an incorrect evalution for the ATK of "The Wicked Avatar" copied by "Fake Hero" and/or "Phantom of Chaos".
+	* fixed "Witchcrafter Genie" being able to target a Continuous Spell to apply the effects, even if the card did not have an applicable effect.
+	* fixed a bug where "Evenly Matched" would be negated by "Necrovalley" if any of the cards to be banished left the field before the resolution. Same with "Topolofic Trishbaena"
+	* fixed the interaction of "Gilford the Legend" with "Necrovalley".
+	* updated cards that should be detected by "Dark Sacrifice".
+	* fixed the bug with "Dark Sanctuary" being unable to special summon the Spirit Message card if it was activated in a higher chain link, e.g. Metaverse.
+	* fixed the bug where it would be possible to stack the destruction replacement effects of "Six Samurai" monsters on the field with those with a similar effect in the GY.
+	* fixed the incorrect interaction of "Ghost Belle & Haunted Mansion" with "The Prime Monarch".
+	* fixed the incorrect interaction of "Ash Blossom & Joyous Spring" with "Magical Hats".
+	* fixed the bug where "Absolute King Jack Back" would not be able to use the effect if "Set Rotation" was used.
+	* fixed bugs with "Cynet Codec" and "Union Hangar" where they would not allow the user to target different monsters if they were summoned in the same chain, but in different chain links.
+	* fixed the bugs of cards that negate the activation of a monster effect, then apply something else, if the monster left the field. Examples: Sollemn Strike, Debunk, Invoked Mechaba.
+	* fixed the bug of "Abyss Playhouse - Fantastic Theater" negating the incorrect Chain Link if multiple monster effects were activated in the chain.
+	* fixed the bug with "Gogogo Dexia & Aristeria" not triggering if "Utopic Unomatopoeia" was used as one of the materials.	
+	* fixed the bug with "Droll & Lock Bird" triggering in the incorrect timing in the presence of "Mystic Mine".	
+	* fixed the bug with "There Can Be Only One" vs a returning monster that would interact with its effect.	
+	* fixed the bug with "Daigusto Spherez" and the damage inflicted if "Fragile Double-Edge Sword" was equipped.	
+	* fixed the incorrect ATK evaluation fo "Gren Maju Dai Eza" vs "Black Rose Dragon".	
 
 * Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
 
@@ -293,11 +334,4 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	]]
 ```
 * Added a "Puzzle Creator" puzzle.
-
-* Added support for translation for system strings.
-	* inside the `config/languages` folder, add a folder for your language and add a `strings.conf` file there, with the strings translated to your desired language.
-	* Credits for the current translations:
-		french: Hel
-		italian: edo9300
-		portuguese: Naim
 
