@@ -250,7 +250,14 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		portuguese: Naim
 
 * Added support for skills and characters
-
+	* To use a Skill during a duel, have it in your deck at the start, it will be removed, to activate it, you will get a Prompt for skill requiring a specific timing OR use the Resolution Circle above the Skill location 
+	* At the moment, Skills are not tied to Speed duel
+	* Only TCG Skills, Duel Link Skill are not planned at the moment, Vrains Anime skills may be done later, but priority to TCG
+	* If you liked Skills, Remember to Support the format IRL if you can
+	* WARNING: 
+		* Don't use Skills in Tag, Tag is not supported because of Core limitation, Cybercatman try to think about a workaround, but it will be take a while
+		* Don't Add several skills in the main deck, the system is not planned for that
+		
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
 	* requires editing the deck file, might be tied with the server's 
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck.
