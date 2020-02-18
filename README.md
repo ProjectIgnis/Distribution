@@ -30,6 +30,7 @@ MMB | Middle Mouse Button
 * ESC: Minimizes the window when full screen
 * F11: Toggling Fullscreen Mode
 * F12: Captures a screenshot
+* CTRL + O : Open the additional settings screen.
 ### Deck Edit:
 * RMB: Adds/removes a card from the deck
 * MMB: Adds another copy of a card to the deck or side deck
@@ -40,6 +41,7 @@ MMB | Middle Mouse Button
 * Hold D: Lets the system stop at available timing.
 * F1-F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials.
 * F5-F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials.
+
 
 ## Searching functions
 * `string`:
@@ -68,22 +70,17 @@ Default value: 0 - disabled.
 Change up your **textures**, **sounds** and/or **skin** folder!
 
 ### Background and other visual elements:
-Editable by changing the contents of the **textures** folder. PNG and JPG are supported with those extensions only. PNG files with the same name will be preferentially loaded first; JPG extension support is only kept for legacy purposes and is highly discouraged.
-* bg: background used during a duel
-* bg_deck: background used while in Deck Edit
-* bg_menu: background used in the other screens
-* cover: the back of your cards
-* cover2: the back of your opponent's cards
+See README in `textures`.
 
 ### Skins:
-Editable by addings subfolders to **skin**, in the main Ygopro folder. For each folder, provide an unique `skin.xml` file, with the changes you want.
-The skin can be changed in the settings. For instruction on the supported field and their effects, see README in `skin`. 
+Editable by addings subfolders to **skin**, in the main Ygopro folder. For each folder, provide a unique `skin.xml` file, with the changes you want.
+The skin can be changed in the settings. For instructions on the supported fields and their effects, see README in `skin`. 
 
 ### Audio:
 See README in `sound`.
 
 ## Updates
-`config/configs.json`
+Controlled by `config/configs.json`
 
 ### Parameters:
 
@@ -104,12 +101,6 @@ See README in `sound`.
 ## Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
 
 ### TEMPORARY:
-* cdb entries for official cards merged into the main cdb:
-	* fixmisc
-	* fixot
-	* fixstr
-	* fixsetcode
-	* official
 * Removed Dark Magician 46986420
 
 #### New TCG/OCG and anime cards by:
@@ -135,26 +126,38 @@ See README in `sound`.
 
 * Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
 
+* Added Discord Integration via Rich Presence
+	* Features:
+		* Your status will be set to "Playing Ygopro", with the elapsed time included.
+		Actions that will have description:
+			* Dueling
+			* In menu
+			* Playing a Puzzle
+			* Watching a Replay
+			* Editing a deck
+		* You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
+		* Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
+
 * Replaced old replay recording system:
 	* current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	* kept compatibility with the old replay system.
 		* old replay mode plays the replay while running the scripts. Use this if you are debugging a card.
-	* replays are still subjected to changed in the database entry for a card.
+	* replays are still subjected to changes in the database entry for a card.
 
 * Added the option to export the decks used in a replay.
-	* decks with be stored in the default deck files and contain the name of the players in the replay.
+	* decks with be stored in the default deck folder and will be named after the players in the replay.
 	
 * Updated handling for live updates:
 	* repositories can now be connected, disconnected, enabled or disabled via json file, in the main folder.
 	* different repositories now display their Update Logs separately.
 
 * Added an option to rename a deck in Deck Edit, without the user needing to edit the file directly
-	* added a mechanism to prevent the user from using characters not allowed in file names.
+	* added a mechanism to prevent the usage of characters not allowed in file names.
 
 * Added a "Quick Animation" option
 
 * Added the following new settings:
-	* indepeendent volume controls for music and sound effects.
+	* independent volume controls for music and sound effects.
 	* hide/show archetype names.
 	* hide passcodes and scopes. Passcodes are the unique number each card has. Scopes are the region where the card is available and/or its origin.
 	* hide FPS.
@@ -164,7 +167,7 @@ See README in `sound`.
 
 * Added shortcut for in game fullscreen toggle [F11]
 
-* Added shortcut for in game acess to the additiona settings [CTRL + O]
+* Added shortcut for in game acess to the additional settings [CTRL + O]
 
 * Updated music and sounds options:
 	* added "chants" support.
@@ -183,12 +186,12 @@ See README in `sound`.
 
 * Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
 
-* "Watch Replay" menu now reads subdirectories in the `replay` folder.
-
-* "Puzzle Mode" menu now reads subdirectories in the `puzzle folder`
-
 * "single" folder renamed to "puzzle"
 	* updated puzzles that were unsolvable to use pre-errata cards.
+	
+* "Puzzle Mode" menu now reads subdirectories in the `puzzle` folder.
+	
+* "Watch Replay" menu now reads subdirectories in the `replay` folder.
 	
 * Forbidden/Limited lists  now are kept in the `/lflists` directory:
 	* multiple files are supported, each containing any number of lists.
@@ -222,18 +225,6 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		* Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
 	* Shift+Right Click to add to side deck in Deck Edit now works like on Windows and Linux
 
-* Added Discord Integration via Rich Presence
-	* Features:
-		* Your status will be set to "Playing Ygopro", with the elapsed time included.
-		Actions that will have description:
-			* Dueling
-			* In menu
-			* Playing a Puzzle
-			* Watching a Replay
-			* Editing a deck
-		* You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
-		* Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
-
 * Scripts now load from one subdirectory level in the script folder only.
 
 * Prereleases are supported. Use the 0x100 OT bit.
@@ -264,6 +255,15 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* requires editing the deck file, might be tied with the server's 
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck.
 
+* Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
+
+	* messages are added with the following syntax:
+```lua
+	--[[message
+	insert the text here
+	]]
+```
+* Added a "Puzzle Creator" puzzle.
 	
 ### Core, Scripts and functions and other
 
@@ -275,6 +275,18 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* updated old scripts of cards with effects that Summon or put themselves on the opponent's field.
 
 * Added support for **Mischief of the Time Goddess**
+
+* Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
+
+* Removed complex handling of Continuous Traps for when it is possible to activate the card AND its effect in the same chain link
+
+* The following functions have been renamed:
+	* `Card.IsLinkState` -> `Card.IsLinked`
+	* `Card.IsExtraLinkState` -> `Card.IsExtraLinked` (this one also no longer requires the workarounds that were once used)
+	* `Card.IsAttackable` -> `Card.CanAttack`
+	* `Card.IsChainAttackable` -> `Card.CanChainAttack`
+
+* Added suport to load other files from within a script (Duel.LoadScript)
 
 * Updated status of the following bugs:
 	* fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
@@ -311,27 +323,4 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* fixed the bug with "Droll & Lock Bird" triggering in the incorrect timing in the presence of "Mystic Mine".	
 	* fixed the bug with "There Can Be Only One" vs a returning monster that would interact with its effect.	
 	* fixed the bug with "Daigusto Spherez" and the damage inflicted if "Fragile Double-Edge Sword" was equipped.	
-	* fixed the incorrect ATK evaluation fo "Gren Maju Dai Eza" vs "Black Rose Dragon".	
-
-* Added `Duel.LinkSummon`, which removes the workarounds used for the "Unchained" monsters.
-
-* Removed complex handling of Continuous Traps for when it is possible to activate the card AND its effect in the same chain link
-
-* The following functions have been renamed:
-	* `Card.IsLinkState` -> `Card.IsLinked`
-	* `Card.IsExtraLinkState` -> `Card.IsExtraLinked` (this one also no longer requires the workarounds that were once used)
-	* `Card.IsAttackable` -> `Card.CanAttack`
-	* `Card.IsChainAttackable` -> `Card.CanChainAttack`
-
-* Added suport to load other files from within a script (Duel.LoadScript)
-
-* Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
-
-	* messages are added with the following syntax:
-```lua
-	--[[message
-	insert the text here
-	]]
-```
-* Added a "Puzzle Creator" puzzle.
-
+	* fixed the incorrect ATK evaluation fo "Gren Maju Dai Eza" vs "Black Rose Dragon".
