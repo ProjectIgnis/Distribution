@@ -30,7 +30,7 @@ MMB | Middle Mouse Button
 * ESC: Minimizes the window when full screen
 * F11: Toggling Fullscreen Mode
 * F12: Captures a screenshot
-* CTRL + O : Open the additional settings screen.
+* CTRL+O: Opens the additional settings screen.
 ### Deck Edit:
 * RMB: Adds/removes a card from the deck
 * MMB: Adds another copy of a card to the deck or side deck
@@ -250,13 +250,14 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		portuguese: Naim
 
 * Added support for skills and characters
-	* To use a Skill during a duel, have it in your deck at the start, it will be removed, to activate it, you will get a Prompt for skill requiring a specific timing OR use the Resolution Circle above the Skill location 
-	* At the moment, Skills are not tied to Speed duel
-	* Only TCG Skills, Duel Link Skill are not planned at the moment, Vrains Anime skills may be done later, but priority to TCG
-	* If you liked Skills, Remember to Support the format IRL if you can
-	* WARNING: 
-		* Don't use Skills in Tag, Tag is not supported because of Core limitation, Cybercatman try to think about a workaround, but it will be take a while
-		* Don't Add several skills in the main deck, the system is not planned for that
+	* To use a Skill during a duel, add it to the deck first.
+		* when the duel starts, the skill is removed.
+		* to activate it, you will get a prompt for skills taht require a specific activation timing and for others you use the resolution circle above the area where the skill is displayed.
+	* At the moment, skills are not limited to Speed duels.
+	* Only TCG skills are available. Duel Link skills and skills from Yu-gi-oh VRAINS are not planned at the moment.
+	* Important: 
+		* Do not use skills in Tag. This is not a duel mode supported due to core limitations.
+		* Don not add more than 1 skill  to the main deck as that is not handled.
 		
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
 	* requires editing the deck file, might be tied with the server's 
