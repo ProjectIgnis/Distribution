@@ -59,6 +59,7 @@ These fields change the colors in the multiple areas in the game.
 * CARDINFO_ARCHETYPE_TEXT_COLOR : Changes the color used for the archtypes names in the card details area
 * CARDINFO_STATS_COLOR : Changes the color used for the Archetype Name in the "Card Info" area
 * CARDINFO_TYPES_COLOR : Changes the color used for the text with the types (Card Type, Attribute, monster type) in the "Card Info" area
+* CARDINFO_PASSCODE_SCOPE_TEXT_COLOR : Changes the color used for the text with the the passcode and scope of a card in the "Card Info" area
 
 The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example: Monsters 32, Spells 5, Traps 3.
 
