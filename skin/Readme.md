@@ -60,6 +60,7 @@ These fields change the colors in the multiple areas in the game.
 * CARDINFO_STATS_COLOR : Changes the color used for the Archetype Name in the "Card Info" area
 * CARDINFO_TYPES_COLOR : Changes the color used for the text with the types (Card Type, Attribute, monster type) in the "Card Info" area
 * CARDINFO_PASSCODE_SCOPE_TEXT_COLOR : Changes the color used for the text with the the passcode and scope of a card in the "Card Info" area
+* FPS_TEXT_COLOR : Changes the color used for the FPS displayed ingame
 
 The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example: Monsters 32, Spells 5, Traps 3.
 
@@ -96,6 +97,7 @@ The following 32 fields change the color used for the areas in Deck Edit, specif
 * DECK_WINDOW_SIDE_INFO_TOP_RIGHT
 * DECK_WINDOW_SIDE_TOP_LEFT
 * DECK_WINDOW_SIDE_TOP_RIGHT
+
 * DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR
 * DUELFIELD_ANNOUNCE_TEXT_COLOR : Changes the color of the color used in the box after a card is announced. Example: Psi-Blocker
 * DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND : Changes the color for area around the caption text when you are selection cards from a group. Example: when you are selecting what monsters to banish by Block Dragon
@@ -112,7 +114,7 @@ The following 32 fields change the color used for the areas in Deck Edit, specif
 * DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
 * DUELFIELD_TOOLTIP_TEXT_COLOR
 
-The following 8 fields change the color for the LP bar, for you LPBAR1 and your opponent, LPBAR2
+The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
 
 * LPBAR_1_BOTTOM_LEFT
 * LPBAR_1_BOTTOM_RIGHT
@@ -274,6 +276,7 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="245" g="245" b="245" />
+		<FPS_TEXT_COLOR a="255" r="245" g="245" b="245" />
 		<DECK_WINDOW_MAIN_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_MAIN_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_MAIN_INFO_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
