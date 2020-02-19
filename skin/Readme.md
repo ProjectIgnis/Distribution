@@ -272,6 +272,7 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<CARDINFO_TYPES_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
+		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="245" g="245" b="245" />
 		<DECK_WINDOW_MAIN_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_MAIN_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
