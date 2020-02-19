@@ -249,15 +249,15 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		italian: edo9300
 		portuguese: Naim
 
-* Added support for skills and characters
+* Added support for TCG Speed Duel Skills
 	* To use a Skill during a duel, add it to the deck first.
-		* when the duel starts, the skill is removed.
-		* to activate it, you will get a prompt for skills taht require a specific activation timing and for others you use the resolution circle above the area where the skill is displayed.
-	* At the moment, skills are not limited to Speed duels.
-	* Only TCG skills are available. Duel Link skills and skills from Yu-gi-oh VRAINS are not planned at the moment.
+		* When the duel starts, the Skill is removed.
+		* For Skills that require a specific activation timing you will get a prompt, for others you use the resolution circle above the area where the Skill is displayed.
+	* At the moment, Skills are not limited to Speed Duels.
+	* Only TCG Skills are available. Duel Link Skills and Skills from Yu-Gi-Oh! VRAINS are not planned at the moment.
 	* Important: 
-		* Do not use skills in Tag. This is not a duel mode supported due to core limitations.
-		* Don not add more than 1 skill  to the main deck as that is not handled.
+		* Do not use Skills in a Tag Duel. Skills in this duel mode are not supported due to core limitations.
+		* Do not add more than 1 Skill in the Main Deck, as there is no handling for it.
 		
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
 	* requires editing the deck file, might be tied with the server's 
