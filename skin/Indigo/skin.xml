@@ -21,6 +21,7 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<CARDINFO_TYPES_COLOR a="224" r="200" g="100" b="255" />
 		<CARDINFO_STATS_COLOR a="224" r="200" g="100" b="255" />
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="224" r="200" g="100" b="255" />
+		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="224" r="200" g="100" b="255" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="255" g="255" b="255" />
 		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="180" g="100" b="255" />
 		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="100" g="150" b="255" />
