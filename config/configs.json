@@ -18,6 +18,10 @@
             "url": "default",
             "type": "field"
         },
+        {
+            "url": "default",
+            "type": "cover"
+        }
     ],
     "servers": [
         {
