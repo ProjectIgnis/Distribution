@@ -27,10 +27,17 @@ RMB | Right Mouse Button
 MMB | Middle Mouse Button
 
 ### General:
-* ESC: Minimizes the window when full screen
-* F11: Toggling Fullscreen Mode
+* ESC: Minimizes the window if not typing
+* F11: Toggles fullscreen
 * F12: Captures a screenshot
-* CTRL+O: Opens the additional settings screen.
+* CTRL+O: Opens the additional settings window
+* R: Reloads fonts if not typing
+* CTRL+R: Reloads current skin
+* CTRL+1: Switch to card info tab
+* CTRL+2: Switch to duel log tab
+* CTRL+3: Switch to chat log tab
+* CTRL+4: Switch to settings tab
+* CTRL+5: Switch to repositories tab
 ### Deck Edit:
 * RMB: Adds/removes a card from the deck
 * MMB: Adds another copy of a card to the deck or side deck
@@ -41,7 +48,12 @@ MMB | Middle Mouse Button
 * Hold D: Lets the system stop at available timing.
 * F1-F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials.
 * F5-F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials.
-
+### macOS:
+Note that system hotkeys may intercept some of the above keyboard shortcuts.
+These app shortcuts are also available in the app and dock menus:
+* Cmd+N opens a new instance with audio muted
+* Cmd+Q quits the game
+* Ctrl+Cmd+F toggles fullscreen
 
 ## Searching functions
 * `string`:
@@ -73,7 +85,7 @@ Change up your **textures**, **sounds** and/or **skin** folder!
 See README in `textures`.
 
 ### Skins:
-Editable by addings subfolders to **skin**, in the main Ygopro folder. For each folder, provide a unique `skin.xml` file, with the changes you want.
+Editable by addings subfolders to **skin**. For each folder, provide a unique `skin.xml` file, with the changes you want.
 The skin can be changed in the settings. For instructions on the supported fields and their effects, see README in `skin`. 
 
 ### Audio:
@@ -219,11 +231,10 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 * The last banlist used is now remembered after leaving deck edit, a duel, or the client.
 
 * macOS
-	* Cmd+Q quits the application. "Quit" menu item added to app menu.
-	* Cmd+N opens a new instance. "New Window" menu item added to app and dock menus.
-	* Ctrl+Cmd+F toggles fullscreen windowed mode. If there's no system bind for F11 that will work as well. "Toggle Full Screen" menu item added to app and dock menus. This is remembered on app restart like on Windows and Linux.
-		* Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen on macOS Mojave, but no user should be starting the game this way anyway.
 	* Shift+Right Click to add to side deck in Deck Edit now works like on Windows and Linux
+	* Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen, but no user should be starting the game this way anyway.
+	* Known bug: Cmd+Right in an edit box results in game crash
+
 
 * Scripts now load from one subdirectory level in the script folder only.
 
