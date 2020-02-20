@@ -270,6 +270,8 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		* Do not use Skills in a Tag Duel. Skills in this duel mode are not supported due to core limitations.
 		* Do not add more than 1 Skill in the Main Deck, as there is no handling for it.
 		
+* Added support for Link Spells ("Judgment Arrows")
+
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
 	* requires editing the deck file, might be tied with the server's 
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck.
