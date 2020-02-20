@@ -1,23 +1,12 @@
 {
     "repos": [
         {
-            "url": "default",
-            "should_update": false,
-            "should_read": false
-        },
-        {
-            "url": "default_anime",
-            "should_update": false,
-            "should_read": false
-        },
-        {
-            "url": "https://github.com/Gideon9212/Livecustom",
-            "repo_path": "./expansions/Livecustom",
+            "url": "https://github.com/ProjectIgnis/LaplaceDelta37.0.0",
+            "repo_path": "./expansions/beta",
             "data_path": "",
             "script_path": "script",
-            "pics_path": "pics",
-            "should_update": false,
-            "should_read": false
+            "should_update": true,
+            "should_read": true
         }
     ],
     "urls": [
@@ -29,14 +18,6 @@
             "url": "default",
             "type": "field"
         },
-        {
-            "url": "https://raw.githubusercontent.com/Gideon9212/Livecustom/master/pics/{}.png",
-            "type": "pic"
-        },
-        {
-            "url": "https://raw.githubusercontent.com/Gideon9212/Livecustom/master/pics/field/{}.png",
-            "type": "field"
-        }
     ],
     "servers": [
         {
