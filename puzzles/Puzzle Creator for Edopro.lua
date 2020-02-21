@@ -274,52 +274,6 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 		Duel.BreakEffect()
 	end
 
-
-
-
-
-	Debug.ShowHint("Click 'OK' to set your LP by using the command line. This feature does not work outside of ygopro_vs_ai_debug.exe. (Your LP will remain as 8000.)")
-	Duel.BreakEffect()
-	while Duel.GetFlagEffect(tp,1546122)==0 do
-		local io=require("io")
-		Duel.BreakEffect()
-		local str=io.read()
-		Duel.BreakEffect()
-		local lp=tonumber(str)
-		if str==nil or lp==nil then lp=8000 end
-		Duel.BreakEffect()
-		if type(lp)=="number" and lp>0 and lp<2147483648 then
-			Duel.SetLP(tp,lp)
-			Duel.RegisterFlagEffect(tp,1546122,0,0,1)
-		else
-			Duel.BreakEffect()
-			Debug.ShowHint("The number you selected was not valid (or not even a number). Try again.")
-		end
-	end
-	Duel.ResetFlagEffect(tp,1546122)
-	Debug.ShowHint("Click 'OK' to set your opponent's LP by using the command line. This feature does not work outside of ygopro_vs_ai_debug.exe. (Their LP will remain as 8000.)")
-	Duel.BreakEffect()
-	while Duel.GetFlagEffect(tp,1546122)==0 do
-		local io=require("io")
-		Duel.BreakEffect()
-		local str=io.read()
-		Duel.BreakEffect()
-		local lp=tonumber(str)
-		if str==nil or lp==nil then lp=8000 end
-		Duel.BreakEffect()
-		if type(lp)=="number" and lp>0 and lp<2147483648 then
-			Duel.SetLP(1-tp,lp)
-			Duel.RegisterFlagEffect(tp,1546122,0,0,1)
-		else
-			Duel.BreakEffect()
-			Debug.ShowHint("The number you selected was not valid (or not even a number). Try again.")
-		end
-	end
-	Duel.ResetFlagEffect(tp,1546122)
-
-
-
-
 	local io=require("io")
 	os = require("os")
 	Duel.BreakEffect()
@@ -504,7 +458,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 	os.remove("./puzzles/unimportant.lua")
 
 	Duel.BreakEffect()
-	Debug.ShowHint("The script has been sucessfully exported as 'Generated Puzzle "..tme..".lua'.")
+	Debug.ShowHint("The puzzle has been sucessfully exported as 'Generated Puzzle "..tme..".lua'.")
 	Duel.SetLP(0,0)
 end)
 Duel.RegisterEffect(e1,0)
