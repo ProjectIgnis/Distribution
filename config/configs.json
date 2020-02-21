@@ -1,8 +1,9 @@
 {
     "repos": [
         {
-            "url": "https://github.com/ProjectIgnis/LaplaceDelta37.0.0",
-            "repo_path": "./expansions/beta",
+						"url": "https://github.com/ProjectIgnis/DeltaBeta",
+						"repo_name": "Patch repository for the closed beta",
+            "repo_path": "./repositories/beta",
             "data_path": "",
             "script_path": "script",
             "should_update": true,
@@ -25,18 +26,25 @@
     ],
     "servers": [
         {
-            "name": "21 Sussex",
-            "address": "06.varsity.utoronto.ca",
-            "roomaddress": "06.varsity.utoronto.ca",
-            "roomlistport": 7922,
-            "duelport": 7911
-        },
+            "name": "Atlantic",
+            "address": "128.100.146.10",
+            "duelport": 7911,
+            "roomaddress": "128.100.146.10",
+            "roomlistport": 7922
+				},
+				{
+					  "name": "Pacific",
+						"address": "73.240.71.103",
+						"duelport": 7911,
+						"roomaddress": "73.240.71.103",
+						"roomlistport": 7922
+			  },
         {
             "name": "localhost",
             "address": "127.0.0.1",
+            "duelport": 7911,
             "roomaddress": "127.0.0.1",
-            "roomlistport": 7922,
-            "duelport": 7911
+            "roomlistport": 7922
         }
 		],
 		"posixPathExtension": "/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands"
