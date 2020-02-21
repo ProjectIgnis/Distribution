@@ -99,7 +99,7 @@ The following 32 fields change the color used for the areas in Deck Edit, specif
 * DECK_WINDOW_SIDE_TOP_RIGHT
 
 * DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR
-* DUELFIELD_ANNOUNCE_TEXT_COLOR : Changes the color of the color used in the box after a card is announced. Example: Psi-Blocker
+* DUELFIELD_ANNOUNCE_TEXT_COLOR : Changes the color used in the box after a card is announced. Example: Psi-Blocker
 * DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND : Changes the color for area around the caption text when you are selection cards from a group. Example: when you are selecting what monsters to banish by Block Dragon
 * DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND : Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck
 * DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT
@@ -111,7 +111,7 @@ The following 32 fields change the color used for the areas in Deck Edit, specif
 * DUELFIELD_MUTUAL_LINKED : Changes the color for the zones where mosters co-linked with the monster that you hover the mouse over are
 * DUELFIELD_SELECTABLE_CARD_OUTLINE : Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it
 * DUELFIELD_SELECTABLE_FIELD_OUTLINE : Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon
-* DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
+* DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
 * DUELFIELD_TOOLTIP_TEXT_COLOR
 
 The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
