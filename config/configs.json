@@ -39,6 +39,13 @@
 						"roomaddress": "73.240.71.103",
 						"roomlistport": 7922
 			  },
+				{
+					  "name": "EU",
+						"address": "185.227.110.90",
+						"duelport": 7911,
+						"roomaddress": "185.227.110.90",
+						"roomlistport": 7922
+			  },
         {
             "name": "localhost",
             "address": "127.0.0.1",
