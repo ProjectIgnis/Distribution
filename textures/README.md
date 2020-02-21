@@ -1,7 +1,10 @@
-Edopro's textures instructions:
+# Textures
 
 Files from here are the default textures used in the game. If the current skin applied contains a `textures` folder, files there will override these.
-PNG and JPG are supported with those extensions only.
+
+See COPYING for copyright information and credits.
+
+PNG and JPG are supported. The files must have those extensions.
 PNG files with the same name will be preferentially loaded first.
 JPG extension support is only kept for legacy purposes and is highly discouraged.
 
