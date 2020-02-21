@@ -103,6 +103,15 @@
 		<ROOMLIST_CUSTOM_ROOM a="255" r="230" g="230" b="230" />
 		<!-- Changes the color for a room, in the room list, that has already started its duel.-->
 		<ROOMLIST_STARTED_ROOM a="255" r="230" g="230" b="230" />
+		
+		<LPBAR_1_TOP_LEFT a="255" r="77" g="0" b="77" />
+		<LPBAR_1_TOP_RIGHT a="255" r="77" g="0" b="77" />
+		<LPBAR_1_BOTTOM_LEFT a="255" r="77" g="0" b="77" />
+		<LPBAR_1_BOTTOM_RIGHT a="255"r="77" g="0" b="77" />
+		<LPBAR_2_TOP_LEFT a="255" r="77" g="0" b="77" />
+		<LPBAR_2_TOP_RIGHT a="255" r="77" g="0" b="77" />
+		<LPBAR_2_BOTTOM_LEFT a="255" r="77" g="0" b="77" />
+		<LPBAR_2_BOTTOM_RIGHT a="255" r="77" g="0" b="77" />
 	</Custom>
 	
 	<Button texture="button.png">
