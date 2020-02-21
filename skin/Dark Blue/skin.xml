@@ -19,14 +19,14 @@
 		<EGDC_ACTIVE_CAPTION a="255" r="255" g="255" b="255" />		  					<!-- Active window title bar text --> 
 		<EGDC_APP_WORKSPACE a="255" r="0" g="0" b="0" />-->				<!-- Background color of multiple document interface (MDI) applications. -->  
 		<EGDC_BUTTON_TEXT a="255" r="255" g="255" b="255" />		 		<!-- Text on a button. --> 
-		<EGDC_GRAY_TEXT a="255" r="220" g="0" b="0" />							<!-- Grayed (disabled) text. -->  
+		<EGDC_GRAY_TEXT a="255" r="25" g="210" b="210" />					<!-- Grayed (disabled) text. -->  
 		<!--<EGDC_HIGH_LIGHT a="255" r="255" g="255" b="255" />			-->  		<!-- Item(s) selected in a control. -->  
 		<EGDC_HIGH_LIGHT_TEXT a="255" r="255" g="255" b="255" />	  				<!-- Text of item(s) selected in a control. --> 
 		<!--<EGDC_INACTIVE_BORDER a="255" r="224" g="224" b="64" />	-->  		<!-- Inactive window border. -->  
 		<!--<EGDC_INACTIVE_CAPTION a="255" r="255" g="255" b="255" />	--> 		<!-- Inactive window caption. -->  
 		<!--<EGDC_TOOLTIP a="255" r="224" g="224" b="64" />	-->					<!-- Tool tip text color. -->  
 		<EGDC_TOOLTIP_BACKGROUND a="255" r="255" g="255" b="255" />			<!-- Tool tip background color. -->  
-		<EGDC_SCROLLBAR a="255" r="255" g="255" b="255" />			-->			<!-- Scrollbar gray area. This ONLY applies to the default scrollbar, if you want to change the colors of the graphical one, change the color attributes in the section near the bottom -->  
+		<EGDC_SCROLLBAR a="255" r="20" g="80" b="140" />			-->			<!-- Scrollbar gray area. This ONLY applies to the default scrollbar, if you want to change the colors of the graphical one, change the color attributes in the section near the bottom -->  
 		<EGDC_WINDOW a="255" r="255" g="255" b="255" />								<!-- Window background. -->  
 		<EGDC_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />		  					<!-- Window symbols like on close buttons, scroll bars and check boxes.  -->
 		<!--<EGDC_ICON a="255" r="255" g="255" b="255" />				-->			<!-- Icons in a list or tree. -->  
