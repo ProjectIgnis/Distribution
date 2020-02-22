@@ -135,6 +135,8 @@ Controlled by `config/configs.json`
 * Localhost AI added with up to four bots per duel in the first four player slots.
 	* Uses custom WindBot Ignite
 	* Bots incompatible with the current Master Rule are not displayed
+	* Decks used by Windbot do not necessarily match the current banlist: they follow the OCG banlist available when they were implemented.
+		* To avoid warning regarding banned cards, the "Don't Check the Deck" option is suggested.
 
 * Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
 
