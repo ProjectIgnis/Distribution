@@ -169,12 +169,7 @@
 	</ComboBox>
 
 	<SunkenPane texture="sunkenpane.png">
-	<!--This file is used as "background" for areas of the client, including:
-	-the area where the card name and its ID is displayed, in deck edit
-	-the area where texts are displayed in LAN mode
-	-the are where the card picture is displayed
-	-the area where a replay name is typed, when savinng it
-	-the area in deck edit where all the multiple filters and menus are placed-->
+		<Color a="180" r="38" g="38" b="38" />
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
 	</SunkenPane>
