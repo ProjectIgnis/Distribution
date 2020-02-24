@@ -74,7 +74,7 @@
 		<!-- Changes the color of the color used as background in the tooltip box, the area with the card details when you hover the mouse over it in the field -->
 		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
 		<!-- Changes the color of the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it in the field -->
-		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="30" g="30" b="30" />
+		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="255" g="255" b="255" />
 		<!-- Changes the color for the zones you are hovering on the field -->
 		<DUELFIELD_HOVERED a="255" r="230" g="230" b="230" />
 		<!-- Changes the color for the zones where a link monster points to -->
@@ -169,7 +169,12 @@
 	</ComboBox>
 
 	<SunkenPane texture="sunkenpane.png">
-		<Color a="180" r="38" g="38" b="38" />
+	<!--This file is used as "background" for areas of the client, including:
+	-the area where the card name and its ID is displayed, in deck edit
+	-the area where texts are displayed in LAN mode
+	-the are where the card picture is displayed
+	-the area where a replay name is typed, when savinng it
+	-the area in deck edit where all the multiple filters and menus are placed-->
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
 	</SunkenPane>
