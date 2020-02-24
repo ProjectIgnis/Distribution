@@ -19,14 +19,14 @@
 		<EGDC_ACTIVE_CAPTION a="255" r="255" g="255" b="255" />		  					<!-- Active window title bar text --> 
 		<EGDC_APP_WORKSPACE a="255" r="0" g="0" b="0" />-->				<!-- Background color of multiple document interface (MDI) applications. -->  
 		<EGDC_BUTTON_TEXT a="255" r="255" g="255" b="255" />		 		<!-- Text on a button. --> 
-		<EGDC_GRAY_TEXT a="255" r="25" g="210" b="210" />					<!-- Grayed (disabled) text. -->  
+		<EGDC_GRAY_TEXT a="255" r="180" g="180" b="180" />				<!-- Grayed (disabled) text. -->  
 		<!--<EGDC_HIGH_LIGHT a="255" r="255" g="255" b="255" />			-->  		<!-- Item(s) selected in a control. -->  
 		<EGDC_HIGH_LIGHT_TEXT a="255" r="255" g="255" b="255" />	  				<!-- Text of item(s) selected in a control. --> 
 		<!--<EGDC_INACTIVE_BORDER a="255" r="224" g="224" b="64" />	-->  		<!-- Inactive window border. -->  
 		<!--<EGDC_INACTIVE_CAPTION a="255" r="255" g="255" b="255" />	--> 		<!-- Inactive window caption. -->  
 		<!--<EGDC_TOOLTIP a="255" r="224" g="224" b="64" />	-->					<!-- Tool tip text color. -->  
 		<EGDC_TOOLTIP_BACKGROUND a="255" r="255" g="255" b="255" />			<!-- Tool tip background color. -->  
-		<EGDC_SCROLLBAR a="255" r="20" g="80" b="140" />			-->			<!-- Scrollbar gray area. This ONLY applies to the default scrollbar, if you want to change the colors of the graphical one, change the color attributes in the section near the bottom -->  
+		<EGDC_SCROLLBAR a="255" r="20" g="40" b="95" />			-->			<!-- Scrollbar gray area. This ONLY applies to the default scrollbar, if you want to change the colors of the graphical one, change the color attributes in the section near the bottom -->  
 		<EGDC_WINDOW a="255" r="255" g="255" b="255" />								<!-- Window background. -->  
 		<EGDC_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />		  					<!-- Window symbols like on close buttons, scroll bars and check boxes.  -->
 		<!--<EGDC_ICON a="255" r="255" g="255" b="255" />				-->			<!-- Icons in a list or tree. -->  
@@ -37,14 +37,26 @@
 		<CheckBoxColor a="255" r="255" g="255" b="255" />
 	</Global>
   		<Custom>
-			<LPBAR_1_BOTTOM_LEFT a="255" r="134" g="0" b="179" />
-			<LPBAR_1_BOTTOM_RIGHT a="255" r="26" g="0" b="26" />
-			<LPBAR_1_TOP_LEFT a="255" r="134" g="0" b="179" />
-			<LPBAR_1_TOP_RIGHT a="255" r="26" g="0" b="26" />
-			<LPBAR_2_BOTTOM_LEFT a="255" r="26" g="0" b="26" />
-			<LPBAR_2_BOTTOM_RIGHT a="255" r="134" g="0" b="179" />
-			<LPBAR_2_TOP_LEFT a="255" r="26" g="0" b="26" />
-			<LPBAR_2_TOP_RIGHT a="255" r="134" g="0" b="179" />
+  			<!--Your LP bar-->
+			<LPBAR_1_BOTTOM_LEFT a="255" r="26" g="36" b="75" />
+			<LPBAR_1_BOTTOM_RIGHT a="255" r="20" g="0" b="125" />
+			<LPBAR_1_TOP_LEFT a="255" r="26" g="36" b="75" />
+			<LPBAR_1_TOP_RIGHT a="255" r="20" g="0" b="125" />
+			<!--Opponent's LP bar-->
+			<LPBAR_2_BOTTOM_LEFT a="255" r="20" g="0" b="125" />
+			<LPBAR_2_BOTTOM_RIGHT a="255" r="26" g="36" b="75" />
+			<LPBAR_2_TOP_LEFT a="255" r="20" g="0" b="125" />
+			<LPBAR_2_TOP_RIGHT a="255" r="26" g="36" b="75" />
+            <DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="255" g="255" b="255" />
+            <DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR a="200" r="0" g="0" b="0" />
+            <DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="20" g="140" b="255" />
+            <DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="180" g="90" b="255" />
+            <CARDINFO_IMAGE_BACKGROUND a="255" r="30" g="36" b="102" />
+            <CARDINFO_TYPES_COLOR a="255" r="25" g="210" b="255" />
+            <CARDINFO_STATS_COLOR a="255" r="80" g="250" b="50" />
+            <CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="50" b="10" />
+            <CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="242" g="255" b="0" />
+            <DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="255" g="255" b="255" />
 	</Custom>
 	<Button texture="button.png">
 		<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
@@ -97,6 +109,7 @@
 	<SunkenPane texture="sunkenpane.png">
 		<SrcBorder tlx="10" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="10" tly="10" brx="10" bry="10" />
+		<Color a="226" r="0" g="0" b="0" />
 	</SunkenPane>
 
 	<TabControl texture="TabControl.png">
@@ -110,9 +123,11 @@
 			<SrcBorder tlx="3" tly="3" brx="3" bry="3" />
 			<DstBorder tlx="3" tly="3" brx="3" bry="3" />
 		</TabButtonPressed>
+		<!--<Color a="255" r="0" g="0" b="0" />-->
 	</TabControl>
   
 	<Window texture="windowbg.png">
+		<Color a="255" r="255" g="255" b="255" />
 		<SrcBorder tlx="25" tly="10" brx="10" bry="10" />
 		<DstBorder tlx="25" tly="10" brx="10" bry="10" />
 	</Window>
