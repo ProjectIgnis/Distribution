@@ -60,16 +60,16 @@ These app shortcuts are also available in the app and dock menus:
 	returns all cards that have `string` in their name OR in the card text.
 	Example: `Hero`
 * `@string`
-	returns all cards that have `string` in their name only, which ignores the card text.
+	returns all cards that belong to the `string`  archetype.
 	Example: `@Hero`
 * `$string`
-	returns all cards that belong to the `string`  archetype.
+	returns all cards that have `string` in their name only, which ignores the card text.
 	Example: `$Heroic`
 * `string1+string2`
-	returns all cards that have `string1` or `string2` in their name/text.
+	returns all cards that have `string1` OR `string2` in their name/text.
 	Example: `Trickstar+Bounzer`
 	
-You can also combine those functions. Example: `$blue-eyes+$buster blader` returns all cards that belong to either the `Blue-Eyes` archetype or the `Buster Blader` archetype
+You can also combine those functions. Example: `@blue-eyes+$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
 
 ## Customization
 
