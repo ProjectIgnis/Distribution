@@ -4,6 +4,8 @@
 			"url": "https://github.com/ProjectIgnis/DeltaBeta",
 			"repo_name": "Patch repository for the closed beta",
 			"repo_path": "./repositories/beta",
+			"has_core": true,
+			"core_path": "bin",
 			"data_path": "",
 			"script_path": "script",
 			"should_update": true,
