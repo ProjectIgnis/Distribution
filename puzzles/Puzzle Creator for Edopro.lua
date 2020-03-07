@@ -17,21 +17,22 @@ e1:SetCode(EVENT_PREDRAW)
 e1:SetCountLimit(1)
 e1:SetProperty(EFFECT_FLAG_NO_TURN_RESET)
 e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
-	local mzone=aux.Stringid(1546122,1)
-	local szone=aux.Stringid(1546122,2)
-	local pzone=aux.Stringid(1546122,3)
-	local fzone=aux.Stringid(1546122,4)
-	local grave=aux.Stringid(1546122,5)
-	local hand=aux.Stringid(1546122,6)
-	local deck=aux.Stringid(1546122,7)
-	local extra=aux.Stringid(1546122,8)
-	local ban=aux.Stringid(1546122,9)
-	local fu=aux.Stringid(1546122,11)
-	local fd=aux.Stringid(1546122,12)
-	local equip=aux.Stringid(1546122,14)
-	while Duel.SelectYesNo(tp,aux.Stringid(1546122,0)) do
+	local mzone=2201
+	local szone=2202
+	local pzone=2203
+	local fzone=2204
+	local grave=2205
+	local hand=2206
+	local deck=2207
+	local extra=2208
+	local ban=2209
+	local fu=2211
+	local fd=2212
+	local equip=2213
+	local attch=2214
+	while Duel.SelectYesNo(tp,2200) do
 		local ac=Duel.AnnounceCard(tp)
-		if Duel.SelectYesNo(tp,aux.Stringid(1546122,10)) then p=tp else p=1-tp end
+		if Duel.SelectYesNo(tp,2210) then p=tp else p=1-tp end
 		local c=Duel.CreateToken(p,ac)
 		if c:IsType(TYPE_MONSTER) then
 			if c:IsType(TYPE_PENDULUM) then
@@ -43,14 +44,14 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 						Duel.MoveToField(c,tp,p,LOCATION_MZONE,pos,true)
 						c:CompleteProcedure()
 						if c:IsType(TYPE_XYZ) then
-							while Duel.GetFlagEffect(tp,1546122)<5 and Duel.SelectYesNo(tp,aux.Stringid(1546122,13)) do
+							local ccount=0
+							while ccount<5 and Duel.SelectYesNo(tp,attch) do
 								local ac=Duel.AnnounceCard(tp)
 								local mat=Duel.CreateToken(p,ac)
 								Duel.Remove(mat,POS_FACEUP,REASON_RULE)
 								Duel.Overlay(c,mat)
-								Duel.RegisterFlagEffect(tp,1546122,0,0,1)
+								ccount=ccount+1
 							end
-							Duel.ResetFlagEffect(tp,1546122)
 						end
 					elseif e:GetLabel()==0 then
 						Duel.MoveToField(c,tp,p,LOCATION_SZONE,POS_FACEUP,false)
@@ -98,7 +99,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 					local choice=Duel.SelectOption(tp,fu,fd)
 					if choice==0 then pos=POS_FACEUP elseif choice==1 then pos=POS_FACEDOWN end
 					if Duel.CheckLocation(p,LOCATION_MZONE,5) and Duel.CheckLocation(p,LOCATION_MZONE,6) 
-						and Duel.SelectYesNo(tp,aux.Stringid(1546121,0)) then --escolhe se sim ou nao pro emz
+						and Duel.SelectYesNo(tp,2215) then
 						Duel.MoveToField(c,tp,p,LOCATION_MZONE,pos,true,96)
 						c:CompleteProcedure()
 					else
@@ -106,14 +107,14 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 						c:CompleteProcedure()
 					end
 					if c:IsType(TYPE_XYZ) then
-						while Duel.GetFlagEffect(tp,1546122)<5 and Duel.SelectYesNo(tp,aux.Stringid(1546122,13)) do
+						local ccount=0
+						while ccount<5 and Duel.SelectYesNo(tp,attch) do
 							local ac=Duel.AnnounceCard(tp)
 							local mat=Duel.CreateToken(p,ac)
 							Duel.Remove(mat,POS_FACEUP,REASON_RULE)
 							Duel.Overlay(c,mat)
-							Duel.RegisterFlagEffect(tp,1546122,0,0,1)
+							ccount=ccount+1
 						end
-						Duel.ResetFlagEffect(tp,1546122)
 					end
 				elseif e:GetLabel()==1 then
 					Duel.SendtoGrave(c,REASON_RULE,p)
@@ -170,8 +171,8 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 				if e:GetLabel()==0 then
 					if ((Duel.CheckLocation(p,LOCATION_MZONE,5) and Duel.CheckLocation(p,LOCATION_MZONE,6))
 						or Duel.IsExistingMatchingCard(emzcheck,tp,LOCATION_MZONE,LOCATION_MZONE,1,nil))
-						and Duel.SelectYesNo(tp,aux.Stringid(1546121,0)) then --escolhe se sim ou nao pro emz
-						Duel.MoveToField(c,tp,p,LOCATION_MZONE,POS_FACEUP,true,96) --mover pra extra monster zone
+						and Duel.SelectYesNo(tp,2215) then
+						Duel.MoveToField(c,tp,p,LOCATION_MZONE,POS_FACEUP,true,96)
 						c:CompleteProcedure()
 					else
 						Duel.MoveToField(c,tp,p,LOCATION_MZONE,POS_FACEUP,true)
@@ -197,7 +198,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 					if choice==0 then pos=POS_FACEUP elseif choice==1 then pos=POS_FACEDOWN_DEFENSE end
 					Duel.MoveToField(c,tp,p,LOCATION_MZONE,pos,true)
 					c:CompleteProcedure()
-					if c:IsType(TYPE_GEMINI) and Duel.SelectYesNo(tp,aux.Stringid(1546122,15)) then
+					if c:IsType(TYPE_GEMINI) and Duel.SelectYesNo(tp,2213) then
 						c:EnableGeminiState()
 					end
 				elseif e:GetLabel()==1 then
@@ -329,6 +330,15 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 			tc=g:GetNext()
 		end
 	end
+	local g=Duel.GetFieldGroup(tp,LOCATION_OVERLAY,0) --unfinished because this is not a proper location
+	if g:GetCount()>0 then
+		f:write("\n--Xyz Materials attached")
+		local tc=g:GetFirst()
+		for i=1,g:GetCount() do
+			f:write("\nDebug.AddCard("..tc:GetCode()..",0,0,LOCATION_OVERLAY,,"..tc:GetSequence()..",POS_FACEUP)")
+			tc=g:GetNext()
+		end
+	end
 	local g=Duel.GetFieldGroup(tp,LOCATION_MZONE,0)
 	if g:GetCount()>0 then
 		f:write("\n--Monster Zones")
@@ -406,6 +416,15 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 		local tc=g:GetFirst()
 		for i=1,g:GetCount() do
 			f:write("\nDebug.AddCard("..tc:GetCode()..",1,1,LOCATION_REMOVED,0,"..tc:GetPosition()..")")
+			tc=g:GetNext()
+		end
+	end
+	local g=Duel.GetFieldGroup(tp,LOCATION_OVERLAY,0) --unfinished because this is not a proper location
+	if g:GetCount()>0 then
+		f:write("\n--Xyz Materials attached")
+		local tc=g:GetFirst()
+		for i=1,g:GetCount() do
+			f:write("\nDebug.AddCard("..tc:GetCode()..",1,1,LOCATION_OVERLAY,,"..tc:GetSequence()..",POS_FACEUP)")
 			tc=g:GetNext()
 		end
 	end
