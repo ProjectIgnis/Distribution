@@ -344,8 +344,14 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 		f:write("\n--Monster Zones")
 		local tc=g:GetFirst()
 		for i=1,g:GetCount() do
-			if tc:GetEquipCount()>0 then
+			if tc:GetEquipCount()>0 and tc:GetOverlayCount()>0 then
 				f:write("\nlocal m_"..i.."=Debug.AddCard("..tc:GetCode()..",0,0,LOCATION_MZONE,"..tc:GetSequence()..","..tc:GetPosition()..",true)")
+				local og=tc:GetOverlayGroup()
+				local oq=og:GetFirst()
+				for b=1,og:GetCount() do
+						f:write("\nDebug.AddCard("..oq:GetCode()..",0,0,LOCATION_MZONE,"..tc:GetSequence()..",POS_FACEUP_ATTACK)")
+						oq=og:GetNext()
+					end
 				local tg=tc:GetEquipGroup()
 				local eq=tg:GetFirst()
 				for b=1,tg:GetCount() do
@@ -353,6 +359,14 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 					del:write("\nDebug.PreEquip(eq_"..i.."_"..b..",".."m_"..i..")")
 					eq=tg:GetNext()
 				end
+			elseif tc:GetOverlayCount()>0 then
+				f:write("\nDebug.AddCard("..tc:GetCode()..",0,0,LOCATION_MZONE,"..tc:GetSequence()..","..tc:GetPosition()..",true)")
+					local og=tc:GetOverlayGroup()
+					local oq=og:GetFirst()
+					for b=1,og:GetCount() do
+						f:write("\nDebug.AddCard("..oq:GetCode()..",0,0,LOCATION_MZONE,"..tc:GetSequence()..",POS_FACEUP_ATTACK)")
+						oq=og:GetNext()
+					end
 			else
 				f:write("\nDebug.AddCard("..tc:GetCode()..",0,0,LOCATION_MZONE,"..tc:GetSequence()..","..tc:GetPosition()..",true)")
 			end
