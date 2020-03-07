@@ -7,8 +7,7 @@ Debug.ReloadFieldEnd()
 --[[message
 	Known Issues:
 	-Incompatible with Ygopro Percy: the path for puzzles is different
-	-You cannot add cards to the Extra Monster Zone: prefer to add them to another zone, then edit the puzzle and change their sequences.
-	-Cards placed in the pendulum zone may not be displayed: prefer to add them to the hand instead
+	-You cannot add cards to your OPPONENT's Extra Monster Zone: prefer to add them to another zone, then edit the puzzle and change their sequences.
 ]]
 
 local e1=Effect.GlobalEffect()
@@ -330,15 +329,6 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 			tc=g:GetNext()
 		end
 	end
-	local g=Duel.GetFieldGroup(tp,LOCATION_OVERLAY,0) --unfinished because this is not a proper location
-	if g:GetCount()>0 then
-		f:write("\n--Xyz Materials attached")
-		local tc=g:GetFirst()
-		for i=1,g:GetCount() do
-			f:write("\nDebug.AddCard("..tc:GetCode()..",0,0,LOCATION_OVERLAY,,"..tc:GetSequence()..",POS_FACEUP)")
-			tc=g:GetNext()
-		end
-	end
 	local g=Duel.GetFieldGroup(tp,LOCATION_MZONE,0)
 	if g:GetCount()>0 then
 		f:write("\n--Monster Zones")
@@ -433,22 +423,19 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 			tc=g:GetNext()
 		end
 	end
-	local g=Duel.GetFieldGroup(tp,LOCATION_OVERLAY,0) --unfinished because this is not a proper location
-	if g:GetCount()>0 then
-		f:write("\n--Xyz Materials attached")
-		local tc=g:GetFirst()
-		for i=1,g:GetCount() do
-			f:write("\nDebug.AddCard("..tc:GetCode()..",1,1,LOCATION_OVERLAY,,"..tc:GetSequence()..",POS_FACEUP)")
-			tc=g:GetNext()
-		end
-	end
 	local g=Duel.GetFieldGroup(tp,0,LOCATION_MZONE)
 	if g:GetCount()>0 then
 		f:write("\n--Monster Zones")
 		local tc=g:GetFirst()
 		for i=1,g:GetCount() do
-			if tc:GetEquipCount()>0 then
+		if tc:GetEquipCount()>0 and tc:GetOverlayCount()>0 then
 				f:write("\nlocal m_"..i.."=Debug.AddCard("..tc:GetCode()..",1,1,LOCATION_MZONE,"..tc:GetSequence()..","..tc:GetPosition()..",true)")
+				local og=tc:GetOverlayGroup()
+				local oq=og:GetFirst()
+				for b=1,og:GetCount() do
+						f:write("\nDebug.AddCard("..oq:GetCode()..",1,1,LOCATION_MZONE,"..tc:GetSequence()..",POS_FACEUP_ATTACK)")
+						oq=og:GetNext()
+					end
 				local tg=tc:GetEquipGroup()
 				local eq=tg:GetFirst()
 				for b=1,tg:GetCount() do
@@ -456,6 +443,14 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 					del:write("\nDebug.PreEquip(eq_"..i.."_"..b..",".."m_"..i..")")
 					eq=tg:GetNext()
 				end
+			elseif tc:GetOverlayCount()>0 then
+				f:write("\nDebug.AddCard("..tc:GetCode()..",1,1,LOCATION_MZONE,"..tc:GetSequence()..","..tc:GetPosition()..",true)")
+					local og=tc:GetOverlayGroup()
+					local oq=og:GetFirst()
+					for b=1,og:GetCount() do
+						f:write("\nDebug.AddCard("..oq:GetCode()..",1,1,LOCATION_MZONE,"..tc:GetSequence()..",POS_FACEUP_ATTACK)")
+						oq=og:GetNext()
+					end
 			else
 				f:write("\nDebug.AddCard("..tc:GetCode()..",1,1,LOCATION_MZONE,"..tc:GetSequence()..","..tc:GetPosition()..",true)")
 			end
