@@ -1,5 +1,5 @@
 Debug.SetAIName("[AI]Ignis")
-Debug.ReloadFieldBegin(0,4)
+Debug.ReloadFieldBegin(0,5)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
@@ -283,7 +283,7 @@ e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
 	local slp=Duel.GetLP(tp)
 	local olp=Duel.GetLP(1-tp)
 	local name="[AI]Ignis"
-	f:write("--Created using senpaizuri's Puzzle Maker (updated by Naim & Larry126)\nDebug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)\nDebug.SetPlayerInfo(0,"..slp..",0,0)\nDebug.SetPlayerInfo(1,"..olp..",0,0)\n")
+	f:write("--Created using senpaizuri's Puzzle Maker (updated by Naim & Larry126)\nDebug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,5)\nDebug.SetPlayerInfo(0,"..slp..",0,0)\nDebug.SetPlayerInfo(1,"..olp..",0,0)\n")
 	local g=Duel.GetFieldGroup(tp,LOCATION_DECK,0)
 	if g:GetCount()>0 then
 		f:write("\n--Main Deck")
