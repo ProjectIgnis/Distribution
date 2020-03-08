@@ -68,7 +68,7 @@
 		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="242" g="255" b="0" />
 		<!-- Changes the color used as background for the area where the card picture is displayed in Deck Edit -->
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="200" g="200" b="255" />
-		<DUELFIELD_ANNOUNCE_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
+		<DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR a="255" r="30" g="30" b="30" />
 		<!-- Changes the color of the color used in the box after a card is announced. Example: Psi-Blocker -->
 		<DUELFIELD_ANNOUNCE_TEXT_COLOR a="255" r="255" g="255" b="255" />
 		<!-- Changes the color of the color used as background in the tooltip box, the area with the card details when you hover the mouse over it in the field -->
