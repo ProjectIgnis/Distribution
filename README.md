@@ -133,12 +133,43 @@ Controlled by `config/configs.json`
 ### Client
 
 * Localhost AI added with up to four bots per duel in the first four player slots.
-	* Uses custom WindBot Ignite
-	* Bots incompatible with the current Master Rule are not displayed
+	* Uses custom WindBot Ignite.
+	* Bots incompatible with the Master Rule used in the room are not displayed.
 	* Decks used by Windbot do not necessarily match the current banlist: they follow the OCG banlist available when they were implemented.
 		* To avoid warning regarding banned cards, the "Don't Check the Deck" option is suggested.
+	* To duel the bot: LAN + AI ->  Host -> OK -> Local AI -> Add AI Player
+	* List of decks Windbot has acess to:
+		* Altergeist
+		* Blue-Eyes
+		* Blue-Eyes Ritual
+		* Burn
+		* Chain Burn
+		* Cyberse
+		* Dark Magician
+		* Dragunity
+		* Dragun of Red-Eyes
+		* Frog
+		* Gren Maju Stun
+		* Horus
+		* Lightsworn Shaddoll Dino
+		* Normal Monster Mash
+		* Normal Monster Mash II
+		* Orcust
+		* Qliphort
+		* R5NK
+		* Rainbow
+		* Rose Scrap Synchro
+		* Salamangreat
+		* Sky Striker
+		* Toadally Awesome
+		* Trickstar
+		* Yosenju
+		* ZEXAL Weapon
+		* Zoodiac
 
-* Added a basic hand test mode accessible in deck edit to play out a combo via a puzzle.
+* Added a basic hand test mode accessible in deck edit, in the `Test Hand` button, to play out a combo via a puzzle.
+	* Includes a "Restart" option.
+	* While you are using this mode, the duel never ends, not even by reducing the opponent's LP to 0.
 
 * Added Discord Integration via Rich Presence
 	* Features:
@@ -202,6 +233,20 @@ Controlled by `config/configs.json`
 
 * "single" folder renamed to "puzzle"
 	* updated puzzles that were unsolvable to use pre-errata cards.
+
+* Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
+	* messages are added with the following syntax:
+	```lua
+		--[[message
+		insert the text here
+		]]
+	```
+* Puzzles now have a "Restart" option.
+
+* Puzzles now can generate a replay.
+
+* Added a "Puzzle Creator" puzzle.
+	* Use this to generate a puzzle by declaring a card and a location to place it. When finished, the resulting puzzle is exported.
 	
 * "Puzzle Mode" menu now reads subdirectories in the `puzzle` folder.
 	
@@ -278,15 +323,6 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* requires editing the deck file, might be tied with the server's 
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck.
 
-* Puzzles can now display a message while in the puzzle selection screen, in the "Puzzle Mode" menu:
-
-	* messages are added with the following syntax:
-```lua
-	--[[message
-	insert the text here
-	]]
-```
-* Added a "Puzzle Creator" puzzle.
 	
 ### Core, Scripts and functions and other
 
