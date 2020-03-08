@@ -190,11 +190,13 @@ Controlled by `config/configs.json`
 	* replays are still subjected to changes in the database entry for a card.
 
 * Added the option to export the decks used in a replay.
-	* decks with be stored in the default deck folder and will be named after the players in the replay.
+	* decks will be stored in the default deck folder and will be named after the players in the replay.
 	
 * Updated handling for live updates:
-	* repositories can now be connected, disconnected, enabled or disabled via json file, in the main folder.
+	* repositories can now be connected, disconnected, enabled or disabled via json file, `/config/configs.json`.
 	* different repositories now display their Update Logs separately.
+		* the update log now only shows the changes applied after the current instance of the game was initialized.
+			* use the "Show Full History" option to see old entries in the log.		
 
 * Added an option to rename a deck in Deck Edit, without the user needing to edit the file directly
 	* added a mechanism to prevent the usage of characters not allowed in file names.
@@ -209,6 +211,7 @@ Controlled by `config/configs.json`
 	* enable fullscreen.
 	* fit the background.
 	* accurate resize for backgrounds.
+	* scale.
 
 * Added shortcut for in game fullscreen toggle [F11]
 
