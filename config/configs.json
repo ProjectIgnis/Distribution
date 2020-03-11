@@ -10,6 +10,14 @@
 			"script_path": "script",
 			"should_update": true,
 			"should_read": true
+		},
+		{
+			"url": "https://github.com/ProjectIgnis/LFLists",
+			"repo_name": "Forbidden & Limited Card Lists",
+			"repo_path": "./repositories/lflists",
+			"lflist_path": ".",
+			"should_update": true,
+			"should_read": true
 		}
 	],
 	"urls": [
