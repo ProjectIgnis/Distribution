@@ -3,8 +3,8 @@ All assets for the game, except card images.
 
 ## Configuration
 `config/system.conf` handles most of the configurations available in the game.
-Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enabled'.
 Only options not directly configurable in-game are listed here.
+Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enabled'.
 
 
 | Name | Description and usage | Usage |
@@ -12,19 +12,14 @@ Only options not directly configurable in-game are listed here.
 |use_d3d |  directx's usage | boolean|
 |use_vsync  | vsync's usage for more accurate fps capping according to the refresh rate of the monitor. If set, the max_fps option will be ignored | boolean
 |max_fps | limits the framerate  | integer, 0=unlimited, 60=default|
+|show_console | ---  | boolean|
 |antialias | makes sharp/pixelated edges softer, but requires more performance  (more details in Customization) | integer|
-|errorlog | how script errors are displayed | integer, 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
+|errorlog | how script errors are displayed | 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
 |textfont | path for the font used for texts and its size | example: *fonts/simhei.ttf 14*|
 |numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
-|dpi_scale | the scale currently applied | a rational value|
+|dpi_scale | the scale currently applied | a rational value, default: 1.0000 (100%) |
 
 ## Shortcuts available in the client
-
-Abbreviation | Corresponding Key
------------- | -------------
-LMB | Left Mouse Button
-RMB | Right Mouse Button
-MMB | Middle Mouse Button
 
 ### General:
 * ESC: Minimizes the window if not typing
@@ -39,15 +34,15 @@ MMB | Middle Mouse Button
 * CTRL+4: Switch to settings tab
 * CTRL+5: Switch to repositories tab
 ### Deck Edit:
-* RMB: Adds/removes a card from the deck
-* MMB: Adds another copy of a card to the deck or side deck
-* Shift+RMB or Hold LMB then click RMB: Adds a card to the side deck
+* Right Mouse Button: Adds/removes a card from the deck
+* Middle Mouse Button: Adds another copy of a card to the deck or side deck
+* Shift+Right Mouse Button or Hold Left Mouse Button then click Right Mouse Button: Adds a card to the side deck
 ### Duel:
-* Hold A or Hold LMB: Lets the system stop at every timing.
-* Hold S or Hold RMB: Lets the system skip every timing.
+* Hold A or Hold Left Mouse Button: Lets the system stop at every timing.
+* Hold S or Hold Right Mouse Button: Lets the system skip every timing.
 * Hold D: Lets the system stop at available timing.
-* F1-F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials.
-* F5-F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials.
+* F1 to F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials.
+* F5 to F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials.
 ### macOS:
 Note that system hotkeys may intercept some of the above keyboard shortcuts.
 These app shortcuts are also available in the app and dock menus:
@@ -73,7 +68,7 @@ You can also combine those functions. Example: `@blue-eyes+$eyes of blue` return
 
 ## Customization
 
-**antialias:** set in the `sytem.conf` file, specifies if the device should use fullscreen anti aliasing.
+**antialias:** set in the `system.conf` file, specifies if the device should use fullscreen anti aliasing.
 Makes sharp/pixelated edges softer, but requires more performance.
 Also, 2D elements might look blurred with this switched on. Rendering results depend on the hardware available, and the program might look different on different hardware with this
 The value is the maximal antialiasing factor requested for the device. The creation method will automatically try smaller values if no window can be created with the given value.
@@ -86,28 +81,38 @@ See README in `textures`.
 
 ### Skins:
 Editable by addings subfolders to **skin**. For each folder, provide a unique `skin.xml` file, with the changes you want.
-The skin can be changed in the settings. For instructions on the supported fields and their effects, see README in `skin`. 
+You can switch skins in the settings (CTRL+O). For instructions on the supported fields and what they change, see README in `skin`. 
 
 ### Audio:
 See README in `sound`.
 
 ## Updates
-Controlled by `config/configs.json`
+`config/configs.json` handles the servers the client is connected to, which include repositories for updates, servers for duels and pictures.
 
 ### Parameters:
 
 #### repos (array)
 * url: required, the complete url of the repository to check for updates.
 * repo_path: optional, the subdirectory in the client's directory where the contents will be saved. If not provided, the folder will be created in the expansions folder and will have the repository's name.
+* has_core: optional.
+* core_path: optional, used if has_core is true.
 * data_path: optional, the folder where the databases and the strings will be loaded from in the repository. If not provided, it will load from the main folder of the repository.
 * script_path: optional, the folder where the scripts will be loaded from in the repository. If not provided, it will load from the script folder of the repository.
 * pics_path: optional, the folder where the pics will be loaded from in the repository. If not provided, it will load from the pics folder of the repository.
+* liflist_path: optional, the path for lflists, if the repository contains any.
 * should_update: true/false, optional, if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
 * should_read: true/false, if set to false the game will ignore that repository. If not provided, it will be set to true.
 
 #### pics (urls)
 * url: the complete url of the repository to check for updates. The url should have a `{}` on it, that will be replaced by the client with the card's id.
 * type: pic/field, if it's either a repository for card pictures or if it is for field spell's art.
+
+#### servers (IPs)
+* name
+* adress
+* duelport
+* roomaddress
+* rommlistport
 
 
 ## Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
@@ -134,6 +139,7 @@ Controlled by `config/configs.json`
 
 * Localhost AI added with up to four bots per duel in the first four player slots.
 	* Uses custom WindBot Ignite.
+	* 27 AI decks.
 	* Bots incompatible with the Master Rule used in the room are not displayed.
 	* Decks used by Windbot do not necessarily match the current banlist: they follow the OCG banlist available when they were implemented.
 		* To avoid warning regarding banned cards, the "Don't Check the Deck" option is suggested.
@@ -166,6 +172,9 @@ Controlled by `config/configs.json`
 		* Yosenju
 		* ZEXAL Weapon
 		* Zoodiac
+	* Known bugs:
+		* The AI is not smart, misplaying a lot, which include but is not limited to negating its own monsters, targetting the same cards with removal effects, attacking monsters with higher ATK, etc.
+		* Some actions that require selection, like Advanced Ritual Art, might cause the AI to hang on forever.
 
 * Added a basic hand test mode accessible in deck edit, in the `Test Hand` button, to play out a combo via a puzzle.
 	* Includes a "Restart" option.
@@ -174,20 +183,20 @@ Controlled by `config/configs.json`
 * Added Discord Integration via Rich Presence
 	* Features:
 		* Your status will be set to "Playing Ygopro", with the elapsed time included.
-		Actions that will have description:
+		* Actions that will be displayed in our Discord status:
 			* Dueling
 			* In menu
 			* Playing a Puzzle
 			* Watching a Replay
 			* Editing a deck
 		* You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
-		* Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application
+		* Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application.
 
 * Replaced old replay recording system:
 	* current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	* kept compatibility with the old replay system.
 		* old replay mode plays the replay while running the scripts. Use this if you are debugging a card.
-	* replays are still subjected to changes in the database entry for a card.
+	* replays are still subjected to changes in the database entry for a card: if you the ID/passcode of a card in the played replay was changed, the replay will still be played without errors, but no description and details for that card will be displayed. If you don't have a picture with that old ID/passcode, it will not be displayed.
 
 * Added the option to export the decks used in a replay.
 	* decks will be stored in the default deck folder and will be named after the players in the replay.
@@ -203,15 +212,23 @@ Controlled by `config/configs.json`
 
 * Added a "Quick Animation" option
 
+* Added option to set maximum FPS in the configuration file.
+
+* Added back automatic download of arts for Field Spell cards.
+
 * Added the following new settings:
 	* independent volume controls for music and sound effects.
 	* hide/show archetype names.
 	* hide passcodes and scopes. Passcodes are the unique number each card has. Scopes are the region where the card is available and/or its origin.
-	* hide FPS.
+	* Draw Field Spell arts on the field.
+	* show FPS.
 	* enable fullscreen.
 	* fit the background.
 	* accurate resize for backgrounds.
-	* scale.
+	* scale
+		* the "Apply and restart" button only applies the change and closes the game at the moment. You will have to start it again.
+	* skin selection, via dropdown menu.
+		* reload skin, that applies the changes to the current skin file without a restart. 
 
 * Added shortcut for in game fullscreen toggle [F11]
 
@@ -227,10 +244,6 @@ Controlled by `config/configs.json`
 	* skins can now be applied with the game running, without restarting.
 	* skins will also support a `textures` folder to make those itens more customizable.
 	* more details available in the README in your `skin` folder. 
-
-* Added option to set maximum FPS in the configuration file.
-
-* Added back automatic download of arts for Field Spell cards.
 
 * Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
 
@@ -285,7 +298,6 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen, but no user should be starting the game this way anyway.
 	* Known bug: Cmd+Right in an edit box results in game crash
 
-
 * Scripts now load from one subdirectory level in the script folder only.
 
 * Prereleases are supported. Use the 0x100 OT bit.
@@ -296,7 +308,6 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		* Setting the Allowed Card list to TCG/OCG allows only cards that are released both in TCG and OCG but not pre-releases.
 		* Setting the Allowed Card list to Pre-release allows only cards that are released both in TCG and OCG.
 		* Setting the Allowed Card list to Anything goes allows any cards that are released in either TCG or OCG.
-	
 	* All card scopes are now listed in card search with the exception of "OCG/TCG", using sysstrings
 
 * Updated many strings called with dialogue boxes and activation prompts used by the client.
@@ -309,6 +320,8 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		french: Hel
 		italian: edo9300
 		portuguese: Naim
+		spanish: Dyxel and Icematoro
+		thai: Tungnon
 
 * Added support for TCG Speed Duel Skills
 	* To use a Skill during a duel, add it to the deck first.
@@ -323,8 +336,8 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 * Added support for Link Spells ("Judgment Arrows")
 
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
-	* requires editing the deck file, might be tied with the server's 
-	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck.
+	* requires editing the deck file, might be tied with the server.
+	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck if the deck file contains more than that.
 
 	
 ### Core, Scripts and functions and other
