@@ -99,7 +99,7 @@ See README in `sound`.
 * data_path: optional, the folder where the databases and the strings will be loaded from in the repository. If not provided, it will load from the main folder of the repository.
 * script_path: optional, the folder where the scripts will be loaded from in the repository. If not provided, it will load from the script folder of the repository.
 * pics_path: optional, the folder where the pics will be loaded from in the repository. If not provided, it will load from the pics folder of the repository.
-* liflist_path: optional, the path for lflists, if the repository contains any.
+* lflist_path: optional, the path for lflists, if the repository contains any.
 * should_update: true/false, optional, if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
 * should_read: true/false, if set to false the game will ignore that repository. If not provided, it will be set to true.
 
@@ -196,7 +196,7 @@ See README in `sound`.
 	* current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	* kept compatibility with the old replay system.
 		* old replay mode plays the replay while running the scripts. Use this if you are debugging a card.
-	* replays are still subjected to changes in the database entry for a card: if you the ID/passcode of a card in the played replay was changed, the replay will still be played without errors, but no description and details for that card will be displayed. If you don't have a picture with that old ID/passcode, it will not be displayed.
+	* replays are still subjected to changes in the database entry for a card: if the ID/passcode of a card in the played replay was changed, the replay will still be played without errors, but no description and details for that card will be displayed. If you don't have a picture with that old ID/passcode, it will not be displayed.
 
 * Added the option to export the decks used in a replay.
 	* decks will be stored in the default deck folder and will be named after the players in the replay.
@@ -282,7 +282,8 @@ See README in `sound`.
 
 * Fixed the dimensions of `field.png`, the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
 
-* Added wildchar support.
+* Added wildchar and other auxiliary characters support.
+	* *: replaces any words in any quantity. Example: `eyes*dragon` will return all cards that have in their name text blue-eyes white dragon, red-eyes balck dragon, galaxy-eyes photon dragon, etc.
 	* @string: returns all cards that have `string` in their name only, ignoring the card text. Example: `@Hero`
 	* $string: returns all cards that belong to the `string` archetype. Example: `$Heroic`
 	* string1+string2: returns all cards that have `string1` or `string2` in their name/text. Example: `Trickstar+Bounzer`
