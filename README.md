@@ -80,8 +80,8 @@ Change up your **textures**, **sounds** and/or **skin** folder!
 See README in `textures`.
 
 ### Skins:
-Editable by addings subfolders to **skin**. For each folder, provide a unique `skin.xml` file, with the changes you want.
-You can switch skins in the settings (CTRL+O). For instructions on the supported fields and what they change, see README in `skin`. 
+Editable by adding subfolders to **skin**. For each folder, provide a unique `skin.xml` file, with the changes you want.
+You can switch skins in the settings (CTRL+O). For instructions on the supported fields and what they change, see README in `skin`.
 
 ### Audio:
 See README in `sound`.
@@ -144,7 +144,7 @@ See README in `sound`.
 	* Decks used by Windbot do not necessarily match the current banlist: they follow the OCG banlist available when they were implemented.
 		* To avoid warning regarding banned cards, the "Don't Check the Deck" option is suggested.
 	* To duel the bot: LAN + AI ->  Host -> OK -> Local AI -> Add AI Player
-	* List of decks Windbot has acess to:
+	* List of decks Windbot has access to:
 		* Altergeist
 		* Blue-Eyes
 		* Blue-Eyes Ritual
@@ -200,12 +200,12 @@ See README in `sound`.
 
 * Added the option to export the decks used in a replay.
 	* decks will be stored in the default deck folder and will be named after the players in the replay.
-	
+
 * Updated handling for live updates:
 	* repositories can now be connected, disconnected, enabled or disabled via json file, `/config/configs.json`.
 	* different repositories now display their Update Logs separately.
 		* the update log now only shows the changes applied after the current instance of the game was initialized.
-			* use the "Show Full History" option to see old entries in the log.		
+			* use the "Show Full History" option to see old entries in the log.
 
 * Added an option to rename a deck in Deck Edit, without the user needing to edit the file directly
 	* added a mechanism to prevent the usage of characters not allowed in file names.
@@ -228,7 +228,7 @@ See README in `sound`.
 	* scale
 		* the "Apply and restart" button only applies the change and closes the game at the moment. You will have to start it again.
 	* skin selection, via dropdown menu.
-		* reload skin, that applies the changes to the current skin file without a restart. 
+		* reload skin, that applies the changes to the current skin file without a restart.
 
 * Added shortcut for in game fullscreen toggle [F11]
 
@@ -242,7 +242,7 @@ See README in `sound`.
 * Updated skins handling.
 	* 10 sample skins and a template are provided.
 	* skins can now be applied with the game running, without restarting.
-	* skins will also support a `textures` folder to make those itens more customizable.
+	* skins will also support a `textures` folder to make those items more customizable.
 	* more details available in the README in your `skin` folder. 
 
 * Changed "Show anime cards" option to "Show unofficial cards", as other types of cards are present.
@@ -263,18 +263,18 @@ See README in `sound`.
 
 * Added a "Puzzle Creator" puzzle.
 	* Use this to generate a puzzle by declaring a card and a location to place it. When finished, the resulting puzzle is exported.
-	
+
 * "Puzzle Mode" menu now reads subdirectories in the `puzzle` folder.
-	
+
 * "Watch Replay" menu now reads subdirectories in the `replay` folder.
-	
+
 * Forbidden/Limited lists  now are kept in the `/lflists` directory:
 	* multiple files are supported, each containing any number of lists.
 	* Forbidden/Limited lists now will be read from a `lflists` folder inside of any repository connected.
 
 * Forbidden/Limited lists now can be done by whitelisting:
 	* adding `$whitelist` to a list will automatically ban all the entries not set in that list
-	
+
 * Aliasing is now disabled in deck edit.
 
 * Added support for **GOAT Format**:
@@ -283,12 +283,12 @@ See README in `sound`.
 * Fixed the dimensions of `field.png`, the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
 
 * Added wildchar and other auxiliary characters support.
-	* *: replaces any words in any quantity. Example: `eyes*dragon` will return all cards that have in their name text blue-eyes white dragon, red-eyes balck dragon, galaxy-eyes photon dragon, etc.
+	* *: replaces any words in any quantity. Example: `Eyes*Dragon` will return cards that have in their name or text Blue-Eyes White Dragon, Red-Eyes Black Dragon, Galaxy-Eyes Photon Dragon, etc.
 	* @string: returns all cards that have `string` in their name only, ignoring the card text. Example: `@Hero`
 	* $string: returns all cards that belong to the `string` archetype. Example: `$Heroic`
 	* string1+string2: returns all cards that have `string1` or `string2` in their name/text. Example: `Trickstar+Bounzer`
 You can also combine those functions.
-Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the "Blue-Eyes" archetype or the "Buster Blader" archetype
+Example: `$blue-eyes+$buster blader` returns all cards that belong to either the "Blue-Eyes" archetype or the "Buster Blader" archetype
 
 * Added asynchronous loading system for card images.
 
@@ -302,7 +302,7 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 * Scripts now load from one subdirectory level in the script folder only.
 
 * Prereleases are supported. Use the 0x100 OT bit.
-	* Prereleases appear by default in deck edit and can be filtered specifically for
+	* Prereleases appear by default in deck edit and can be specifically filtered for
 	* Prereleases can be permitted in duels in addition to "OCG/TCG" mode.
 		* Setting the Allowed Card list to TCG allows only cards that are released in TCG.
 		* Setting the Allowed Card list to OCG allows only cards that are released in OCG.
@@ -330,23 +330,23 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 		* For Skills that require a specific activation timing you will get a prompt, for others you use the resolution circle above the area where the Skill is displayed.
 	* At the moment, Skills are not limited to Speed Duels.
 	* Only TCG Skills are available. Duel Link Skills and Skills from Yu-Gi-Oh! VRAINS are not planned at the moment.
-	* Important: 
+	* Important:
 		* Do not use Skills in a Tag Duel. Skills in this duel mode are not supported due to core limitations.
 		* Do not add more than 1 Skill in the Main Deck, as there is no handling for it.
-		
+
 * Added support for Link Spells ("Judgment Arrows")
 
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
 	* requires editing the deck file, might be tied with the server.
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck if the deck file contains more than that.
 
-	
+
 ### Core, Scripts and functions and other
 
 #### OCGCORE: updated from 1.034 standard to edo9300's 6.0
 
 * Updated mandatory trigger effects handling.
-	
+
 * Added support for **Flash Charge Dragon**:
 	* updated old scripts of cards with effects that Summon or put themselves on the opponent's field.
 
@@ -365,9 +365,9 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 * Added suport to load other files from within a script (Duel.LoadScript)
 
 * Updated status of the following bugs:
-	* fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wans't changing result of dice to outside dice allowed values.
+	* fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wasn't changing result of dice to outside dice allowed values.
 	* changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
-	* fixed interaction of "Chaos Hunter" and "Macro Cosmos". (remind to check all the script to remove unecessary things).
+	* fixed interaction of "Chaos Hunter" and "Macro Cosmos".
 	* fixed "Formud Skipper" and "Zombie World" interactions.
 	* fixed "Absolute Machine Angel Ritual" vs "Necrovalley" interaction.
 	* fixed "Super Polymerization" vs "Chain Material" interaction.
@@ -377,14 +377,14 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* fixed the bugs with incorrect interactions of "Fantastic Striborg" with "Degenerate Circuit" and "Macro Cosmos"
 	* due to updates in segoc rules, the bug where two "Mythical Instutuion" could activate the effect in the same chain was fixed.
 	* due to the changes on how mandatory trigger effects were handled, the bug with using the effect of "Heavymetalfoes Electrumite" while the player controlled 2 and 1 of those was negated was fixed.
-	* fixed the incorrect damage evaluation for "Trickstar Lycoris" and "Trickstar Lightstage" vs "Preparation of rites" and similar cards.
+	* fixed the incorrect damage evaluation for "Trickstar Lycoris" and "Trickstar Light Stage" vs "Preparation of rites" and similar cards.
 	* fixed a bug related with being unable to get some properties with triggering location:
 		* main interaction is "Doomking Balerdroch" vs an "Orcust" monster activating its effect in the GY while "Zombie World" was in play.
-	* fixed a bug with "Partian Shot" and its interaction with "Timelord" or "Gladiator Beast" monsters.
-	* fixed an incorrect evalution for the ATK of monster equipped with "Megamorph" and "Sword of Toxic Solitude" to match rulings.
-	* fixed an incorrect evalution for the ATK of "The Wicked Avatar" copied by "Fake Hero" and/or "Phantom of Chaos".
+	* fixed a bug with "Parthian Shot" and its interaction with "Timelord" or "Gladiator Beast" monsters.
+	* fixed an incorrect evaluation for the ATK of monster equipped with "Megamorph" and "Sword of Toxic Solitude" to match rulings.
+	* fixed an incorrect evaluation for the ATK of "The Wicked Avatar" copied by "Fake Hero" and/or "Phantom of Chaos".
 	* fixed "Witchcrafter Genie" being able to target a Continuous Spell to apply the effects, even if the card did not have an applicable effect.
-	* fixed a bug where "Evenly Matched" would be negated by "Necrovalley" if any of the cards to be banished left the field before the resolution. Same with "Topolofic Trishbaena"
+	* fixed a bug where "Evenly Matched" would be negated by "Necrovalley" if any of the cards to be banished left the field before the resolution. Same with "Topologic Trisbaena"
 	* fixed the interaction of "Gilford the Legend" with "Necrovalley".
 	* updated cards that should be detected by "Dark Sacrifice".
 	* fixed the bug with "Dark Sanctuary" being unable to special summon the Spirit Message card if it was activated in a higher chain link, e.g. Metaverse.
@@ -395,8 +395,8 @@ Example: `$blue-eyes+$buster blader` returns all cards that belong to eiher the 
 	* fixed bugs with "Cynet Codec" and "Union Hangar" where they would not allow the user to target different monsters if they were summoned in the same chain, but in different chain links.
 	* fixed the bugs of cards that negate the activation of a monster effect, then apply something else, if the monster left the field. Examples: Sollemn Strike, Debunk, Invoked Mechaba.
 	* fixed the bug of "Abyss Playhouse - Fantastic Theater" negating the incorrect Chain Link if multiple monster effects were activated in the chain.
-	* fixed the bug with "Gogogo Dexia & Aristeria" not triggering if "Utopic Unomatopoeia" was used as one of the materials.	
+	* fixed the bug with "Gogogo Aristeria & Dexia" not triggering if "Utopic Unomatopoeia" was used as one of the materials.	
 	* fixed the bug with "Droll & Lock Bird" triggering in the incorrect timing in the presence of "Mystic Mine".	
 	* fixed the bug with "There Can Be Only One" vs a returning monster that would interact with its effect.	
-	* fixed the bug with "Daigusto Spherez" and the damage inflicted if "Fragile Double-Edge Sword" was equipped.	
-	* fixed the incorrect ATK evaluation fo "Gren Maju Dai Eza" vs "Black Rose Dragon".
+	* fixed the bug with "Daigusto Sphereez" and the damage inflicted if "Fragile Double-Edge Sword" was equipped.	
+	* fixed the incorrect ATK evaluation fo "Gren Maju Da Eiza" vs "Black Rose Dragon".
