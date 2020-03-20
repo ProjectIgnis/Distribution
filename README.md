@@ -60,11 +60,15 @@ These app shortcuts are also available in the app and dock menus:
 * `$string`
 	returns all cards that have `string` in their name only, which ignores the card text.
 	Example: `$Heroic`
-* `string1+string2`
+* `string1||string2`
 	returns all cards that have `string1` OR `string2` in their name/text.
-	Example: `Trickstar+Bounzer`
-	
-You can also combine those functions. Example: `@blue-eyes+$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
+	Example: `Trickstar||Bounzer`
+* `!!string`:
+	negative lookup (NOT)
+* `string1*string2`
+	replaces any character in any amount. Example: `Eyes*Dragon` will return cards Blue-Eyes White Dragon, Red-Eyes B. Dragon, Galaxy-Eyes Photon Dragon, etc.
+
+These can be combined functions. Example: `@blue-eyes||$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
 
 ## Customization
 
@@ -281,14 +285,6 @@ See README in `sound`.
 	* added 2005.4 Forbidden/Limited List, credits to EerieCode, Tungnon and Naim for preparing the file.
 
 * Fixed the dimensions of `field.png`, the picture used for MR1 and MR2 duels. Credits to GK#3620, on Discord.
-
-* Added wildchar and other auxiliary characters support.
-	* *: replaces any words in any quantity. Example: `Eyes*Dragon` will return cards that have in their name or text Blue-Eyes White Dragon, Red-Eyes Black Dragon, Galaxy-Eyes Photon Dragon, etc.
-	* @string: returns all cards that have `string` in their name only, ignoring the card text. Example: `@Hero`
-	* $string: returns all cards that belong to the `string` archetype. Example: `$Heroic`
-	* string1+string2: returns all cards that have `string1` or `string2` in their name/text. Example: `Trickstar+Bounzer`
-You can also combine those functions.
-Example: `$blue-eyes+$buster blader` returns all cards that belong to either the "Blue-Eyes" archetype or the "Buster Blader" archetype
 
 * Added asynchronous loading system for card images.
 
