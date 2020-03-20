@@ -50,7 +50,7 @@ These fields change the colors in the multiple areas in the game.
 * EGDC_FOCUSED_EDITABLE : Show focus of window background for editable field (editbox or when checkbox-field is pressed). Changes the color for the search boxes when they are enabled [when you click on them]
 * CheckBoxColor : Changes the color used for the check markers in the checkboxes, like the "Show unofficial card"
 * Caption : takes tbardistancex and tbardistancey : Changes the coordinates used for the text in the Version name, Update Log, etc
-* WindowButton : take a width: Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc
+* WindowButton : takes a width: Changes the width in the'arrows' used in the deck selection dropdown menu, category dropdown menu, etc
 
 
 ## Custom
@@ -62,7 +62,7 @@ These fields change the colors in the multiple areas in the game.
 * CARDINFO_PASSCODE_SCOPE_TEXT_COLOR : Changes the color used for the text with the the passcode and scope of a card in the "Card Info" area
 * FPS_TEXT_COLOR : Changes the color used for the FPS displayed ingame
 
-The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example: Monsters 32, Spells 5, Traps 3.
+The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel wher one read `Monsters 32, Spells 5, Traps 3`.
 
 * DECK_WINDOW_EXTRA_BOTTOM_LEFT
 * DECK_WINDOW_EXTRA_BOTTOM_RIGHT
@@ -100,15 +100,15 @@ The following 32 fields change the color used for the areas in Deck Edit, specif
 
 * DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR
 * DUELFIELD_ANNOUNCE_TEXT_COLOR : Changes the color used in the box after a card is announced. Example: Psi-Blocker
-* DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND : Changes the color for area around the caption text when you are selection cards from a group. Example: when you are selecting what monsters to banish by Block Dragon
-* DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND : Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck
+* DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND : Changes the color for area around the caption text when you are selecting cards from a group. Example: when you are selecting what monsters to banish by Block Dragon.
+* DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND : Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck.
 * DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT
-* DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT : Changes the color for the caption text when you have to select cards from a location. Example: the "Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming
+* DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT : Changes the color for the caption text when you have to select cards from a location. Example: the Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming
 * DUELFIELD_CARD_SELF_WINDOW_BACKGROUND
-* DUELFIELD_HIGHLIGHTING_CARD_OUTLINE : Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming
-* DUELFIELD_HOVERED : Changes the color for the zones you are hovering on the field
-* DUELFIELD_LINKED : Changes the color for the zones where a link monster points to
-* DUELFIELD_MUTUAL_LINKED : Changes the color for the zones where mosters co-linked with the monster that you hover the mouse over are
+* DUELFIELD_HIGHLIGHTING_CARD_OUTLINE : Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming.
+* DUELFIELD_HOVERED : Changes the color for the zone highlighted when you are hovering on the field.
+* DUELFIELD_LINKED : Changes the color for the zones where a link monster points to.
+* DUELFIELD_MUTUAL_LINKED : Changes the color for the zones where monsters co-linked with the monster that you hover the mouse over are.
 * DUELFIELD_SELECTABLE_CARD_OUTLINE : Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it
 * DUELFIELD_SELECTABLE_FIELD_OUTLINE : Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon
 * DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
