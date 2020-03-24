@@ -1,6 +1,16 @@
 # EDOPro by Project Ignis
 All assets for the game, except card images.
 
+## System requirements
+
+Supported platforms:
+- Windows 7 or later, 32-bit or 64-bit
+- macOS 10.11 or later
+- 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros)
+
+DirectX 9 or OpenGL 4+ supporting graphics driver required.
+1 GB free disk space recommended for asset updates and images.
+
 ## Configuration
 `config/system.conf` handles most of the configurations available in the game.
 Only options not directly configurable in-game are listed here.
