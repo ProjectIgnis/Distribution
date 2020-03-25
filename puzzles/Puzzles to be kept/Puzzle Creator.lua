@@ -6,7 +6,6 @@ Debug.SetPlayerInfo(1,8000,0,0)
 Debug.ReloadFieldEnd()
 --[[message
 	Known Issues:
-	-Incompatible with Ygopro Percy: the path for puzzles is different
 	-You cannot add cards to your OPPONENT's Extra Monster Zone: prefer to add them to another zone, then edit the puzzle and change their sequences.
 ]]
 
