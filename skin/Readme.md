@@ -7,6 +7,9 @@ At the end of this file you have a template.
 
 
 # Groups availables:
+	* Properties
+	* Global
+	* Custom
 
 ## Properties
 Elements here are all optional
@@ -62,7 +65,7 @@ These fields change the colors in the multiple areas in the game.
 * CARDINFO_PASSCODE_SCOPE_TEXT_COLOR : Changes the color used for the text with the the passcode and scope of a card in the "Card Info" area
 * FPS_TEXT_COLOR : Changes the color used for the FPS displayed ingame
 
-The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel wher one read `Monsters 32, Spells 5, Traps 3`.
+### The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel where you see `Monsters 32, Spells 5, Traps 3`.
 
 * DECK_WINDOW_EXTRA_BOTTOM_LEFT
 * DECK_WINDOW_EXTRA_BOTTOM_RIGHT
@@ -114,7 +117,7 @@ The following 32 fields change the color used for the areas in Deck Edit, specif
 * DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
 * DUELFIELD_TOOLTIP_TEXT_COLOR
 
-The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
+### The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
 
 * LPBAR_1_BOTTOM_LEFT
 * LPBAR_1_BOTTOM_RIGHT
@@ -232,11 +235,11 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 ```xml
 <Skin>
 	<Properties>
-		<Name data="egopro's skin" />
-		<Author data="authos" />
+		<Name data="Edopro's skin" />
+		<Author data="author" />
 		<Version data="0.1" />
 		<Date data="dd-mm-yyyy"/>
-		<Desc data="some destricptionA skin that uses white, black and grey elements"/>
+		<Desc data="some description: A skin that uses white, black and grey elements"/>
 		<Fallback skin="" />
 		<Font texture="fontTahoma.png" />
 	</Properties>
