@@ -20,14 +20,9 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 | Name | Description and usage | Usage |
 |------------ | -------------| --------|
 |use_d3d |  directx's usage | boolean|
-|use_vsync  | vsync's usage for more accurate fps capping according to the refresh rate of the monitor. If set, the max_fps option will be ignored | boolean
-|max_fps | limits the framerate  | integer, 0=unlimited, 60=default|
-|show_console | ---  | boolean|
 |antialias | makes sharp/pixelated edges softer, but requires more performance  (more details in Customization) | integer|
-|errorlog | how script errors are displayed | 0=disabled, 1=in game message, 2=writes to error.log file, 3=both in game messages and error.log
 |textfont | path for the font used for texts and its size | example: *fonts/simhei.ttf 14*|
 |numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
-|dpi_scale | the scale currently applied | a rational value, default: 1.0000 (100%) |
 
 ## Shortcuts available in the client
 
