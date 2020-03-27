@@ -206,6 +206,7 @@ See README in `sound`.
 	* kept compatibility with the old replay system.
 		* old replay mode plays the replay while running the scripts. Use this if you are debugging a card.
 	* replays are still subjected to changes in the database entry for a card: if the ID/passcode of a card in the played replay was changed, the replay will still be played without errors, but no description and details for that card will be displayed. If you don't have a picture with that old ID/passcode, it will not be displayed.
+	* replays now show the number of turns in the duel.
 
 * Added the option to export the decks used in a replay.
 	* decks will be stored in the default deck folder and will be named after the players in the replay.
@@ -340,6 +341,15 @@ See README in `sound`.
 * Added support for an arbitrary number of cards in a deck (main, side, extra.)
 	* requires editing the deck file, might be tied with the server.
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck if the deck file contains more than that.
+
+* Text can now be copied (on windows, CTRL+C) from the chat/duel log.
+
+* Files can now be dragged and dropped in the client:
+	* drop an YDK file in the deck area in Deck edit and it will load that deck
+	* drop a card ID/passcode in the deck are in Deck edit and it will add that card to the deck
+		* the same works for card names
+	* drop a YRPx file in the replay area in Watch replay and it will load that replay.
+
 
 
 ### Core, Scripts and functions and other
