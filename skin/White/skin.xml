@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Skin>
 	<Properties>
-		<Name data="Edopro Blue Skin" />
+		<Name data="Edopro white Skin" />
 		<Author data="Naim" />
-		<Version data="0." />
+		<Version data="0.1" />
 		<Date data="28-Jan-2020"/>
-		<Desc data="A skin with blue elements"/>
+		<Desc data="A skin with white elements"/>
 	</Properties>
 	<Global guialpha="255">
 		<EGDC_3D_DARK_SHADOW a="255" r="140" g="140" b="140" />
@@ -36,7 +36,7 @@
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="0" g="0" b="255" />
 		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="0" g="0" b="255" />
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="200" g="200" b="255" />
-		<DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR a="255" r="30" g="30" b="30" />
+		<DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR a="255" r="204" g="204" b="204" />
 		<DUELFIELD_ANNOUNCE_TEXT_COLOR a="255" r="30" g="30" b="30" />
 		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
 		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="30" g="30" b="30" />
@@ -50,8 +50,8 @@
 		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="230" g="230" b="230"/>
 		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="255" g="0" b="0" />
 		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="20" g="20" b="20" />
-		<PROGRESSBAR_FILL_COLOR  a="255" r="30" g="30" b="255" />
-		<PROGRESSBAR_EMPTY_COLOR  a="255" r="230" g="230" b="230" />
+		<PROGRESSBAR_FILL_COLOR a="255" r="30" g="30" b="255" />
+		<PROGRESSBAR_EMPTY_COLOR a="255" r="230" g="230" b="230" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
 		<LPBAR_1_TOP_LEFT a="210" r="255" g="255" b="255" />
 		<LPBAR_1_TOP_RIGHT a="210" r="255" g="255" b="255" />
