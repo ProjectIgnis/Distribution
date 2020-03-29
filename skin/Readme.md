@@ -1,7 +1,12 @@
+To create a skin:
+	* Create a folder inside the skin folder with your skin name
+	* Add to that folder a `skin.xml` file
+		* Optionally, also add a `textures` folder inside the `skin` folder. If any files are added to it, the skin will apply those to overridde the default ones in the game's main `textures` folder.
+
 A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter.
+Files from here are the default textures used in the game. If the current skin applied contains a `textures` folder, files there will override these.
 Groups and the fields available are not case sensitive.
-If used, Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels).
-If you are loading imagens (optional), SrcBorder and DstBorder are in this order: top, left, bottom, right.
+
 
 At the end of this file you have a template.
 
@@ -64,43 +69,6 @@ These fields change the colors in the multiple areas in the game.
 * CARDINFO_TYPES_COLOR : Changes the color used for the text with the types (Card Type, Attribute, monster type) in the "Card Info" area
 * CARDINFO_PASSCODE_SCOPE_TEXT_COLOR : Changes the color used for the text with the the passcode and scope of a card in the "Card Info" area
 * FPS_TEXT_COLOR : Changes the color used for the FPS displayed ingame
-
-### The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel where you see `Monsters 32, Spells 5, Traps 3`.
-
-* DECK_WINDOW_EXTRA_BOTTOM_LEFT
-* DECK_WINDOW_EXTRA_BOTTOM_RIGHT
-* DECK_WINDOW_EXTRA_INFO_BOTTOM_LEFT
-* DECK_WINDOW_EXTRA_INFO_BOTTOM_RIGHT
-* DECK_WINDOW_EXTRA_INFO_TOP_LEFT
-* DECK_WINDOW_EXTRA_INFO_TOP_RIGHT
-* DECK_WINDOW_EXTRA_TOP_LEFT
-* DECK_WINDOW_EXTRA_TOP_RIGHT
-* DECK_WINDOW_HOVERED_CARD_RESULT
-* DECK_WINDOW_MAIN_BOTTOM_LEFT
-* DECK_WINDOW_MAIN_BOTTOM_RIGHT
-* DECK_WINDOW_MAIN_INFO_BOTTOM_LEFT
-* DECK_WINDOW_MAIN_INFO_BOTTOM_RIGHT
-* DECK_WINDOW_MAIN_INFO_TOP_LEFT
-* DECK_WINDOW_MAIN_INFO_TOP_RIGHT
-* DECK_WINDOW_MAIN_TOP_LEFT
-* DECK_WINDOW_MAIN_TOP_RIGHT
-* DECK_WINDOW_SEARCH_RESULT_BOTTOM_LEFT
-* DECK_WINDOW_SEARCH_RESULT_BOTTOM_RIGHT
-* DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_LEFT
-* DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_RIGHT
-* DECK_WINDOW_SEARCH_RESULT_INFO_TOP_LEFT
-* DECK_WINDOW_SEARCH_RESULT_INFO_TOP_RIGHT
-* DECK_WINDOW_SEARCH_RESULT_TOP_LEFT
-* DECK_WINDOW_SEARCH_RESULT_TOP_RIGHT
-* DECK_WINDOW_SIDE_BOTTOM_LEFT
-* DECK_WINDOW_SIDE_BOTTOM_RIGHT
-* DECK_WINDOW_SIDE_INFO_BOTTOM_LEFT
-* DECK_WINDOW_SIDE_INFO_BOTTOM_RIGHT
-* DECK_WINDOW_SIDE_INFO_TOP_LEFT
-* DECK_WINDOW_SIDE_INFO_TOP_RIGHT
-* DECK_WINDOW_SIDE_TOP_LEFT
-* DECK_WINDOW_SIDE_TOP_RIGHT
-
 * DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR
 * DUELFIELD_ANNOUNCE_TEXT_COLOR : Changes the color used in the box after a card is announced. Example: Psi-Blocker
 * DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND : Changes the color for area around the caption text when you are selecting cards from a group. Example: when you are selecting what monsters to banish by Block Dragon.
@@ -116,28 +84,60 @@ These fields change the colors in the multiple areas in the game.
 * DUELFIELD_SELECTABLE_FIELD_OUTLINE : Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon
 * DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
 * DUELFIELD_TOOLTIP_TEXT_COLOR
-
-### The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
-
-* LPBAR_1_BOTTOM_LEFT
-* LPBAR_1_BOTTOM_RIGHT
-* LPBAR_1_TOP_LEFT
-* LPBAR_1_TOP_RIGHT
-* LPBAR_2_BOTTOM_LEFT
-* LPBAR_2_BOTTOM_RIGHT
-* LPBAR_2_TOP_LEFT
-* LPBAR_2_TOP_RIGHT
 * PROGRESSBAR_FILL_COLOR : Changes the color used for the elapsed progress bar in repositories. 
 * PROGRESSBAR_EMPTY_COLOR : Changes the color for remaining progress bar for repositories
 * ROOMLIST_CUSTOM_ROOM : Changes the color for a room that has any of its settings changed from the default ones. Example: different LP, different starting hand, etc
 * ROOMLIST_NORMAL_ROOM : Changes the color for a room that didn't have any of its settings changed from the default ones
 * ROOMLIST_STARTED_ROOM : Changes the color for a room, in the room list, that has already started its duel.
 * ROOMLIST_TEXTS_COLOR : Changes the color for the texts in the room list menu. Examples: the "Server", "Nickname", "show locked rooms" texts
-
+* The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel where you see `Monsters 32, Spells 5, Traps 3`.
+	* DECK_WINDOW_EXTRA_BOTTOM_LEFT
+	* DECK_WINDOW_EXTRA_BOTTOM_RIGHT
+	* DECK_WINDOW_EXTRA_INFO_BOTTOM_LEFT
+	* DECK_WINDOW_EXTRA_INFO_BOTTOM_RIGHT
+	* DECK_WINDOW_EXTRA_INFO_TOP_LEFT
+	* DECK_WINDOW_EXTRA_INFO_TOP_RIGHT
+	* DECK_WINDOW_EXTRA_TOP_LEFT
+	* DECK_WINDOW_EXTRA_TOP_RIGHT
+	* DECK_WINDOW_HOVERED_CARD_RESULT
+	* DECK_WINDOW_MAIN_BOTTOM_LEFT
+	* DECK_WINDOW_MAIN_BOTTOM_RIGHT
+	* DECK_WINDOW_MAIN_INFO_BOTTOM_LEFT
+	* DECK_WINDOW_MAIN_INFO_BOTTOM_RIGHT
+	* DECK_WINDOW_MAIN_INFO_TOP_LEFT
+	* DECK_WINDOW_MAIN_INFO_TOP_RIGHT
+	* DECK_WINDOW_MAIN_TOP_LEFT
+	* DECK_WINDOW_MAIN_TOP_RIGHT
+	* DECK_WINDOW_SEARCH_RESULT_BOTTOM_LEFT
+	* DECK_WINDOW_SEARCH_RESULT_BOTTOM_RIGHT
+	* DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_LEFT
+	* DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_RIGHT
+	* DECK_WINDOW_SEARCH_RESULT_INFO_TOP_LEFT
+	* DECK_WINDOW_SEARCH_RESULT_INFO_TOP_RIGHT
+	* DECK_WINDOW_SEARCH_RESULT_TOP_LEFT
+	* DECK_WINDOW_SEARCH_RESULT_TOP_RIGHT
+	* DECK_WINDOW_SIDE_BOTTOM_LEFT
+	* DECK_WINDOW_SIDE_BOTTOM_RIGHT
+	* DECK_WINDOW_SIDE_INFO_BOTTOM_LEFT
+	* DECK_WINDOW_SIDE_INFO_BOTTOM_RIGHT
+	* DECK_WINDOW_SIDE_INFO_TOP_LEFT
+	* DECK_WINDOW_SIDE_INFO_TOP_RIGHT
+	* DECK_WINDOW_SIDE_TOP_LEFT
+	* DECK_WINDOW_SIDE_TOP_RIGHT
+* The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
+	* LPBAR_1_BOTTOM_LEFT
+	* LPBAR_1_BOTTOM_RIGHT
+	* LPBAR_1_TOP_LEFT
+	* LPBAR_1_TOP_RIGHT
+	* LPBAR_2_BOTTOM_LEFT
+	* LPBAR_2_BOTTOM_RIGHT
+	* LPBAR_2_TOP_LEFT
+	* LPBAR_2_TOP_RIGHT
 
 # Optional elements
 
 If provided, these will load files from the same directory as the `skin.xml` file and will apply those to different areas.
+If used, Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels). SrcBorder and DstBorder are in this order: top, left, bottom, right.
 
 * Button: changes the appearance of the buttons used in the game.
 	* Color
