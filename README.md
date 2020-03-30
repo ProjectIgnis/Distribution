@@ -1,28 +1,16 @@
-# EDOPro by Project Ignis
-All assets for the game, except card images.
+# Project Ignis: EDOPro
+All assets for the game, except card images. See LICENSE and COPYING in each folder for proper credits, copyright, and rules for redistribution.
 
 ## System requirements
 
 Supported platforms:
 - Windows 7 or later, 32-bit or 64-bit
 - macOS 10.11 or later
-- 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros)
+- 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros like Arch)
+  - You may need to install FreeType from your package manager.
 
 DirectX 9 or OpenGL 4+ supporting graphics driver required.
 1 GB free disk space recommended for asset updates and images.
-
-## Configuration
-`config/system.conf` handles most of the configurations available in the game.
-Only options not directly configurable in-game are listed here.
-Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enabled'.
-
-
-| Name | Description and usage | Usage |
-|------------ | -------------| --------|
-|use_d3d |  directx's usage | boolean|
-|antialias | makes sharp/pixelated edges softer, but requires more performance  (more details in Customization) | integer|
-|textfont | path for the font used for texts and its size | example: *fonts/simhei.ttf 14*|
-|numfont | path for the font used for numbers | example: *fonts/arialbd.ttf*|
 
 ## Shortcuts available in the client
 
@@ -42,6 +30,7 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 * Right Mouse Button: Adds/removes a card from the deck
 * Middle Mouse Button: Adds another copy of a card to the deck or side deck
 * Shift+Right Mouse Button or Hold Left Mouse Button then click Right Mouse Button: Adds a card to the side deck
+* With the exception of Shift+Right Mouse Button, holding Shift will ignore ALL deck building rules
 ### Duel:
 * Hold A or Hold Left Mouse Button: Lets the system stop at every timing.
 * Hold S or Hold Right Mouse Button: Lets the system skip every timing.
@@ -73,19 +62,33 @@ These app shortcuts are also available in the app and dock menus:
 * `string1*string2`
 	replaces any character in any amount. Example: `Eyes*Dragon` will return cards Blue-Eyes White Dragon, Red-Eyes B. Dragon, Galaxy-Eyes Photon Dragon, etc.
 
-These can be combined functions. Example: `@blue-eyes||$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
+These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
+
+The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?` and using comparison modifiers <, <=, >=, >, and =. 
+
+## Discord Rich Presence
+Works with the desktop version of Discord. In your Discord settings, turn on Game Activity first.
+
+Your status on Discord will update to be playing a game, including elapsed time.
+Activities displayed in Rich Presence:
+* Dueling
+* In menu
+* Playing a puzzle
+* Watching a replay
+* Editing a deck
+
+## Game invites
+Host a room on a server (LAN does not work). In the appropriate channel or private message, the upload + icon should change to have an additional green play button.
+Clicking on it will send out a game invite to your room with your message of choice. If the room is locked, the password will be skipped for invitees.
+Users can accept the invite while EDOPro is closed if they've started it once before; the game will be launched automatically.
+
+## Test hand
+A rudimentary hand test mode is accessible from the deck editor, with quick restart. More features and configuration coming soon!
+The duel will never end normally in this game mode (e.g. running out of LP, decking out)
 
 ## Customization
 
-**antialias:** set in the `system.conf` file, specifies if the device should use fullscreen anti aliasing.
-Makes sharp/pixelated edges softer, but requires more performance.
-Also, 2D elements might look blurred with this switched on. Rendering results depend on the hardware available, and the program might look different on different hardware with this
-The value is the maximal antialiasing factor requested for the device. The creation method will automatically try smaller values if no window can be created with the given value.
-Default value: 0 - disabled.
-
-Change up your **textures**, **sounds** and/or **skin** folder!
-
-### Background and other visual elements:
+### Default textures:
 See README in `textures`.
 
 ### Skins:
@@ -93,12 +96,32 @@ Editable by adding subfolders to **skin**. For each folder, provide a unique `sk
 You can switch skins in the settings (CTRL+O). For instructions on the supported fields and what they change, see README in `skin`.
 
 ### Audio:
-See README in `sound`.
+See README in `sound`. There are many new features, including summon chants!
+Music and sound volume controls are also separated.
 
-## Updates
+### MSAA (antialiasing)
+Makes sharp/pixelated edges softer, but requires more performance.
+2D elements might look blurred at higher levels. Rendering results are hardware- and device-dependent.
+The program will automatically try smaller MSAA values if the driver does not support the specified MSAA level.
+
+## Advanced configuration
+
+### system.conf
+`config/system.conf` handles most of the configurations available in the game. It is overwritten when the game is closed normally.
+Only options not directly configurable in-game are listed here.
+Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enabled'.
+
+| Name     | Purpose | Example |
+| -------- | ------- | ------- |
+| use_d3d  | Windows-only. 1 = Direct3D 9; 0 = OpenGL 4.  | |
+| textfont | path to the font used for texts and its size | fonts/NotoSansJP-Regular.otf 14 |
+| numfont  | path to the font used for numbers            | fonts/NotoSansJP-Regular.otf |
+
+If a character cannot be found in the supplied font, it will not be displayed. The shipped font supports all characters that appear on Yu-Gi-Oh! cards in Latin alphabets and Japanese.
+Font chainloading coming soon!
+
+### configs.json
 `config/configs.json` handles the servers the client is connected to, which include repositories for updates, servers for duels and pictures.
-
-### Parameters:
 
 #### repos (array)
 * url: required, the complete url of the repository to check for updates.
@@ -112,17 +135,19 @@ See README in `sound`.
 * should_update: true/false, optional, if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
 * should_read: true/false, if set to false the game will ignore that repository. If not provided, it will be set to true.
 
-#### pics (urls)
-* url: the complete url of the repository to check for updates. The url should have a `{}` on it, that will be replaced by the client with the card's id.
-* type: pic/field, if it's either a repository for card pictures or if it is for field spell's art.
+#### urls (array)
+* url: A URL format string for direct card image download, or "default". Should contain `{}` to be replaced by the client with the card's passcode.
+* type: pic/field/cover
 
-#### servers (IPs)
-* name
-* adress
-* duelport
-* roomaddress
-* rommlistport
+#### servers (array)
+* name: Display name
+* address: URL (domain or IP works) for connecting to rooms nad hosting
+* duelport: port for the above
+* roomaddress: URL for retrieving the room list via the REST API
+* roomlistport: port for the above
 
+#### posixPathExtension
+Used on macOS and Linux as additional search paths for Mono, required to run WindBot Ignite. Generally you should not need to change this.
 
 ## Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
 
@@ -185,22 +210,6 @@ See README in `sound`.
 		* The AI is not smart, misplaying a lot, which include but is not limited to negating its own monsters, targetting the same cards with removal effects, attacking monsters with higher ATK, etc.
 		* Some actions that require selection, like Advanced Ritual Art, might cause the AI to hang on forever.
 
-* Added a basic hand test mode accessible in deck edit, in the `Test Hand` button, to play out a combo via a puzzle.
-	* Includes a "Restart" option.
-	* While you are using this mode, the duel never ends, not even by reducing the opponent's LP to 0.
-
-* Added Discord Integration via Rich Presence
-	* Features:
-		* Your status will be set to "Playing Ygopro", with the elapsed time included.
-		* Actions that will be displayed in our Discord status:
-			* Dueling
-			* In menu
-			* Playing a Puzzle
-			* Watching a Replay
-			* Editing a deck
-		* You can invite people to join your room. To do it: host a room, then in the Discord PC application you can create an invite in the input text bar.
-		* Similarly, you can join a room through the invite created. If Ygopro/Edopro is closed, clicking in the invite will launch the application.
-
 * Replaced old replay recording system:
 	* current system is now unaffected by script changes from when the replay was recorded to when it is played.
 	* kept compatibility with the old replay system.
@@ -243,11 +252,6 @@ See README in `sound`.
 * Added shortcut for in game fullscreen toggle [F11]
 
 * Added shortcut for in game acess to the additional settings [CTRL + O]
-
-* Updated music and sounds options:
-	* added "chants" support.
-	* more details available in the txt file in the "sounds" folder.
-	* music and sound volume controls separated
 
 * Updated skins handling.
 	* 10 sample skins and a template are provided.
@@ -299,7 +303,6 @@ See README in `sound`.
 * macOS
 	* Shift+Right Click to add to side deck in Deck Edit now works like on Windows and Linux
 	* Known bug: invoking the binary from the Terminal directly (./EDOPro.app/Contents/MacOS/EDOPro) will never start the game in fullscreen, but no user should be starting the game this way anyway.
-	* Known bug: Cmd+Right in an edit box results in game crash
 
 * Scripts now load from one subdirectory level in the script folder only.
 
@@ -354,7 +357,7 @@ See README in `sound`.
 
 ### Core, Scripts and functions and other
 
-#### OCGCORE: updated from 1.034 standard to edo9300's 6.0
+#### OCGCORE: updated from 1.034 standard to edo9300's 7.0
 
 * Updated mandatory trigger effects handling.
 
