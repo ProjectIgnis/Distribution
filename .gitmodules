@@ -4,3 +4,6 @@
 [submodule "expansions"]
 	path = expansions
 	url = https://github.com/kevinlul/edopro-cdb.git
+[submodule "puzzles/Canon collection"]
+	path = puzzles/Canon collection
+	url = https://github.com/ProjectIgnis/Puzzles.git
