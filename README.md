@@ -31,6 +31,11 @@ DirectX 9 or OpenGL 4+ supporting graphics driver required.
 * Middle Mouse Button: Adds another copy of a card to the deck or side deck
 * Shift+Right Mouse Button or Hold Left Mouse Button then click Right Mouse Button: Adds a card to the side deck
 * With the exception of Shift+Right Mouse Button, holding Shift will ignore ALL deck building rules
+
+If not typing:
+* CTRL+C: Copy deck code to clipboard
+* CTRL+SHIFT+C: Copy textual decklist to clipboard
+* CTRL+V: Imports deck code from clipboard
 ### Duel:
 * Hold A or Hold Left Mouse Button: Lets the system stop at every timing.
 * Hold S or Hold Right Mouse Button: Lets the system skip every timing.
@@ -345,13 +350,16 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 	* requires editing the deck file, might be tied with the server.
 	* the deck displayed in Deck Edit will no longer display a maximum of 60 cards in the main deck if the deck file contains more than that.
 
-* Text can now be copied (on windows, CTRL+C) from the chat/duel log.
+* Text can now be copied (CTRL+C) from the chat/duel log.
 
-* Files can now be dragged and dropped in the client:
-	* drop an YDK file in the deck area in Deck edit and it will load that deck
+* Files and text can now be dragged and dropped in the client:
+	* drop an YDK file in the main menu or the deck area in Deck edit and it will load that deck
 	* drop a card ID/passcode in the deck are in Deck edit and it will add that card to the deck
 		* the same works for card names
-	* drop a YRPx file in the replay area in Watch replay and it will load that replay.
+	* drop a ydke:// url in the deck edit area and it will load the deck secified by that url
+	* drop a YRPx file in the main menu or the replay area in Watch replay and it will load that replay (if valid).
+	* drop a lua file in the main menu or the puzzle area in Puzzles and it will load that puzzle (if valid).
+	* drop text in a text box and it will be inserted there
 
 
 
