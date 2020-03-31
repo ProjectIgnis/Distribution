@@ -82,13 +82,6 @@ License: Creative Commons 0 License.
 Source: https://freesound.org/people/majoranman/sounds/240745/
 ---------------------------------------------------------------|
 
-
-
---nextturn.wav
-Original: "synthesizer sequence 42" by PhonosUPF
-License: Creative Commons 0 License.
-Source: https://freesound.org/people/PhonosUPF/sounds/503445/
-
 --phase.wav
 Original: "Fast swipe.wav" by ParadoxTheSock
 License: Creative Commons 0 License.
