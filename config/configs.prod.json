@@ -43,13 +43,6 @@
 	],
 	"servers": [
 		{
-			"name": "NA Pacific",
-			"address": "73.240.71.103",
-			"duelport": 7911,
-			"roomaddress": "73.240.71.103",
-			"roomlistport": 7922
-		},
-		{
 			"name": "EU Central",
 			"address": "185.227.110.90",
 			"duelport": 7911,
@@ -57,10 +50,10 @@
 			"roomlistport": 7922
 		},
 		{
-			"name": "localhost",
-			"address": "127.0.0.1",
+			"name": "NA Pacific",
+			"address": "73.240.71.103",
 			"duelport": 7911,
-			"roomaddress": "127.0.0.1",
+			"roomaddress": "73.240.71.103",
 			"roomlistport": 7922
 		}
 	],
