@@ -1,0 +1,68 @@
+{
+	"repos": [
+		{
+			"url": "https://github.com/ProjectIgnis/DeltaBeta",
+			"repo_name": "Patch repository for the closed beta",
+			"repo_path": "./repositories/beta",
+			"has_core": true,
+			"core_path": "bin",
+			"data_path": "",
+			"script_path": "script",
+			"should_update": true,
+			"should_read": true
+		},
+		{
+			"url": "https://github.com/ProjectIgnis/LFLists",
+			"repo_name": "Forbidden & Limited Card Lists",
+			"repo_path": "./repositories/lflists",
+			"lflist_path": ".",
+			"should_update": true,
+			"should_read": true
+		},
+		{
+			"url": "https://github.com/ProjectIgnis/Puzzles",
+			"repo_name": "Project Ignis puzzles",
+			"repo_path": "./puzzles/Canon collection",
+			"should_update": true,
+			"should_read": true
+		}
+	],
+	"urls": [
+		{
+			"url": "default",
+			"type": "pic"
+		},
+		{
+			"url": "default",
+			"type": "field"
+		},
+		{
+			"url": "default",
+			"type": "cover"
+		}
+	],
+	"servers": [
+		{
+			"name": "NA Pacific",
+			"address": "73.240.71.103",
+			"duelport": 7911,
+			"roomaddress": "73.240.71.103",
+			"roomlistport": 7922
+		},
+		{
+			"name": "EU Central",
+			"address": "185.227.110.90",
+			"duelport": 7911,
+			"roomaddress": "185.227.110.90",
+			"roomlistport": 7922
+		},
+		{
+			"name": "localhost",
+			"address": "127.0.0.1",
+			"duelport": 7911,
+			"roomaddress": "127.0.0.1",
+			"roomlistport": 7922
+		}
+	],
+	"posixPathExtension": "/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+}
