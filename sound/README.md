@@ -13,26 +13,27 @@ Played when a certain action is performed in a duel. You can disable them in the
 
 These files will be loaded and played; you may replace them with custom ones as long as the name is the same.
 
-	activate.wav        : played when cards or effects are activated, unless there is an associated chant for that card.
-	addcounter.wav      : played when counters are added to cards.
-	attack.wav          : played when a monster declares an attack, unless there is an associated chant for that monster.
-	chatmessage.wav     : played when messages are sent in the chat of the current room.
-	coinflip.wav        : played when coins are flipped.
-	damage.wav          : played when damage is inflicted, either by battle or by effect.
-	destroyed.wav       : played when cards are destroyed.
-	diceroll.wav        : played when dice are rolled.
-	draw.wav            : played when a player draws cards.
-	equip.wav           : played when a card is equipped to another.
-	flip.wav            : played when cards are flipped, including when a monster is Flip Summoned, unless there is an associated chant for that monster.
-	gainlp.wav          : played when a player recovers Life Points.
-	nextturn.wav        : played when the next turn starts.
-	phase.wav           : played when you are moving from a phase to another.
-	playerenter.wav     : played when a player joins the room.
-	removecounter.wav   : played when counters are removed from cards.
-	set.wav             : played when cards are set on the field.
-	shuffle.wav         : played when cards are shuffled.
-	specialsummon.wav   : played when a monster is Special Summoned, unless there is an associated chant for that monster.
-	summon.wav          : played when a monster is Normal Summoned, unless there is an associated chant for that monster.
+	activate.wav          : played when cards or effects are activated, unless there is an associated chant for that card.
+	addcounter.wav        : played when counters are added to cards.
+	attack.wav            : played when a monster declares an attack, unless there is an associated chant for that monster.
+	chatmessage.wav       : played when messages are sent in the chat of the current room.
+	coinflip.wav          : played when coins are flipped.
+	damage.wav            : played when damage is inflicted, either by battle or by effect.
+	destroyed.wav         : played when cards are destroyed.
+	diceroll.wav          : played when dice are rolled.
+	draw.wav              : played when a player draws cards.
+	equip.wav             : played when a card is equipped to another.
+	flip.wav              : played when cards are flipped, including when a monster is Flip Summoned, unless there is an associated chant for that monster.
+	gainlp.wav            : played when a player recovers Life Points.
+	nextturn.wav          : played when the next turn starts.
+	phase.wav             : played when you are moving from a phase to another.
+	playerenter.wav       : played when a player joins the room.
+	rockpaperscissors.wav :
+	removecounter.wav     : played when counters are removed from cards.
+	set.wav               : played when cards are set on the field.
+	shuffle.wav           : played when cards are shuffled.
+	specialsummon.wav     : played when a monster is Special Summoned, unless there is an associated chant for that monster.
+	summon.wav            : played when a monster is Normal Summoned, unless there is an associated chant for that monster.
 
 ## Background music (BGM subfolder)
 

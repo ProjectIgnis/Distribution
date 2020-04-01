@@ -1,13 +1,5 @@
 The following files were not changed yet and need to be replaced:
 
-damage.wav
-flip.wav
-specialsummon.wav
-
---activate.wav:
-Original: "VolCa SaMple ModulaR EfecTo 40" by DJ_SoMaR.
-License: Creative Commons 0 License.
-Source: https://freesound.org/people/DJ_SoMaR/sounds/503358/
 
 --addcounter.wav:
 Original: "Ping.wav" by edsward.
@@ -34,11 +26,6 @@ Original: "Nasty Knife Stab 2.wav" by Aris621.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/Aris621/sounds/478145/
 
---destroyed.wav
-Original: "breaking glass_2.wav" by ElenZack.
-License: Creative Commons Attribution-NonCommercial 3.0 Unported
-Source: https://freesound.org/people/ElenZack/sounds/500604/
-
 --diceroll.wav
 Original: "Dices 3.wav" by Aiwha.
 License: Creative Commons Attribution 3.0 Unported
@@ -56,19 +43,15 @@ License: Creative Commons Attribution 3.0 Unported
 Source: https://freesound.org/people/Paul%20Sinnett/sounds/404015/
 --------------------------------------------------------------------|
 
-
-
 --equip.wav:
 Original: "Single Iron hit hard.wav" by Mrthenoronha.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/Mrthenoronha/sounds/371922
 
-
 --flip.wav:
 Original: "flipCard.wav" by Splashdust.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/Splashdust/sounds/84322/
-
 
 --gainlp.wav
 Original: "jingle2" by soneproject
