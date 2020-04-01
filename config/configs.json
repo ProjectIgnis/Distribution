@@ -1,17 +1,6 @@
 {
 	"repos": [
 		{
-			"url": "https://github.com/ProjectIgnis/DeltaBeta",
-			"repo_name": "Patch repository for the closed beta",
-			"repo_path": "./repositories/beta",
-			"has_core": true,
-			"core_path": "bin",
-			"data_path": "",
-			"script_path": "script",
-			"should_update": true,
-			"should_read": true
-		},
-		{
 			"url": "https://github.com/ProjectIgnis/LFLists",
 			"repo_name": "Forbidden & Limited Card Lists",
 			"repo_path": "./repositories/lflists",
@@ -36,21 +25,21 @@
 	],
 	"servers": [
 		{
-			"name": "NA Pacific",
-			"address": "73.240.71.103",
-			"duelport": 7911,
-			"roomaddress": "73.240.71.103",
-			"roomlistport": 7922
-		},
-		{
-			"name": "EU",
+			"name": "EU Central (Hel)",
 			"address": "185.227.110.90",
 			"duelport": 7911,
 			"roomaddress": "185.227.110.90",
 			"roomlistport": 7922
 		},
 		{
-			"name": "NA Atlantic",
+			"name": "NA Pacific (Gideon)",
+			"address": "73.240.71.103",
+			"duelport": 7911,
+			"roomaddress": "73.240.71.103",
+			"roomlistport": 7922
+		},
+		{
+			"name": "21 Sussex (Kevin)",
 			"address": "128.100.146.10",
 			"duelport": 7911,
 			"roomaddress": "128.100.146.10",

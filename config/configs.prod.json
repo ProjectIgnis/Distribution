@@ -1,9 +1,9 @@
 {
 	"repos": [
 		{
-			"url": "https://github.com/ProjectIgnis/DeltaBeta",
-			"repo_name": "Patch repository for the closed beta",
-			"repo_path": "./repositories/beta",
+			"url": "https://github.com/ProjectIgnis/DeltaHopeHarbinger",
+			"repo_name": "Project Ignis updates",
+			"repo_path": "./repositories/delta",
 			"has_core": true,
 			"core_path": "bin",
 			"data_path": "",
@@ -43,14 +43,14 @@
 	],
 	"servers": [
 		{
-			"name": "EU Central",
+			"name": "EU Central (Competitive)",
 			"address": "185.227.110.90",
 			"duelport": 7911,
 			"roomaddress": "185.227.110.90",
 			"roomlistport": 7922
 		},
 		{
-			"name": "NA Pacific",
+			"name": "NA Pacific (Casual)",
 			"address": "73.240.71.103",
 			"duelport": 7911,
 			"roomaddress": "73.240.71.103",
