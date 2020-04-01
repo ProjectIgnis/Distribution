@@ -16,18 +16,19 @@ Now: It cannot activate.
 5-Before: You have 5 cards Set in your Spell & Trap Zone, you activate 1 of them, which is “Embodiment of Apophis” and Special Summons it to the Monster Zone. The Spell & Trap Zone that “Embodiment of Apophis” was in before cannot be used, so you cannot Set a new card in your Spell & Trap Zones.
 Now: the Spell & Trap Zone it was in before is now empty and available for use, therefore you can Set a new Spell/Trap Card into the Spell & Trap Zone it was in before.
 ]]
-Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,5)
+Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,4)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
 
-Debug.ShowHint("Remember to change the duel rule in ReloadFieldBegin to test in MR4 and MR5")
+--Debug.ShowHint("Remember to change the duel rule in ReloadFieldBegin to test in MR4 and MR5")
 --Main Deck
 Debug.AddCard(15951532,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(15951532,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(89631139,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(89631139,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 Debug.AddCard(89631139,0,0,LOCATION_DECK,0,POS_FACEDOWN)
+Debug.AddCard(88241506,0,0,LOCATION_DECK,0,POS_FACEDOWN)
 --Hand
 Debug.AddCard(89882100,0,0,LOCATION_HAND,0,POS_FACEDOWN)
 Debug.AddCard(5318639,0,0,LOCATION_HAND,0,POS_FACEDOWN)
@@ -46,7 +47,7 @@ Debug.AddCard(89882100,0,0,LOCATION_SZONE,2,10)
 Debug.AddCard(54447022,0,0,LOCATION_SZONE,0,10)
 
 --Monster Zones
-Debug.AddCard(4591250,0,0,LOCATION_MZONE,0,1,true)
+local a = Debug.AddCard(4591250,0,0,LOCATION_MZONE,0,1,true)
 Debug.AddCard(26202165,0,0,LOCATION_MZONE,3,1,true)
 --Spell & Trap Zones
 Debug.AddCard(79852326,0,0,LOCATION_SZONE,4,10)
@@ -60,4 +61,7 @@ Debug.AddCard(73574678,1,1,LOCATION_MZONE,0,4,true)
 Debug.AddCard(44095762,1,1,LOCATION_SZONE,4,10)
 Debug.AddCard(5650082,1,1,LOCATION_SZONE,3,10)
 Debug.AddCard(84749824,1,1,LOCATION_SZONE,1,10)
+Debug.PreSummon(a,SUMMON_TYPE_FUSION,LOCATION_EXTRA)
 Debug.ReloadFieldEnd()
+
+
