@@ -16,7 +16,7 @@ Now: It cannot activate.
 5-Before: You have 5 cards Set in your Spell & Trap Zone, you activate 1 of them, which is “Embodiment of Apophis” and Special Summons it to the Monster Zone. The Spell & Trap Zone that “Embodiment of Apophis” was in before cannot be used, so you cannot Set a new card in your Spell & Trap Zones.
 Now: the Spell & Trap Zone it was in before is now empty and available for use, therefore you can Set a new Spell/Trap Card into the Spell & Trap Zone it was in before.
 ]]
-Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN|DUEL_SIMPLE_AI|DUEL_MODE_MR5,5,true)
+Debug.ReloadFieldBegin(DUEL_ATTACK_FIRST_TURN+DUEL_SIMPLE_AI,5)
 Debug.SetPlayerInfo(0,8000,0,0)
 Debug.SetPlayerInfo(1,8000,0,0)
 
