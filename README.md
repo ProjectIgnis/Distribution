@@ -12,13 +12,15 @@ Supported platforms:
   - You may need to install FreeType from your package manager.
 
 DirectX 9 or OpenGL 4+ supporting graphics driver required.
+
 1 GB free disk space recommended for asset updates and images.
+
 1 GB free RAM recommended, though the game is not expected to exceed 300 MB of memory unless you spam the restart button.
 
 ### Prerequisites for WindBot Ignite (AI):
-Windows: install .NET Framework 4 if you don't have it. This ships with Windows 10.
-Linux: install the mono-complete package https://www.mono-project.com/download/stable/#download-lin
-macOS: install Mono with the .pkg https://www.mono-project.com/download/stable/#download-mac
+- Windows: install .NET Framework 4 if you don't have it. This ships with Windows 10.
+- Linux: install the mono-complete package https://www.mono-project.com/download/stable/#download-lin
+- macOS: install Mono with the .pkg https://www.mono-project.com/download/stable/#download-mac
 
 ## Shortcuts available in the client
 

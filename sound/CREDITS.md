@@ -1,5 +1,7 @@
-The following files were not changed yet and need to be replaced:
+# Sound effects
 
+--activate.wav, nextturn.wav, specialsummon.wav:
+Standard YGOPro sound effects.
 
 --addcounter.wav:
 Original: "Ping.wav" by edsward.
@@ -36,13 +38,6 @@ Original: "Sliding Envelope.wav" by MTJohnson.
 License: Creative Commons Attribution 3.0 Unported
 Source: https://freesound.org/people/MTJohnson/sounds/444431/
 
---------------------------------------------------------------------|
---draw.wav
-Original: "Dices 3.wav" by Paul Sinnett.
-License: Creative Commons Attribution 3.0 Unported
-Source: https://freesound.org/people/Paul%20Sinnett/sounds/404015/
---------------------------------------------------------------------|
-
 --equip.wav:
 Original: "Single Iron hit hard.wav" by Mrthenoronha.
 License: Creative Commons 0 License.
@@ -57,13 +52,6 @@ Source: https://freesound.org/people/Splashdust/sounds/84322/
 Original: "jingle2" by soneproject
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/soneproject/sounds/255101/
-
----------------------------------------------------------------|
---gainlp.wav
-Original: "Choir One-Shot" by majoranman
-License: Creative Commons 0 License.
-Source: https://freesound.org/people/majoranman/sounds/240745/
----------------------------------------------------------------|
 
 --phase.wav
 Original: "Fast swipe.wav" by ParadoxTheSock
