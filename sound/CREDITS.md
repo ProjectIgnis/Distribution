@@ -1,5 +1,5 @@
 # Sound effects
-
+```
 --activate.wav, nextturn.wav, specialsummon.wav:
 Standard YGOPro sound effects.
 
@@ -82,7 +82,10 @@ Source: https://freesound.org/people/Kodack/sounds/256508/
 Original: "Vocal_chord.wav" by cellokratzer.
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/cellokratzer/sounds/502947/
+```
 
+# Background music
+```
 --BGM/advantage/Ketsa_Mission_Ready.mp3
 Original: "Ketsa_-_13_-_Mission_Ready.mp3" by Ketsa
 License: CC BY-NC-ND 4.0
@@ -117,3 +120,4 @@ Source: https://freemusicarchive.org/music/Chad_Crouch/Drifter/Barefoot
 Original: "Steve_Combs_-_09_-_Small_Victory.mp3" by Steve Combs
 License: CC BY 4.0
 Source: https://freemusicarchive.org/music/Steve_Combs/Speaking_in_Spirals_1809/09_Small_Victory
+```
