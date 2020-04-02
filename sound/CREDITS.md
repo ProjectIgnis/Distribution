@@ -1,6 +1,6 @@
 # Sound effects
 ```
---activate.wav, nextturn.wav, specialsummon.wav:
+--activate.wav, destroyed.wav, nextturn.wav, specialsummon.wav:
 Standard YGOPro sound effects.
 
 --addcounter.wav:
