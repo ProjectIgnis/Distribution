@@ -1,5 +1,7 @@
 # Project Ignis: EDOPro
 All assets for the game, except card images. See LICENSE and COPYING in each folder for proper credits, copyright, and rules for redistribution.
+On Windows, please do not put your game install in Program Files, Downloads, or any other location that might be read-only or require admin permissions.
+On Linux, after moving the game install to your preferred location, you can run `./install.sh` from a terminal to install desktop files for the current user.
 
 ## System requirements
 
@@ -11,6 +13,12 @@ Supported platforms:
 
 DirectX 9 or OpenGL 4+ supporting graphics driver required.
 1 GB free disk space recommended for asset updates and images.
+1 GB free RAM recommended, though the game is not expected to exceed 300 MB of memory unless you spam the restart button.
+
+### Prerequisites for WindBot Ignite (AI):
+Windows: install .NET Framework 4 if you don't have it. This ships with Windows 10.
+Linux: install the mono-complete package https://www.mono-project.com/download/stable/#download-lin
+macOS: install Mono with the .pkg https://www.mono-project.com/download/stable/#download-mac
 
 ## Shortcuts available in the client
 
@@ -154,7 +162,7 @@ Font chainloading coming soon!
 #### posixPathExtension
 Used on macOS and Linux as additional search paths for Mono, required to run WindBot Ignite. Generally you should not need to change this.
 
-## Changes from YGOPro Percy 1.034 Links Beta to EDOPro by Project Ignis
+## Differences from YGOPro Percy 1.034 Links Beta
 
 ### TEMPORARY:
 * Removed Dark Magician 46986420
@@ -250,7 +258,7 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 	* fit the background.
 	* accurate resize for backgrounds.
 	* scale
-		* the "Apply and restart" button only applies the change and closes the game at the moment. You will have to start it again.
+		* the "Apply and restart" applies the GUI scale without resizing. Do not spam this button because it will leak memory until the game is properly restarted.
 	* skin selection, via dropdown menu.
 		* reload skin, that applies the changes to the current skin file without a restart.
 
@@ -325,14 +333,10 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 	* Update incorrect strings called in the Damage Step
 	* All the strings used in the client are now controlled by the `strings.conf` file, being editable, which allows translations for all these elements.
 
-* Added support for translation for system strings.
+* Added support for translations.
 	* inside the `config/languages` folder, add a folder for your language and add a `strings.conf` file there, with the strings translated to your desired language.
-	* Credits for the current translations:
-		french: Hel
-		italian: edo9300
-		portuguese: Naim
-		spanish: Dyxel and Icematoro
-		thai: Tungnon
+	* Check each strings.conf file for translation credits
+	* cards.cdb in each of these folders will also be loaded to replace card text in that locale
 
 * Added support for TCG Speed Duel Skills
 	* To use a Skill during a duel, add it to the deck first.

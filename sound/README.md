@@ -1,4 +1,4 @@
-# Audio in EDOPro by Project Ignis
+# Audio
 
 The game supports three types of audio:
 - sound effects
