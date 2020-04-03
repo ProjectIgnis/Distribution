@@ -79,7 +79,7 @@ These app shortcuts are also available in the app and dock menus:
 
 These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
 
-The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?` and using comparison modifiers <, <=, >=, >, and =. 
+The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?`. You can also prefix the search with comparison modifiers <, <=, >=, >, and =. 
 
 ## Discord Rich Presence
 Works with the desktop version of Discord. In your Discord settings, turn on Game Activity first.
