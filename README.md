@@ -36,6 +36,14 @@ DirectX 9 or OpenGL 4+ supporting graphics driver required.
 * CTRL+3: Switch to chat log tab
 * CTRL+4: Switch to settings tab
 * CTRL+5: Switch to repositories tab
+* Files and text can now be dragged and dropped in the client:
+	* drop an YDK file in the main menu or the deck area in Deck edit and it will load that deck
+	* drop a card ID/passcode in the deck are in Deck edit and it will add that card to the deck
+		* the same works for card names
+	* drop a ydke:// url in the deck edit area and it will load the deck secified by that url
+	* drop a YRPx file in the main menu or the replay area in Watch replay and it will load that replay (if valid).
+	* drop a lua file in the main menu or the puzzle area in Puzzles and it will load that puzzle (if valid).
+	* drop text in a text box and it will be inserted there
 ### Deck Edit:
 * Right Mouse Button: Adds/removes a card from the deck
 * Middle Mouse Button: Adds another copy of a card to the deck or side deck
@@ -58,16 +66,6 @@ These app shortcuts are also available in the app and dock menus:
 * Cmd+N opens a new instance with audio muted
 * Cmd+Q quits the game
 * Ctrl+Cmd+F toggles fullscreen
-
-
-* Files and text can now be dragged and dropped in the client:
-	* drop an YDK file in the main menu or the deck area in Deck edit and it will load that deck
-	* drop a card ID/passcode in the deck are in Deck edit and it will add that card to the deck
-		* the same works for card names
-	* drop a ydke:// url in the deck edit area and it will load the deck secified by that url
-	* drop a YRPx file in the main menu or the replay area in Watch replay and it will load that replay (if valid).
-	* drop a lua file in the main menu or the puzzle area in Puzzles and it will load that puzzle (if valid).
-	* drop text in a text box and it will be inserted there
 
 ## Searching functions
 * `string`:
