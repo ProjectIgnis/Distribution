@@ -3,9 +3,6 @@
 --activate.wav, destroyed.wav, specialsummon.wav:
 YGOPro Percy sound effects.
 
----nextturn.wav
-Standard YGOPro sound effects.
-
 --addcounter.wav:
 Original: "Ping.wav" by edsward.
 License: Creative Commons 0 License.
@@ -55,6 +52,11 @@ Source: https://freesound.org/people/Splashdust/sounds/84322/
 Original: "jingle2" by soneproject
 License: Creative Commons 0 License.
 Source: https://freesound.org/people/soneproject/sounds/255101/
+
+---nextturn.wav
+Original: "Sound5.mp3" by Kastenfrosch
+License: Creative Commons 0 License.
+Source: https://freesound.org/people/Kastenfrosch/sounds/162471/
 
 --phase.wav
 Original: "Fast swipe.wav" by ParadoxTheSock
