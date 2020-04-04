@@ -22,7 +22,7 @@ DirectX 9 or OpenGL 4+ supporting graphics driver required.
 - Linux: install the mono-complete package https://www.mono-project.com/download/stable/#download-lin
 - macOS: install Mono with the .pkg https://www.mono-project.com/download/stable/#download-mac
 
-## Shortcuts available in the client
+## Keyboard and mouse shortcuts
 
 ### General:
 * ESC: Minimizes the window if not typing
@@ -36,38 +36,40 @@ DirectX 9 or OpenGL 4+ supporting graphics driver required.
 * CTRL+3: Switch to chat log tab
 * CTRL+4: Switch to settings tab
 * CTRL+5: Switch to repositories tab
-* Files and text can now be dragged and dropped in the client:
-	* drop an YDK file in the main menu or the deck area in Deck edit and it will load that deck
-	* drop a card ID/passcode in the deck are in Deck edit and it will add that card to the deck
-		* the same works for card names
-	* drop a ydke:// url in the deck edit area and it will load the deck secified by that url
-	* drop a YRPx file in the main menu or the replay area in Watch replay and it will load that replay (if valid).
-	* drop a lua file in the main menu or the puzzle area in Puzzles and it will load that puzzle (if valid).
-	* drop text in a text box and it will be inserted there
-### Deck Edit:
+* Drag and drop support for files and text:
+	* drop an `ydk` file in the main menu or the deck edit area to load that deck
+	* drop a card passcode or card name in the deck edit area to add that card to the deck
+	* drop a `ydke://` URL in the deck edit area to load the deck specified by that URL
+	* drop a `yrpX` file in the main menu or the replay selection menu to load that replay, if valid
+	* drop a Lua file in the main menu or the puzzle selection menu to load that puzzle, if valid
+	* drop text in a text box to insert text
+
+### Deck editor:
 * Right Mouse Button: Adds/removes a card from the deck
 * Middle Mouse Button: Adds another copy of a card to the deck or side deck
 * Shift+Right Mouse Button or Hold Left Mouse Button then click Right Mouse Button: Adds a card to the side deck
 * With the exception of Shift+Right Mouse Button, holding Shift will ignore ALL deck building rules
 
-If not typing:
-* CTRL+C: Copy deck code to clipboard
-* CTRL+SHIFT+C: Copy textual decklist to clipboard
-* CTRL+V: Imports deck code from clipboard
+While not typing:
+* CTRL+C: Copies a `ydke://` URL of the deck list for sharing
+* CTRL+SHIFT+C: Copies a plain text deck list for sharing
+* CTRL+V: Imports a `ydke://` URL decklist from the clipboard
+
 ### Duel:
 * Hold A or Hold Left Mouse Button: Lets the system stop at every timing.
 * Hold S or Hold Right Mouse Button: Lets the system skip every timing.
 * Hold D: Lets the system stop at available timing.
-* F1 to F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials.
-* F5 to F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials.
+* F1 to F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials respectively.
+* F5 to F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials respectively.
+
 ### macOS:
 Note that system hotkeys may intercept some of the above keyboard shortcuts.
-These app shortcuts are also available in the app and dock menus:
+The following app shortcuts are also available in the app and dock menus:
 * Cmd+N opens a new instance with audio muted
 * Cmd+Q quits the game
 * Ctrl+Cmd+F toggles fullscreen
 
-## Searching functions
+## Deck editor search functions
 * `string`:
 	returns all cards that have `string` in their name OR in the card text.
 	Example: `Hero`
@@ -89,6 +91,10 @@ These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards th
 
 The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?`. You can also prefix the search with comparison modifiers <, <=, >=, >, and =. 
 
+## Test hand
+A rudimentary hand test mode is accessible from the deck editor, with quick restart. More features and configuration coming soon!
+The duel will never end normally in this game mode (e.g. running out of LP, decking out)
+
 ## Discord Rich Presence
 Works with the desktop version of Discord. In your Discord settings, turn on Game Activity first.
 
@@ -100,14 +106,10 @@ Activities displayed in Rich Presence:
 * Watching a replay
 * Editing a deck
 
-## Game invites
-Host a room on a server (LAN does not work). In the appropriate channel or private message, the upload + icon should change to have an additional green play button.
+### Game invites
+Host a room on a server (LAN does not work). In the appropriate channel or private message, the upload (+) icon should change to have an additional green play button.
 Clicking on it will send out a game invite to your room with your message of choice. If the room is locked, the password will be skipped for invitees.
-Users can accept the invite while EDOPro is closed if they've started it once before; the game will be launched automatically.
-
-## Test hand
-A rudimentary hand test mode is accessible from the deck editor, with quick restart. More features and configuration coming soon!
-The duel will never end normally in this game mode (e.g. running out of LP, decking out)
+Users can accept the invite while EDOPro is closed if they've started it once before; the game should be launched automatically. Note that Discord is rather fickle and changes this behaviour on us very frequently, so if the game fails to automatically launch, try starting the game.
 
 ## Customization
 
@@ -172,7 +174,7 @@ Font chainloading coming soon!
 #### posixPathExtension
 Used on macOS and Linux as additional search paths for Mono, required to run WindBot Ignite. Generally you should not need to change this.
 
-## Differences from YGOPro Percy 1.034 Links Beta
+## Miscellaneous differences from YGOPro Percy 1.034 Links Beta
 
 ### TEMPORARY:
 * Removed Dark Magician 46986420
@@ -274,7 +276,7 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 
 * Added shortcut for in game fullscreen toggle [F11]
 
-* Added shortcut for in game acess to the additional settings [CTRL + O]
+* Added shortcut for in game access to the additional settings [CTRL + O]
 
 * Updated skins handling.
 	* 10 sample skins and a template are provided.
