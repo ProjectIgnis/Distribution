@@ -50,10 +50,10 @@
 			"roomlistport": 7922
 		},
 		{
-			"name": "NA Pacific (Casual)",
-			"address": "73.240.71.103",
+			"name": "US West (Casual)",
+			"address": "146.71.79.166",
 			"duelport": 7911,
-			"roomaddress": "73.240.71.103",
+			"roomaddress": "146.71.79.166",
 			"roomlistport": 7922
 		}
 	],
