@@ -98,9 +98,9 @@
 		<!-- Changes the color for the texts in the room list menu. Examples: the "Server", "Nickname", "show locked rooms" texts-->
 		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
 		<!-- Changes the color for a room that didn't have any of its settings changed from the default ones-->
-		<ROOMLIST_NORMAL_ROOM a="255" r="230" g="230" b="230" />
+		<ROOMLIST_NORMAL_ROOM a="250" r="230" g="230" b="230" />
 		<!-- Changes the color for a room that has any of its settings changed from the default ones. Example: different LP, different starting hand, etc-->
-		<ROOMLIST_CUSTOM_ROOM a="255" r="230" g="230" b="230" />
+		<ROOMLIST_CUSTOM_ROOM a="255" r="194" g="19" b="26" />
 		<!-- Changes the color for a room, in the room list, that has already started its duel.-->
 		<ROOMLIST_STARTED_ROOM a="255" r="230" g="230" b="230" />
 		
