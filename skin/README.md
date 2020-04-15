@@ -76,14 +76,21 @@ These fields change the colors in the multiple areas in the game.
 * DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT
 * DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT : Changes the color for the caption text when you have to select cards from a location. Example: the Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming
 * DUELFIELD_CARD_SELF_WINDOW_BACKGROUND
+* DUELFIELD_DISABLED_FIELD_COLOR
 * DUELFIELD_HIGHLIGHTING_CARD_OUTLINE : Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming.
 * DUELFIELD_HOVERED : Changes the color for the zone highlighted when you are hovering on the field.
 * DUELFIELD_LINKED : Changes the color for the zones where a link monster points to.
+* DUELFIELD_LP_1 : home team
+* DUELFIELD_LP_2 : away team
 * DUELFIELD_MUTUAL_LINKED : Changes the color for the zones where monsters co-linked with the monster that you hover the mouse over are.
 * DUELFIELD_SELECTABLE_CARD_OUTLINE : Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it
 * DUELFIELD_SELECTABLE_FIELD_OUTLINE : Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon
+* DUELFIELD_STACK
 * DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
 * DUELFIELD_TOOLTIP_TEXT_COLOR
+* DUELFIELD_TURN_COUNT : turn counter color
+* DUELFIELD_TURNPLAYER_COLOR
+* DUELFIELD_TURNPLAYER_OUTLINE_COLOR
 * PROGRESSBAR_FILL_COLOR : Changes the color used for the elapsed progress bar in repositories. 
 * PROGRESSBAR_EMPTY_COLOR : Changes the color for remaining progress bar for repositories
 * ROOMLIST_CUSTOM_ROOM : Changes the color for a room that has any of its settings changed from the default ones. Example: different LP, different starting hand, etc
@@ -124,7 +131,7 @@ These fields change the colors in the multiple areas in the game.
 	* DECK_WINDOW_SIDE_INFO_TOP_RIGHT
 	* DECK_WINDOW_SIDE_TOP_LEFT
 	* DECK_WINDOW_SIDE_TOP_RIGHT
-* The following 8 fields change the color for the LP bar for you, with LPBAR1, and your opponent's with LPBAR2.
+* The following 8 fields change the color of the LP bar: LPBAR_1 (home), LPBAR_2 (away)
 	* LPBAR_1_BOTTOM_LEFT
 	* LPBAR_1_BOTTOM_RIGHT
 	* LPBAR_1_TOP_LEFT
@@ -133,6 +140,29 @@ These fields change the colors in the multiple areas in the game.
 	* LPBAR_2_BOTTOM_RIGHT
 	* LPBAR_2_TOP_LEFT
 	* LPBAR_2_TOP_RIGHT
+* The following 10 fields change the color of the timer: TIMEBAR_1 (home), TIMEBAR_2 (away)
+ 	* TIMEBAR_1_BOTTOM_LEFT
+	* TIMEBAR_1_BOTTOM_RIGHT
+	* TIMEBAR_1_TOP_LEFT
+	* TIMEBAR_1_TOP_RIGHT
+	* TIMEBAR_1_OUTLINE
+	* TIMEBAR_2_BOTTOM_LEFT
+	* TIMEBAR_2_BOTTOM_RIGHT
+	* TIMEBAR_2_TOP_LEFT
+	* TIMEBAR_2_TOP_RIGHT
+	* TIMEBAR_2_OUTLINE
+* The following 11 fields change the color of card properties on the field
+  * DUELFIELD_CARD_LEVEL
+  * DUELFIELD_CARD_TUNER_LEVEL
+  * DUELFIELD_CARD_RANK
+  * DUELFIELD_CARD_LINK
+  * DUELFIELD_CARD_PSCALE
+  * DUELFIELD_UNCHANGED_CARD_ATK
+  * DUELFIELD_HIGHER_CARD_ATK
+  * DUELFIELD_LOWER_CARD_ATK
+  * DUELFIELD_UNCHANGED_CARD_DEF
+  * DUELFIELD_HIGHER_CARD_DEF
+  * DUELFIELD_LOWER_CARD_DEF
 
 # Optional elements
 
