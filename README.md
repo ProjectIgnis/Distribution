@@ -26,8 +26,9 @@ DirectX 9 or OpenGL 4+ supporting graphics driver required.
 
 ### General:
 * ESC: Minimizes the window if not typing
+* F9: Reload audio
 * F11: Toggles fullscreen
-* F12: Captures a screenshot
+* F10/F12: Captures a screenshot
 * CTRL+O: Opens the additional settings window
 * R: Reloads fonts if not typing
 * CTRL+R: Reloads current skin
