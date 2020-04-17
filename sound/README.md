@@ -16,6 +16,7 @@ These files will be loaded and played; you may replace them with custom ones as 
 	activate.wav          : played when cards or effects are activated, unless there is an associated chant for that card.
 	addcounter.wav        : played when counters are added to cards.
 	attack.wav            : played when a monster declares an attack, unless there is an associated chant for that monster.
+	banished.wav          : played when cards are banished.
 	chatmessage.wav       : played when messages are sent in the chat of the current room.
 	coinflip.wav          : played when coins are flipped.
 	damage.wav            : played when damage is inflicted, either by battle or by effect.
