@@ -11,6 +11,7 @@ EDOPro*
 *.dll
 *.so
 *.dylib
+*.pdb
 *.apk
 .DS_Store
 Thumbs.db

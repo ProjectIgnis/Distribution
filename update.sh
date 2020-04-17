@@ -26,8 +26,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 else
     git fetch --prune bin $BRANCH-windows travis-core-windows
     git checkout bin/$BRANCH-windows -- ygoprodll.exe
+		git checkout bin/$BRANCH-windows -- ygoprodll.pdb
     git checkout bin/travis-core-windows -- ocgcore.dll
-    git reset -q ygoprodll.exe ocgcore.dll
+    git reset -q ygoprodll.exe ygoprodll.pdb ocgcore.dll
     mv ygoprodll.exe EDOPro.exe
 fi
 
