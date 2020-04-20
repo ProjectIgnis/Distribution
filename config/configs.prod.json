@@ -43,6 +43,13 @@
 	],
 	"servers": [
 		{
+			"name": "EU Central (Casual)",
+			"address": "185.227.110.90",
+			"duelport": 7912,
+			"roomaddress": "185.227.110.90",
+			"roomlistport": 7923
+		},
+		{
 			"name": "EU Central (Competitive)",
 			"address": "185.227.110.90",
 			"duelport": 7911,
@@ -55,6 +62,13 @@
 			"duelport": 7911,
 			"roomaddress": "146.71.79.166",
 			"roomlistport": 7922
+		},
+		{
+			"name": "US West (Competitive)",
+			"address": "146.71.79.166",
+			"duelport": 7912,
+			"roomaddress": "146.71.79.166",
+			"roomlistport": 7923
 		}
 	],
 	"posixPathExtension": "/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands"
