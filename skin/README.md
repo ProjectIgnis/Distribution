@@ -81,17 +81,17 @@ These fields change the colors in the multiple areas in the game.
 * DUELFIELD_HIGHLIGHTING_CARD_OUTLINE : Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming.
 * DUELFIELD_HOVERED : Changes the color for the zone highlighted when you are hovering on the field.
 * DUELFIELD_LINKED : Changes the color for the zones where a link monster points to.
-* DUELFIELD_LP_1 : home team
-* DUELFIELD_LP_2 : away team
+* DUELFIELD_LP_1 : changes the color used for the value in your LP 
+* DUELFIELD_LP_2 : changes the color used for the value in your opponent's LP 
 * DUELFIELD_MUTUAL_LINKED : Changes the color for the zones where monsters co-linked with the monster that you hover the mouse over are.
 * DUELFIELD_SELECTABLE_CARD_OUTLINE : Changes the color for the borders of a card, when it is selectable. Example: a Maxx C in your hand will have this color when asking you to activate it
 * DUELFIELD_SELECTABLE_FIELD_OUTLINE : Changes the color for the borders of a zone , when you have to select it. Example: when selecting a zone to normal summon
-* DUELFIELD_STACK
-* DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the text with the tooltip box, the area with the card details when you hover the mouse over it on the field
-* DUELFIELD_TOOLTIP_TEXT_COLOR
-* DUELFIELD_TURN_COUNT : turn counter color
-* DUELFIELD_TURNPLAYER_COLOR
-* DUELFIELD_TURNPLAYER_OUTLINE_COLOR
+* DUELFIELD_STACK: changes the color used for number in piles on the field, like the number of cards in a player's deck or extra deck.
+* DUELFIELD_TOOLTIP_TEXT_BACKGROUND_COLOR : Changes the color used in the area for the tooltip box, the area with the card details when you hover the mouse over it on the field
+* DUELFIELD_TOOLTIP_TEXT_COLOR:  Changes the color used in the text with the tooltip box.
+* DUELFIELD_TURN_COUNT : the color used the for the turn count
+* DUELFIELD_TURNPLAYER_COLOR: the color used for the area where the LP bar, player name and timer are drawn.
+* DUELFIELD_TURNPLAYER_OUTLINE_COLOR: the color around the area where the LP bar, player name and timer are drawn.
 * PROGRESSBAR_FILL_COLOR : Changes the color used for the elapsed progress bar in repositories. 
 * PROGRESSBAR_EMPTY_COLOR : Changes the color for remaining progress bar for repositories
 * ROOMLIST_CUSTOM_ROOM : Changes the color for a room that has any of its settings changed from the default ones. Example: different LP, different starting hand, etc
