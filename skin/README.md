@@ -1,4 +1,5 @@
-To create a skin:
+# Creating a skin:
+
 	* Create a folder inside the skin folder with your skin name
 	* Add to that folder a `skin.xml` file
 		* Optionally, also add a `textures` folder inside the `skin` folder. If any files are added to it, the skin will apply those to overridde the default ones in the game's main `textures` folder.
@@ -8,7 +9,7 @@ Files from here are the default textures used in the game. If the current skin a
 Groups and the fields available are not case sensitive.
 
 
-At the end of this file you have a template.
+At the end of this file you have a **template**.
 
 
 # Groups availables:
@@ -17,7 +18,7 @@ At the end of this file you have a template.
 	* Custom
 
 ## Properties
-Elements here are all optional
+Elements here are all optional.
 
 * Author
 * Version
@@ -271,7 +272,7 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<Date data="dd-mm-yyyy"/>
 		<Desc data="some description: A skin that uses white, black and grey elements"/>
 		<Fallback skin="" />
-		<Font texture="fontTahoma.png" />
+		<Font texture="fontNotosans.png" />
 	</Properties>
 	<Global guialpha="255">
 		<EGDC_3D_DARK_SHADOW a="255" r="255" g="255" b="255" />
@@ -304,20 +305,11 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<CheckBoxColor a="255" r="30" g="30" b="30" />
 	</Global>
 	<Custom>
-		<CARDINFO_TYPES_COLOR a="255" r="255" g="255" b="204" />
-		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
-		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
 		<CARDINFO_IMAGE_BACKGROUND a="255" r="245" g="245" b="245" />
-		<FPS_TEXT_COLOR a="255" r="245" g="245" b="245" />
-		<DECK_WINDOW_MAIN_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_MAIN_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_MAIN_INFO_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
-		<DECK_WINDOW_MAIN_INFO_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_MAIN_TOP_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_MAIN_TOP_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_MAIN_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_MAIN_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
+		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="255" g="255" b="204" />
+		<CARDINFO_STATS_COLOR a="255" r="255" g="255" b="204" />
+		<CARDINFO_TYPES_COLOR a="255" r="255" g="255" b="204" />
 		<DECK_WINDOW_EXTRA_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_EXTRA_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_EXTRA_INFO_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
@@ -326,14 +318,14 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<DECK_WINDOW_EXTRA_TOP_RIGHT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_EXTRA_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_EXTRA_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_INFO_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_INFO_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_TOP_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_TOP_RIGHT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
-		<DECK_WINDOW_SIDE_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_INFO_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
+		<DECK_WINDOW_MAIN_INFO_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_TOP_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_TOP_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_MAIN_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_SEARCH_RESULT_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_SEARCH_RESULT_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
@@ -342,21 +334,47 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<DECK_WINDOW_SEARCH_RESULT_TOP_RIGHT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_SEARCH_RESULT_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
 		<DECK_WINDOW_SEARCH_RESULT_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_INFO_TOP_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_INFO_TOP_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_INFO_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_INFO_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_TOP_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_TOP_RIGHT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_BOTTOM_LEFT a="255" r="200" g="200" b="200" />
+		<DECK_WINDOW_SIDE_BOTTOM_RIGHT a="255" r="200" g="200" b="200" />
 		<DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR a="255" r="30" g="30" b="30" />
 		<DUELFIELD_ANNOUNCE_TEXT_COLOR a="255" r="30" g="30" b="30" />
-		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
-		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="30" g="30" b="30" />
-		<DUELFIELD_HOVERED a="255" r="230" g="230" b="230" />
-		<DUELFIELD_LINKED a="255" r="230" g="230" b="230" />
-		<DUELFIELD_MUTUAL_LINKED a="255" r="30" g="255" b="30" />
-		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="255" g="255" b="255" />
-		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="255" g="255" b="255" />
-		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="255" g="255" b="255" />
 		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="255" g="255" b="255" />
 		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="240" g="240" b="240" />
 		<DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND a="255" r="255" g="200" b="200" />
 		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="255" g="255" b="255" />
 		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="255" g="255" b="255" />
+		<DUELFIELD_CARD_LEVEL a="255" r="255" g="255" b="255" />
+		<DUELFIELD_CARD_LINK a="255" r="255" g="255" b="255" />
+		<DUELFIELD_CARD_PSCALE a="255" r="255" g="255" b="255" />
+		<DUELFIELD_CARD_RANK a="255" r="255" g="255" b="255" />
+		<DUELFIELD_CARD_TUNER_LEVEL a="255" r="255" g="255" b="255" />
+		<DUELFIELD_HIGHER_CARD_ATK a="255" r="255" g="255" b="255" />
+		<DUELFIELD_HIGHER_CARD_DEF a="255" r="255" g="255" b="255" />
+		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="255" g="255" b="255" />
+		<DUELFIELD_HOVERED a="255" r="230" g="230" b="230" />
+		<DUELFIELD_LINKED a="255" r="230" g="230" b="230" />
+		<DUELFIELD_LOWER_CARD_ATK a="255" r="255" g="255" b="255" />
+		<DUELFIELD_LOWER_CARD_DEF a="255" r="255" g="255" b="255" />
+		<DUELFIELD_LP_1 a="255" r="255" g="255" b="255" />
+		<DUELFIELD_LP_2 a="255" r="255" g="255" b="255" />
+		<DUELFIELD_MUTUAL_LINKED a="255" r="30" g="255" b="30" />
+		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="255" g="255" b="255" />
+		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="255" g="255" b="255" />
+		<DUELFIELD_STACK a="255" r="255" g="255" b="255" />
+		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
+		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="30" g="30" b="30" />
+		<DUELFIELD_TURN_COUNT a="255" r="255" g="255" b="255" />
+		<DUELFIELD_TURNPLAYER_COLOR a="255" r="255" g="255" b="255" />
+		<DUELFIELD_TURNPLAYER_OUTLINE_COLOR a="255" r="255" g="255" b="255" />
+		<DUELFIELD_UNCHANGED_CARD_ATK a="255" r="255" g="255" b="255" />
+		<DUELFIELD_UNCHANGED_CARD_DEF a="255" r="255" g="255" b="255" />
+		<FPS_TEXT_COLOR a="255" r="245" g="245" b="245" />
 		<PROGRESSBAR_FILL_COLOR  a="255" r="179" g="179" b="179" />
 		<PROGRESSBAR_EMPTY_COLOR  a="255" r="242" g="242" b="242" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
@@ -371,6 +389,16 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<LPBAR_2_TOP_RIGHT a="255" r="255" g="255" b="255" />
 		<LPBAR_2_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
 		<LPBAR_2_BOTTOM_RIGHT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_1_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_1_BOTTOM_RIGHT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_1_TOP_LEFT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_1_TOP_RIGHT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_1_OUTLINE a="255" r="255" g="255" b="255" />
+		<TIMEBAR_2_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_2_BOTTOM_RIGHT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_2_TOP_LEFT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_2_TOP_RIGHT a="255" r="255" g="255" b="255" />
+		<TIMEBAR_2_OUTLINE a="255" r="255" g="255" b="255" />
 	</Custom>
 	<Button texture="button.png">
 		<Color a="255" r="255" g="255" b="255" />
