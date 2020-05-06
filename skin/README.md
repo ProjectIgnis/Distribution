@@ -284,22 +284,22 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<EGDC_ACTIVE_CAPTION a="255" r="35" g="45" b="95" />
 		<EGDC_APP_WORKSPACE a="255" r="255" g="255" b="255" />
 		<EGDC_BUTTON_TEXT a="240" r="255" g="255" b="255" />
+		<EGDC_EDITABLE a="255" r="255" g="255" b="255" />
+		<EGDC_FOCUSED_EDITABLE a="255" r="190" g="190" b="190" />
+		<EGDC_GRAY_EDITABLE a="255" r="51" g="51" b="51" />
 		<EGDC_GRAY_TEXT a="255" r="60" g="60" b="60" />
+		<EGDC_GRAY_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />
 		<EGDC_HIGH_LIGHT a="255" r="153" g="153" b="153" />
 		<EGDC_HIGH_LIGHT_TEXT a="255" r="20" g="20" b="20" />
-		<EGDC_INACTIVE_BORDER a="255" r="255" g="255" b="255" />
-		<EGDC_INACTIVE_CAPTION a="255" r="26" g="255" b="255" />
-		<EGDC_TOOLTIP a="255" r="255" g="40" b="40" />
-		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
-		<EGDC_SCROLLBAR a="255" r="153" g="153" b="153" />
-		<EGDC_WINDOW a="255" r="255" g="255" b="255" />
-		<EGDC_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />
 		<EGDC_ICON a="255" r="255" g="255" b="255" />
 		<EGDC_ICON_HIGH_LIGHT a="255" r="70" g="190" b="240" />
-		<EGDC_GRAY_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />
-		<EGDC_EDITABLE a="255" r="255" g="255" b="255" />
-		<EGDC_GRAY_EDITABLE a="255" r="51" g="51" b="51" />
-		<EGDC_FOCUSED_EDITABLE a="255" r="190" g="190" b="190" />
+		<EGDC_INACTIVE_BORDER a="255" r="255" g="255" b="255" />
+		<EGDC_INACTIVE_CAPTION a="255" r="26" g="255" b="255" />
+		<EGDC_SCROLLBAR a="255" r="153" g="153" b="153" />
+		<EGDC_TOOLTIP a="255" r="255" g="40" b="40" />
+		<EGDC_TOOLTIP_BACKGROUND a="150" r="70" g="190" b="240" />
+		<EGDC_WINDOW a="255" r="255" g="255" b="255" />
+		<EGDC_WINDOW_SYMBOL a="255" r="255" g="255" b="255" />
 		<Caption tbardistancex="4" tbardistancey="8" />
 		<WindowButton width="24" />
 		<CheckBoxColor a="255" r="30" g="30" b="30" />
@@ -364,9 +364,9 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<DUELFIELD_LP_1 a="255" r="255" g="255" b="255" />
 		<DUELFIELD_LP_2 a="255" r="255" g="255" b="255" />
 		<DUELFIELD_MUTUAL_LINKED a="255" r="30" g="255" b="30" />
+		<DUELFIELD_STACK a="255" r="255" g="255" b="255" />
 		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="255" g="255" b="255" />
 		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="255" g="255" b="255" />
-		<DUELFIELD_STACK a="255" r="255" g="255" b="255" />
 		<DUELFIELD_TOOLTIP_TEXT_BACKROUND_COLOR a="255" r="30" g="30" b="30" />
 		<DUELFIELD_TOOLTIP_TEXT_COLOR a="255" r="30" g="30" b="30" />
 		<DUELFIELD_TURN_COUNT a="255" r="255" g="255" b="255" />
@@ -375,12 +375,6 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<DUELFIELD_UNCHANGED_CARD_ATK a="255" r="255" g="255" b="255" />
 		<DUELFIELD_UNCHANGED_CARD_DEF a="255" r="255" g="255" b="255" />
 		<FPS_TEXT_COLOR a="255" r="245" g="245" b="245" />
-		<PROGRESSBAR_FILL_COLOR  a="255" r="179" g="179" b="179" />
-		<PROGRESSBAR_EMPTY_COLOR  a="255" r="242" g="242" b="242" />
-		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
-		<ROOMLIST_NORMAL_ROOM a="255" r="255" g="255" b="255" />
-		<ROOMLIST_CUSTOM_ROOM a="255" r="255" g="255" b="255" />
-		<ROOMLIST_STARTED_ROOM a="255" r="230" g="230" b="230" />
 		<LPBAR_1_TOP_LEFT a="255" r="255" g="255" b="255" />
 		<LPBAR_1_TOP_RIGHT a="255" r="255" g="255" b="255" />
 		<LPBAR_1_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
@@ -389,6 +383,12 @@ Changes the thickness of the image used in the menus in Deck Edit: Card Info, Lo
 		<LPBAR_2_TOP_RIGHT a="255" r="255" g="255" b="255" />
 		<LPBAR_2_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
 		<LPBAR_2_BOTTOM_RIGHT a="255" r="255" g="255" b="255" />
+		<PROGRESSBAR_FILL_COLOR  a="255" r="179" g="179" b="179" />
+		<PROGRESSBAR_EMPTY_COLOR  a="255" r="242" g="242" b="242" />
+		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />
+		<ROOMLIST_NORMAL_ROOM a="255" r="255" g="255" b="255" />
+		<ROOMLIST_CUSTOM_ROOM a="255" r="255" g="255" b="255" />
+		<ROOMLIST_STARTED_ROOM a="255" r="230" g="230" b="230" />
 		<TIMEBAR_1_BOTTOM_LEFT a="255" r="255" g="255" b="255" />
 		<TIMEBAR_1_BOTTOM_RIGHT a="255" r="255" g="255" b="255" />
 		<TIMEBAR_1_TOP_LEFT a="255" r="255" g="255" b="255" />
