@@ -1,12 +1,12 @@
 # Creating a skin:
 
-	* Create a folder inside the skin folder with your skin name
-	* Add to that folder a `skin.xml` file
-		* Optionally, also add a `textures` folder inside the `skin` folder. If any files are added to it, the skin will apply those to overridde the default ones in the game's main `textures` folder.
-
 A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter.
 Files from here are the default textures used in the game. If the current skin applied contains a `textures` folder, files there will override these.
 Groups and the fields available are not case sensitive.
+
+* Create a folder inside the skin folder with your skin name
+* Add to that folder a `skin.xml` file
+	* Optionally, also add a `textures` folder inside the `skin` folder. If any files are added to it, the skin will apply those to overridde the default ones in the game's main `textures` folder.
 
 
 At the end of this file you have a **template**.
