@@ -1,21 +1,19 @@
 # Creating a skin:
 
-A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter.
-Files from here are the default textures used in the game. If the current skin applied contains a `textures` folder, files there will override these.
-Groups and the fields available are not case sensitive.
+A `skin.xml` file is read by the GUI Skin (CImageGUISkin). The order of elements/groups does not matter and they are not case sensitive.
 
-* Create a folder inside the skin folder with your skin name
-* Add to that folder a `skin.xml` file
+* Create a folder inside the `skin` folder with your skin name.
+* Add to that folder a `skin.xml` file.
 	* Optionally, also add a `textures` folder inside the `skin` folder. If any files are added to it, the skin will apply those to overridde the default ones in the game's main `textures` folder.
-
 
 At the end of this file you have a **template**.
 
 
 # Groups availables:
-	* Properties
-	* Global
-	* Custom
+	* Properties: contains information about the current skin file.
+	* Global: contains elements that change the global enviroment
+	* Custom: contains elements, all optional, that change specific parts of the GUI.
+
 
 ## Properties
 Elements here are all optional.
@@ -29,8 +27,7 @@ Elements here are all optional.
 
 
 ## Global
-These fields change the colors in the multiple areas in the game.
-
+Elements here change the colors in the multiple areas in the game.
 
 * EGDC_3D_DARK_SHADOW : Dark shadow for three-dimensional display elements.
 * EGDC_3D_SHADOW : Shadow color for three-dimensional display elements (for edges facing away from the light source).
@@ -142,7 +139,7 @@ These fields change the colors in the multiple areas in the game.
 	* LPBAR_2_TOP_LEFT
 	* LPBAR_2_TOP_RIGHT
 * The following 10 fields change the color of the timer: TIMEBAR_1 (home), TIMEBAR_2 (away)
- 	* TIMEBAR_1_BOTTOM_LEFT
+	* TIMEBAR_1_BOTTOM_LEFT
 	* TIMEBAR_1_BOTTOM_RIGHT
 	* TIMEBAR_1_TOP_LEFT
 	* TIMEBAR_1_TOP_RIGHT
@@ -153,21 +150,21 @@ These fields change the colors in the multiple areas in the game.
 	* TIMEBAR_2_TOP_RIGHT
 	* TIMEBAR_2_OUTLINE
 * The following 11 fields change the color of card properties on the field
-  * DUELFIELD_CARD_LEVEL
-  * DUELFIELD_CARD_TUNER_LEVEL
-  * DUELFIELD_CARD_RANK
-  * DUELFIELD_CARD_LINK
-  * DUELFIELD_CARD_PSCALE
-  * DUELFIELD_UNCHANGED_CARD_ATK
-  * DUELFIELD_HIGHER_CARD_ATK
-  * DUELFIELD_LOWER_CARD_ATK
-  * DUELFIELD_UNCHANGED_CARD_DEF
-  * DUELFIELD_HIGHER_CARD_DEF
-  * DUELFIELD_LOWER_CARD_DEF
+	* DUELFIELD_CARD_LEVEL
+	* DUELFIELD_CARD_TUNER_LEVEL
+	* DUELFIELD_CARD_RANK
+	* DUELFIELD_CARD_LINK
+	* DUELFIELD_CARD_PSCALE
+	* DUELFIELD_UNCHANGED_CARD_ATK
+	* DUELFIELD_HIGHER_CARD_ATK
+	* DUELFIELD_LOWER_CARD_ATK
+	* DUELFIELD_UNCHANGED_CARD_DEF
+	* DUELFIELD_HIGHER_CARD_DEF
+	* DUELFIELD_LOWER_CARD_DEF
 
 # Optional elements
 
-If provided, these will load files from the same directory as the `skin.xml` file and will apply those to different areas.
+If provided, after the global/custom groups, these will load files from the same directory as the `skin.xml` file and will apply those to different areas, similar to the "global" elements.
 If used, Source border is the border width (in pixels) on the texture and Dest border is the border width on the screen (also in pixels). SrcBorder and DstBorder are in this order: top, left, bottom, right.
 
 * Button: changes the appearance of the buttons used in the game.
