@@ -60,8 +60,8 @@ While not typing:
 * Hold A or Hold Left Mouse Button: Lets the system stop at every timing.
 * Hold S or Hold Right Mouse Button: Lets the system skip every timing.
 * Hold D: Lets the system stop at available timing.
-* F1 to F4: Shows the cards in your GY, Banished Zone, Extra Deck, Xyz Materials respectively.
-* F5 to F8: Shows the cards in your opponent's GY, Banished Zone, Extra Deck, Xyz Materials respectively.
+* F1 to F4: Shows the cards in your GY, banished, Extra Deck, Xyz Materials respectively.
+* F5 to F8: Shows the cards in your opponent's GY, banished, Extra Deck, Xyz Materials respectively.
 
 ### macOS:
 Note that system hotkeys may intercept some of the above keyboard shortcuts.
@@ -93,8 +93,9 @@ These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards th
 The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?`. You can also prefix the search with comparison modifiers <, <=, >=, >, and =. 
 
 ## Test hand
-A rudimentary hand test mode is accessible from the deck editor, with quick restart. More features and configuration coming soon!
+A rudimentary hand test mode is accessible from the deck editor, with quick restart.
 The duel will never end normally in this game mode (e.g. running out of LP, decking out)
+Notice that, at the moment, the opponent has no deck for you to interact with, which causes some effects to be unplayable (e.g. One Day of Peace)
 
 ## Discord Rich Presence
 Works with the desktop version of Discord. In your Discord settings, turn on Game Activity first.
@@ -144,7 +145,6 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 | numfont  | path to the font used for numbers            | fonts/NotoSansJP-Regular.otf |
 
 If a character cannot be found in the supplied font, it will not be displayed. The shipped font supports all characters that appear on Yu-Gi-Oh! cards in Latin alphabets and Japanese.
-Font chainloading coming soon!
 
 ### configs.json
 `config/configs.json` handles the servers the client is connected to, which include repositories for updates, servers for duels and pictures.
@@ -176,9 +176,6 @@ Font chainloading coming soon!
 Used on macOS and Linux as additional search paths for Mono, required to run WindBot Ignite. Generally you should not need to change this.
 
 ## Miscellaneous differences from YGOPro Percy 1.034 Links Beta
-
-### TEMPORARY:
-* Removed Dark Magician 46986420
 
 #### New TCG/OCG and anime cards by:
 
@@ -393,40 +390,3 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 	* `Card.IsChainAttackable` -> `Card.CanChainAttack`
 
 * Added suport to load other files from within a script (Duel.LoadScript)
-
-* Updated status of the following bugs:
-	* fixed a bug with "Number 67: Pair-a-Dice Smasher" where it wasn't changing result of dice to outside dice allowed values.
-	* changed AssumeProperty to allow cards having more than 1 property (Race, ATK, ...) assumed at a time.
-	* fixed interaction of "Chaos Hunter" and "Macro Cosmos".
-	* fixed "Formud Skipper" and "Zombie World" interactions.
-	* fixed "Absolute Machine Angel Ritual" vs "Necrovalley" interaction.
-	* fixed "Super Polymerization" vs "Chain Material" interaction.
-	* fixed problems with accumulated Additional Normal Summon effects, like "Gem-Knight Seraphinite" and "Knightmare Goblin"
-	* fixed a bug where "Vampire Sucker" would not be able to tribute more than 1 monster controlled by the opponent.
-	* fixed a bug where "Servant of the Endymion" would be able to activate the effect once again even if "Ash Blossom & Joyous Spring" negated it.
-	* fixed the bugs with incorrect interactions of "Fantastic Striborg" with "Degenerate Circuit" and "Macro Cosmos"
-	* due to updates in segoc rules, the bug where two "Mythical Instutuion" could activate the effect in the same chain was fixed.
-	* due to the changes on how mandatory trigger effects were handled, the bug with using the effect of "Heavymetalfoes Electrumite" while the player controlled 2 and 1 of those was negated was fixed.
-	* fixed the incorrect damage evaluation for "Trickstar Lycoris" and "Trickstar Light Stage" vs "Preparation of rites" and similar cards.
-	* fixed a bug related with being unable to get some properties with triggering location:
-		* main interaction is "Doomking Balerdroch" vs an "Orcust" monster activating its effect in the GY while "Zombie World" was in play.
-	* fixed a bug with "Parthian Shot" and its interaction with "Timelord" or "Gladiator Beast" monsters.
-	* fixed an incorrect evaluation for the ATK of monster equipped with "Megamorph" and "Sword of Toxic Solitude" to match rulings.
-	* fixed an incorrect evaluation for the ATK of "The Wicked Avatar" copied by "Fake Hero" and/or "Phantom of Chaos".
-	* fixed "Witchcrafter Genie" being able to target a Continuous Spell to apply the effects, even if the card did not have an applicable effect.
-	* fixed a bug where "Evenly Matched" would be negated by "Necrovalley" if any of the cards to be banished left the field before the resolution. Same with "Topologic Trisbaena"
-	* fixed the interaction of "Gilford the Legend" with "Necrovalley".
-	* updated cards that should be detected by "Dark Sacrifice".
-	* fixed the bug with "Dark Sanctuary" being unable to special summon the Spirit Message card if it was activated in a higher chain link, e.g. Metaverse.
-	* fixed the bug where it would be possible to stack the destruction replacement effects of "Six Samurai" monsters on the field with those with a similar effect in the GY.
-	* fixed the incorrect interaction of "Ghost Belle & Haunted Mansion" with "The Prime Monarch".
-	* fixed the incorrect interaction of "Ash Blossom & Joyous Spring" with "Magical Hats".
-	* fixed the bug where "Absolute King Jack Back" would not be able to use the effect if "Set Rotation" was used.
-	* fixed bugs with "Cynet Codec" and "Union Hangar" where they would not allow the user to target different monsters if they were summoned in the same chain, but in different chain links.
-	* fixed the bugs of cards that negate the activation of a monster effect, then apply something else, if the monster left the field. Examples: Sollemn Strike, Debunk, Invoked Mechaba.
-	* fixed the bug of "Abyss Playhouse - Fantastic Theater" negating the incorrect Chain Link if multiple monster effects were activated in the chain.
-	* fixed the bug with "Gogogo Aristeria & Dexia" not triggering if "Utopic Unomatopoeia" was used as one of the materials.	
-	* fixed the bug with "Droll & Lock Bird" triggering in the incorrect timing in the presence of "Mystic Mine".	
-	* fixed the bug with "There Can Be Only One" vs a returning monster that would interact with its effect.	
-	* fixed the bug with "Daigusto Sphereez" and the damage inflicted if "Fragile Double-Edge Sword" was equipped.	
-	* fixed the incorrect ATK evaluation fo "Gren Maju Da Eiza" vs "Black Rose Dragon".
