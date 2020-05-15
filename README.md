@@ -202,6 +202,7 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 		* To avoid warning regarding banned cards, the "Don't Check the Deck" option is suggested.
 	* To duel the bot: LAN + AI ->  Host -> OK -> Local AI -> Add AI Player
 	* List of decks Windbot has access to:
+		* ABC (from version 38.1.0 onwards)
 		* Altergeist
 		* Blue-Eyes
 		* Blue-Eyes Ritual
@@ -209,12 +210,14 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 		* Chain Burn
 		* Cyberse
 		* Dark Magician
+		* Dragma (from version 38.1.0 onwards)
 		* Dragunity
 		* Dragun of Red-Eyes
 		* Frog
 		* Gren Maju Stun
 		* Horus
 		* Lightsworn Shaddoll Dino
+		* Mathmech (from version 38.1.0 onwards)
 		* Normal Monster Mash
 		* Normal Monster Mash II
 		* Orcust
@@ -224,8 +227,11 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 		* Rose Scrap Synchro
 		* Salamangreat
 		* Sky Striker
+		* Time Thief (from version 38.1.0 onwards)
 		* Toadally Awesome
 		* Trickstar
+		* Windwitch Gusto (from version 38.1.0 onwards)
+		* Witchcrafter Grass (from version 38.1.0 onwards)
 		* Yosenju
 		* ZEXAL Weapon
 		* Zoodiac
