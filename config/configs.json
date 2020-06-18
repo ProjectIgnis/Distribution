@@ -53,6 +53,13 @@
 			"roomlistport": 7923
 		},
 		{
+			"name": "GOAT (Gideon)",
+			"address": "73.240.71.103",
+			"duelport": 7905,
+			"roomaddress": "73.240.71.103",
+			"roomlistport": 7906
+		},
+		{
 			"name": "NA Pacific (Gideon)",
 			"address": "73.240.71.103",
 			"duelport": 7911,
