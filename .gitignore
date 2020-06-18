@@ -4,7 +4,9 @@ replay/
 repositories/
 screenshots/
 WindBot/
+config/user_configs.json
 error.log
+.edopro_lock
 EDOPro*
 *.exe
 *.app
