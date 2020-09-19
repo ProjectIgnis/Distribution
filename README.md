@@ -93,9 +93,10 @@ These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards th
 The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?`. You can also prefix the search with comparison modifiers <, <=, >=, >, and =. 
 
 ## Test hand
-A rudimentary hand test mode is accessible from the deck editor, with quick restart.
+A Hand Test mode is accessible from the deck editor, with quick restart.
 The duel will never end normally in this game mode (e.g. running out of LP, decking out)
-Notice that, at the moment, the opponent has no deck for you to interact with, which causes some effects to be unplayable (e.g. One Day of Peace)
+* From version 38.1.4 onwards it is also possible to change the ammount of cards in the initial hand, number of cards per draw, disable deck shuffle or even give the opponent a copy of your deck (for interactions like One Day of Peace).
+	* Notice that this mode was not made to control the opponent. Dueling vs yourself in LAN Mode would be a better option for that.
 
 ## Discord Rich Presence
 Works with the desktop version of Discord. In your Discord settings, turn on Game Activity first.
@@ -196,13 +197,13 @@ Used on macOS and Linux as additional search paths for Mono, required to run Win
 
 * Localhost AI added with up to four bots per duel in the first four player slots.
 	* Uses custom WindBot Ignite.
-	* 27 AI decks.
+	* 27 AI decks (33 from version 38.1.0 onwards).
 	* Bots incompatible with the Master Rule used in the room are not displayed.
 	* Decks used by Windbot do not necessarily match the current banlist: they follow the OCG banlist available when they were implemented.
 		* To avoid warning regarding banned cards, the "Don't Check the Deck" option is suggested.
 	* To duel the bot: LAN + AI ->  Host -> OK -> Local AI -> Add AI Player
 	* List of decks Windbot has access to:
-		* ABC (from version 38.1.0 onwards)
+		* ABC-Dragon Buster (from version 38.1.0 onwards)
 		* Altergeist
 		* Blue-Eyes
 		* Blue-Eyes Ritual
