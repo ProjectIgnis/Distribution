@@ -1,9 +1,9 @@
 {
 	"repos": [
 		{
-			"url": "https://github.com/ProjectIgnis/DeltaHopeHarbinger",
+			"url": "https://github.com/ProjectIgnis/DeltaUtopia",
 			"repo_name": "Project Ignis updates",
-			"repo_path": "./repositories/delta",
+			"repo_path": "./repositories/delta-utopia",
 			"has_core": true,
 			"core_path": "bin",
 			"data_path": "",
