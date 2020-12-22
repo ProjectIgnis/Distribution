@@ -6,12 +6,11 @@ On Linux, after moving the game install to your preferred location, you can run 
 ## System requirements
 
 Supported platforms:
-- Windows 7 or later, 32-bit or 64-bit
+- Windows 2000 or later, 32-bit or 64-bit
 - macOS 10.11 or later
 - 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros like Arch)
-  - You may need to install FreeType from your package manager.
 
-DirectX 9 or OpenGL 4+ supporting graphics driver required.
+DirectX 9 or OpenGL 1.0 supporting graphics driver required.
 
 1 GB free disk space recommended for asset updates and images.
 
@@ -44,6 +43,7 @@ DirectX 9 or OpenGL 4+ supporting graphics driver required.
 	* drop a `yrpX` file in the main menu or the replay selection menu to load that replay, if valid
 	* drop a Lua file in the main menu or the puzzle selection menu to load that puzzle, if valid
 	* drop text in a text box to insert text
+	* drop a `.pem`, `.cer`, `.crt` certificate bundle file to make the client use that for ssl verification (if you're getting ssl certificate is invalid)
 
 ### Deck editor:
 * Right Mouse Button: Adds/removes a card from the deck
