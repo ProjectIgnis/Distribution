@@ -1,9 +1,9 @@
 [submodule "script"]
 	path = script
-	url = https://github.com/kevinlul/edopro-script.git
+	url = https://github.com/ProjectIgnis/CardScripts.git
 [submodule "expansions"]
 	path = expansions
-	url = https://github.com/kevinlul/edopro-cdb.git
+	url = https://github.com/ProjectIgnis/BabelCDB.git
 [submodule "puzzles/Canon collection"]
 	path = puzzles/Canon collection
 	url = https://github.com/ProjectIgnis/Puzzles.git
