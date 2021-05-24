@@ -95,40 +95,49 @@ Elements here change the colors in the multiple areas in the game.
 * ROOMLIST_NORMAL_ROOM : Changes the color for a room that didn't have any of its settings changed from the default ones
 * ROOMLIST_STARTED_ROOM : Changes the color for a room, in the room list, that has already started its duel.
 * ROOMLIST_TEXTS_COLOR : Changes the color for the texts in the room list menu. Examples: the "Server", "Nickname", "show locked rooms" texts
-* The following 32 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel where you see `Monsters 32, Spells 5, Traps 3`.
-	* DECK_WINDOW_EXTRA_BOTTOM_LEFT
-	* DECK_WINDOW_EXTRA_BOTTOM_RIGHT
+* The following 41 fields change the color used for the areas in Deck Edit, specifically for the areas where the informations about the deck are displayed. Example, the panel where you see `Monsters 32, Spells 5, Traps 3`.
 	* DECK_WINDOW_EXTRA_INFO_BOTTOM_LEFT
 	* DECK_WINDOW_EXTRA_INFO_BOTTOM_RIGHT
 	* DECK_WINDOW_EXTRA_INFO_TOP_LEFT
 	* DECK_WINDOW_EXTRA_INFO_TOP_RIGHT
+	* DECK_WINDOW_EXTRA_INFO_OUTLINE
+	* DECK_WINDOW_EXTRA_BOTTOM_LEFT
+	* DECK_WINDOW_EXTRA_BOTTOM_RIGHT
 	* DECK_WINDOW_EXTRA_TOP_LEFT
 	* DECK_WINDOW_EXTRA_TOP_RIGHT
+	* DECK_WINDOW_EXTRA_OUTLINE
 	* DECK_WINDOW_HOVERED_CARD_RESULT
-	* DECK_WINDOW_MAIN_BOTTOM_LEFT
-	* DECK_WINDOW_MAIN_BOTTOM_RIGHT
 	* DECK_WINDOW_MAIN_INFO_BOTTOM_LEFT
 	* DECK_WINDOW_MAIN_INFO_BOTTOM_RIGHT
 	* DECK_WINDOW_MAIN_INFO_TOP_LEFT
 	* DECK_WINDOW_MAIN_INFO_TOP_RIGHT
+	* DECK_WINDOW_MAIN_INFO_OUTLINE
+	* DECK_WINDOW_MAIN_BOTTOM_LEFT
+	* DECK_WINDOW_MAIN_BOTTOM_RIGHT
 	* DECK_WINDOW_MAIN_TOP_LEFT
 	* DECK_WINDOW_MAIN_TOP_RIGHT
-	* DECK_WINDOW_SEARCH_RESULT_BOTTOM_LEFT
-	* DECK_WINDOW_SEARCH_RESULT_BOTTOM_RIGHT
+	* DECK_WINDOW_MAIN_OUTLINE
 	* DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_LEFT
 	* DECK_WINDOW_SEARCH_RESULT_INFO_BOTTOM_RIGHT
 	* DECK_WINDOW_SEARCH_RESULT_INFO_TOP_LEFT
 	* DECK_WINDOW_SEARCH_RESULT_INFO_TOP_RIGHT
+	* DECK_WINDOW_SEARCH_RESULT_INFO_OUTLINE
+	* DECK_WINDOW_SEARCH_RESULT_BOTTOM_LEFT
+	* DECK_WINDOW_SEARCH_RESULT_BOTTOM_RIGHT
 	* DECK_WINDOW_SEARCH_RESULT_TOP_LEFT
 	* DECK_WINDOW_SEARCH_RESULT_TOP_RIGHT
-	* DECK_WINDOW_SIDE_BOTTOM_LEFT
-	* DECK_WINDOW_SIDE_BOTTOM_RIGHT
+	* DECK_WINDOW_SEARCH_RESULT_OUTLINE
 	* DECK_WINDOW_SIDE_INFO_BOTTOM_LEFT
 	* DECK_WINDOW_SIDE_INFO_BOTTOM_RIGHT
 	* DECK_WINDOW_SIDE_INFO_TOP_LEFT
 	* DECK_WINDOW_SIDE_INFO_TOP_RIGHT
+	* DECK_WINDOW_SIDE_INFO_OUTLINE
+	* DECK_WINDOW_SIDE_BOTTOM_LEFT
+	* DECK_WINDOW_SIDE_BOTTOM_RIGHT
 	* DECK_WINDOW_SIDE_TOP_LEFT
 	* DECK_WINDOW_SIDE_TOP_RIGHT
+	* DECK_WINDOW_SIDE_OUTLINE
+	* DECK_WINDOW_HOVERED_CARD_OUTLINE
 * The following 8 fields change the color of the LP bar: LPBAR_1 (home), LPBAR_2 (away)
 	* LPBAR_1_BOTTOM_LEFT
 	* LPBAR_1_BOTTOM_RIGHT
@@ -149,7 +158,7 @@ Elements here change the colors in the multiple areas in the game.
 	* TIMEBAR_2_TOP_LEFT
 	* TIMEBAR_2_TOP_RIGHT
 	* TIMEBAR_2_OUTLINE
-* The following 11 fields change the color of card properties on the field
+* The following 12 fields change the color of card properties on the field
 	* DUELFIELD_CARD_LEVEL
 	* DUELFIELD_CARD_TUNER_LEVEL
 	* DUELFIELD_CARD_RANK
@@ -161,6 +170,7 @@ Elements here change the colors in the multiple areas in the game.
 	* DUELFIELD_UNCHANGED_CARD_DEF
 	* DUELFIELD_HIGHER_CARD_DEF
 	* DUELFIELD_LOWER_CARD_DEF
+	* DUELFIELD_ATTACK_ARROW
 
 # Optional elements
 
