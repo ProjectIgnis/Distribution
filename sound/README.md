@@ -9,7 +9,7 @@ Audio files are loaded when the game starts. You can force a refresh by pressing
 
 ## Sound effects (no subfolder)
 
-Played when a certain action is performed in a duel. You can disable them in the settings. These may also be easier to hear if you turn down or disable game music. Only `.wav` files are supported.
+Played when a certain action is performed in a duel. You can disable them in the settings. These may also be easier to hear if you turn down or disable game music. `.wav`, `.ogg`, `.mp3`, and `.flac` files are supported.
 
 These files will be loaded and played; you may replace them with custom ones as long as the name is the same.
 
