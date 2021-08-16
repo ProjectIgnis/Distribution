@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skin>
 	<Properties>
-		<Name data="Edopro white Skin" />
+		<Name data="EDOPro White Skin" />
 		<Author data="Naim" />
 		<Version data="0.1" />
 		<Date data="28-Jan-2020"/>
@@ -46,10 +46,10 @@
 		<DUELFIELD_SELECTABLE_FIELD_OUTLINE a="255" r="230" g="230" b="230" />
 		<DUELFIELD_SELECTABLE_CARD_OUTLINE a="255" r="230" g="230" b="230" />
 		<DUELFIELD_HIGHLIGHTING_CARD_OUTLINE a="255" r="230" g="230" b="230" />
-		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="255" g="1" b="255" />
-		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="230" g="230" b="230"/>
+		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="230" g="230" b="230" />
+		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="190" g="190" b="190"/>
 		<DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT a="255" r="255" g="0" b="0" />
-		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="20" g="20" b="20" />
+		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="0" g="0" b="255" />
 		<PROGRESSBAR_FILL_COLOR a="255" r="30" g="30" b="255" />
 		<PROGRESSBAR_EMPTY_COLOR a="255" r="230" g="230" b="230" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="230" g="230" b="230" />

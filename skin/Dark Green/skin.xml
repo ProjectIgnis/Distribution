@@ -22,7 +22,7 @@ SrcBorder and DstBorder are in order = top,left,bottom,right	 -->
 		<CARDINFO_STATS_COLOR a="255" r="80" g="250" b="50" />
 		<CARDINFO_ARCHETYPE_TEXT_COLOR a="255" r="255" g="50" b="10" />
 		<CARDINFO_PASSCODE_SCOPE_TEXT_COLOR a="255" r="242" g="255" b="0" />
-		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="255" g="255" b="255" />
+		<DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT a="255" r="242" g="255" b="0" />
 		<ROOMLIST_TEXTS_COLOR a="255" r="255" g="255" b="255" />
 		<DUELFIELD_CARD_SELF_WINDOW_BACKGROUND a="255" r="17" g="87" b="6" />
 		<DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND a="255" r="27" g="35" b="117" />
