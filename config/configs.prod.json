@@ -44,30 +44,30 @@
 	"servers": [
 		{
 			"name": "EU Central (Casual)",
-			"address": "185.227.110.90",
+			"address": "eu.ygopro.co",
 			"duelport": 7912,
-			"roomaddress": "185.227.110.90",
+			"roomaddress": "eu.ygopro.co",
 			"roomlistport": 7923
 		},
 		{
 			"name": "EU Central (Competitive)",
-			"address": "185.227.110.90",
+			"address": "eu.ygopro.co",
 			"duelport": 7911,
-			"roomaddress": "185.227.110.90",
+			"roomaddress": "eu.ygopro.co",
 			"roomlistport": 7922
 		},
 		{
 			"name": "US West (Casual)",
-			"address": "146.71.79.166",
+			"address": "us.ygopro.co",
 			"duelport": 7911,
-			"roomaddress": "146.71.79.166",
+			"roomaddress": "us.ygopro.co",
 			"roomlistport": 7922
 		},
 		{
 			"name": "US West (Competitive)",
-			"address": "146.71.79.166",
+			"address": "us.ygopro.co",
 			"duelport": 7912,
-			"roomaddress": "146.71.79.166",
+			"roomaddress": "us.ygopro.co",
 			"roomlistport": 7923
 		}
 	],
