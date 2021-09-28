@@ -141,12 +141,21 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 
 | Name     | Purpose | Example |
 | -------- | ------- | ------- |
-| driver_type  | graphic driver used for rendering. Valid values are: opengl, d3d9, ogles1, ogles2, default. Not all the drivers are available on all the platforms.  | |
+| driver_type  | graphic driver used for rendering. Valid values are: opengl, d3d9, ogles1, ogles2, default. The availability of those values is listed in the table below.  | |
 | useWayland  | Linux only. 1 = use experimental wayland device; 0 = use x11 device. | |
 | textfont | path to the font used for texts and its size | fonts/NotoSansJP-Regular.otf 14 |
 | numfont  | path to the font used for numbers            | fonts/NotoSansJP-Regular.otf |
 
 If a character cannot be found in the supplied font, it will not be displayed. The shipped font supports all characters that appear on Yu-Gi-Oh! cards in Latin alphabets and Japanese.
+
+### supported values for driver_type based on the system
+|      | opengl | d3d9 | ogles1 | ogles2 | default |
+| -------- | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Windows  | X | X | X (If supported by the driver) | X (If supported by the driver) | d3d9 |
+| Linux Wayland  | X (Only if LibGLx is present) | | X (only if libGLESv1_CM is present) | X | ogles2 |
+| Linux X11 | X |  | X (only if libGLESv1_CM is present) | X (only if libGLESv2 is present) | opengl |
+| MacOS | X |  |  |  | opengl |
+| Android |  | | X | X | ogles2 |
 
 ### configs.json
 `config/configs.json` handles the servers the client is connected to, which include repositories for updates, servers for duels and pictures.
