@@ -47,6 +47,7 @@
 			"address": "eu.ygopro.co",
 			"duelport": 7912,
 			"roomaddress": "eu.ygopro.co",
+			"roomlistprotocol": "http",
 			"roomlistport": 7923
 		},
 		{
@@ -54,6 +55,7 @@
 			"address": "eu.ygopro.co",
 			"duelport": 7911,
 			"roomaddress": "eu.ygopro.co",
+			"roomlistprotocol": "http",
 			"roomlistport": 7922
 		},
 		{
@@ -61,6 +63,7 @@
 			"address": "us.ygopro.co",
 			"duelport": 7911,
 			"roomaddress": "us.ygopro.co",
+			"roomlistprotocol": "http",
 			"roomlistport": 7922
 		},
 		{
@@ -68,6 +71,7 @@
 			"address": "us.ygopro.co",
 			"duelport": 7912,
 			"roomaddress": "us.ygopro.co",
+			"roomlistprotocol": "http",
 			"roomlistport": 7923
 		}
 	],
