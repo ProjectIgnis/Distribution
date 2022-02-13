@@ -73,6 +73,14 @@
 			"roomaddress": "us.ygopro.co",
 			"roomlistprotocol": "http",
 			"roomlistport": 7923
+		},
+		{
+			"name": "Asia Hong Kong (Casual/Competitive)",
+			"address": "ignis-duel.ygopro.cn",
+			"duelport": 44444,
+			"roomaddress": "ignis-room.ygopro.cn",
+			"roomlistprotocol": "https",
+			"roomlistport": 443
 		}
 	],
 	"posixPathExtension": "/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands"
