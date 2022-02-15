@@ -1,9 +1,9 @@
-App icon and backgrounds Copyright (C) 2020  LogicalNonsense. All Rights Reserved.
+App icon and backgrounds Copyright (C) 2020  LogicalNonsense, licensed under GNU AGPLv3 or later.
 - AppIcon.png
 - bg.png
 - bg_deck.png
 - bg_menu.png
-Cover, field, ot, and gear textures Copyright (C) 2020  Icematoro. All Rights Reserved.
+Cover, field, ot, and gear textures Copyright (C) 2020  Icematoro, licensed under GNU AGPLv3 or later.
 - cover.png
 - cover2.png
 - field-transparent.png
@@ -24,13 +24,10 @@ Cover, field, ot, and gear textures Copyright (C) 2020  Icematoro. All Rights Re
 - fieldSP4.png
 - ot.png
 - settings.png
-Miscellaneous textures Copyright (C) 2020  NaimSantos. All Rights Reserved.
+Miscellaneous textures Copyright (C) 2020  NaimSantos, licensed under GNU AGPLv3 or later.
 - act.png
 - lp.png
 - unknown.jpg
-The above textures may only be distributed in a canonical copy of Project Ignis: EDOPro.
-This notice must be retained. All other use is prohibited without the author's permission.
-
 
 Fluorohydride textures Copyright (C) 2012  Argon Sun, licensed under GNU GPLv2.
 - attack.png
