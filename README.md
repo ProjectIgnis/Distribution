@@ -181,6 +181,7 @@ If a character cannot be found in the supplied font, it will not be displayed. T
 * address: URL (domain or IP works) for connecting to rooms nad hosting
 * duelport: port for the above
 * roomaddress: URL for retrieving the room list via the REST API
+* roomlistprotocol: url protocol that will be used for roomaddress. Supported protocols are ``http`` (default if not provided) and ``https``
 * roomlistport: port for the above
 
 #### posixPathExtension
