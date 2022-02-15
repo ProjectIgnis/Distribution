@@ -74,6 +74,7 @@ Elements here change the colors in the multiple areas in the game.
 * DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT
 * DUELFIELD_CARD_SELECT_WINDOW_SET_TEXT : Changes the color for the caption text when you have to select cards from a location. Example: the Deck[1], Deck[2], etc, positions shown when you select a card with something like Terraforming
 * DUELFIELD_CARD_SELF_WINDOW_BACKGROUND
+* DUELFIELD_CHAIN_COLOR : Changes the hue color used when drawing chain links (default is yellow)
 * DUELFIELD_DISABLED_FIELD_COLOR
 * DUELFIELD_HIGHLIGHTING_CARD_OUTLINE : Changes the color for the borders of a card, when it is selected. Example: a card that you add to your hand via Terraforming.
 * DUELFIELD_HOVERED : Changes the color for the zone highlighted when you are hovering on the field.
