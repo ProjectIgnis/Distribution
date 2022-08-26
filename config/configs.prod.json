@@ -44,33 +44,33 @@
 	"servers": [
 		{
 			"name": "EU Central (Casual)",
-			"address": "eu.ygopro.co",
+			"address": "eu.projectignis.org",
 			"duelport": 7912,
-			"roomaddress": "eu.ygopro.co",
+			"roomaddress": "eu.projectignis.org",
 			"roomlistprotocol": "http",
 			"roomlistport": 7923
 		},
 		{
 			"name": "EU Central (Competitive)",
-			"address": "eu.ygopro.co",
+			"address": "eu.projectignis.org",
 			"duelport": 7911,
-			"roomaddress": "eu.ygopro.co",
+			"roomaddress": "eu.projectignis.org",
 			"roomlistprotocol": "http",
 			"roomlistport": 7922
 		},
 		{
 			"name": "US West (Casual)",
-			"address": "us.ygopro.co",
+			"address": "us.projectignis.org",
 			"duelport": 7911,
-			"roomaddress": "us.ygopro.co",
+			"roomaddress": "us.projectignis.org",
 			"roomlistprotocol": "http",
 			"roomlistport": 7922
 		},
 		{
 			"name": "US West (Competitive)",
-			"address": "us.ygopro.co",
+			"address": "us.projectignis.org",
 			"duelport": 7912,
-			"roomaddress": "us.ygopro.co",
+			"roomaddress": "us.projectignis.org",
 			"roomlistprotocol": "http",
 			"roomlistport": 7923
 		},
