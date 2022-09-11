@@ -1,9 +1,9 @@
 {
 	"repos": [
 		{
-			"url": "https://github.com/ProjectIgnis/DeltaUtopia",
+			"url": "https://github.com/ProjectIgnis/DeltaPuppetOfStrings",
 			"repo_name": "Project Ignis updates",
-			"repo_path": "./repositories/delta-utopia",
+			"repo_path": "./repositories/delta-puppet",
 			"has_core": true,
 			"core_path": "bin",
 			"data_path": "",
