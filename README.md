@@ -26,6 +26,7 @@ DirectX 9 or OpenGL 1.0 supporting graphics driver required.
 ### General:
 * ESC: Minimizes the window if not typing
 * F9: Toggle topdown field view
+* F10: Mac and Windows: Save the current window position (shift+F10 to restore it)
 * F11: Toggles fullscreen
 * F12: Captures a screenshot
 * CTRL+O: Opens the additional settings window
