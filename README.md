@@ -25,7 +25,7 @@ DirectX 9 or OpenGL 1.0 supporting graphics driver required.
 
 ### General:
 * ESC: Minimizes the window if not typing
-* F9: Reload audio
+* F9: Toggle topdown field view
 * F11: Toggles fullscreen
 * F12: Captures a screenshot
 * CTRL+O: Opens the additional settings window
