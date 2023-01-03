@@ -7,7 +7,7 @@ On Linux, after moving the game install to your preferred location, you can run 
 
 Supported platforms:
 - Windows 2000 or later, 32-bit or 64-bit
-- macOS 10.11 or later
+- macOS 10.9 or later
 - 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros like Arch)
 
 DirectX 9 or OpenGL 1.0 supporting graphics driver required.
@@ -63,6 +63,7 @@ While not typing:
 * Hold D: Lets the system stop at available timing.
 * F1 to F4: Shows the cards in your GY, banished, Extra Deck, Xyz Materials respectively.
 * F5 to F8: Shows the cards in your opponent's GY, banished, Extra Deck, Xyz Materials respectively.
+* Double click (or tap) on a card pile: Shows the cards in such pile.
 
 ### macOS:
 Note that system hotkeys may intercept some of the above keyboard shortcuts.
@@ -95,9 +96,8 @@ The ATK, DEF, Level/Rank, and Scale textboxes support searching for `?`. You can
 
 ## Test hand
 A Hand Test mode is accessible from the deck editor, with quick restart.
-The duel will never end normally in this game mode (e.g. running out of LP, decking out)
-* From version 38.1.4 onwards it is also possible to change the ammount of cards in the initial hand, number of cards per draw, disable deck shuffle or even give the opponent a copy of your deck (for interactions like One Day of Peace).
-	* Notice that this mode was not made to control the opponent. Dueling vs yourself in LAN Mode would be a better option for that.
+The duel will **never** end normally in this game mode (e.g. running out of LP, decking out)
+* Notice that this mode was not made to control the opponent. Dueling vs yourself in LAN Mode would be a better option for that.
 
 ## Discord Rich Presence
 Works with the desktop version of Discord. In your Discord settings, turn on Game Activity first.
@@ -144,8 +144,9 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 | -------- | ------- | ------- |
 | driver_type  | graphic driver used for rendering. Valid values are: opengl, d3d9, ogles1, ogles2, default. The availability of those values is listed in the table below.  | |
 | useWayland  | Linux only. 1 = use experimental wayland device; 0 = use x11 device. | |
-| textfont | path to the font used for texts and its size | fonts/NotoSansJP-Regular.otf 14 |
+| textfont | path to the font used for texts and its size | fonts/NotoSansJP-Regular.otf 12 |
 | numfont  | path to the font used for numbers            | fonts/NotoSansJP-Regular.otf |
+| fallbackFonts  | path to the fonts to be used as fallback for missing characters (each font and its **must** be contained in double quotes `"`, the game ships with a `bundled` font that will always be loaded) | "fonts/fallback1.otf 15" "bundled 12" |
 
 If a character cannot be found in the supplied font, it will not be displayed. The shipped font supports all characters that appear on Yu-Gi-Oh! cards in Latin alphabets and Japanese.
 

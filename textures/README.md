@@ -12,6 +12,7 @@ Supported files:
 * act: used as "activation" symbol for things like summons from the Extra Deck or finishing resolving effects previously applied.
 * attack: icon used when to animate an attack being performed
 * bg: background used during a duel
+* bg_duel_dopdown: background used during a duel if the topdown view is being used
 * bg_deck: background used while in Deck Edit
 * bg_menu: background used in the other screens like the main menu
 * chain: used when a chain link is displayed
