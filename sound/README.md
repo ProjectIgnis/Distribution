@@ -5,7 +5,7 @@ The game supports three types of audio:
 - background music
 - chants, which override certain sound effects
 
-Audio files are loaded when the game starts. You can force a refresh by pressing F9.
+Audio files are loaded when the game starts.
 
 ## Sound effects (no subfolder)
 
