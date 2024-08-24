@@ -173,6 +173,8 @@ If a character cannot be found in the supplied font, it will not be displayed. T
 * lflist_path: optional, the path for lflists, if the repository contains any.
 * should_update: true/false, optional, if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
 * should_read: true/false, if set to false the game will ignore that repository. If not provided, it will be set to true.
+* is_language: true/false, optional, if set to true, declares that the current repository is a languages repository, which can be used to enable translations
+* language: optional, a string with the name of the language, if is_language is used.
 
 #### urls (array)
 * url: A URL format string for direct card image download, or "default". Should contain `{}` to be replaced by the client with the card's passcode.
