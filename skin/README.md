@@ -69,6 +69,7 @@ Elements here change the colors in the multiple areas in the game.
 * FPS_TEXT_COLOR : Changes the color used for the FPS displayed ingame
 * DUELFIELD_ANNOUNCE_TEXT_BACKGROUND_COLOR
 * DUELFIELD_ANNOUNCE_TEXT_COLOR : Changes the color used in the box after a card is announced. Example: Psi-Blocker
+* DUELFIELD_ATTACK_ARROW: Changes the color of the arrow used in the animation for an attack.
 * DUELFIELD_CARD_OPPONENT_WINDOW_BACKGROUND : Changes the color for area around the caption text when you are selecting cards from a group. Example: when you are selecting what monsters to banish by Block Dragon.
 * DUELFIELD_CARD_SELECTED_WINDOW_BACKGROUND : Changes the color for area around the areas like where the numbering for Extra Deck cards are, when you scroll through your Extra deck.
 * DUELFIELD_CARD_SELECT_WINDOW_OVERLAY_TEXT
