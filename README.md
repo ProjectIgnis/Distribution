@@ -89,6 +89,8 @@ The following app shortcuts are also available in the app and dock menus:
 	negative lookup (NOT)
 * `string1*string2`
 	replaces any character in any amount. Example: `Eyes*Dragon` will return cards Blue-Eyes White Dragon, Red-Eyes B. Dragon, Galaxy-Eyes Photon Dragon, etc.
+* `string1`&&`string2`
+	returns all cards that match `string1` and `string2`.
 
 These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
 
