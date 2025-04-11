@@ -64,6 +64,7 @@ While not typing:
 * F1 to F4: Shows the cards in your GY, banished, Extra Deck, Xyz Materials respectively.
 * F5 to F8: Shows the cards in your opponent's GY, banished, Extra Deck, Xyz Materials respectively.
 * Double click (or tap) on a card pile: Shows the cards in such pile.
+* Use the Tab key to navigate between options in dialogue boxes, and press Space to select an option.
 
 ### macOS:
 Note that system hotkeys may intercept some of the above keyboard shortcuts.
