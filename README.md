@@ -6,15 +6,13 @@ On Linux, after moving the game install to your preferred location, you can run 
 ## System requirements
 
 Supported platforms:
-- Windows 2000 or later, 32-bit or 64-bit
+- Windows XP Service Pack 3 or later, 32-bit or 64-bit
 - macOS 10.9 or later
 - 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros like Arch)
 
-DirectX 9 or OpenGL 1.0 supporting graphics driver required.
-
 1 GB free disk space recommended for asset updates and images.
 
-1 GB free RAM recommended, though the game is not expected to exceed 300 MB of memory unless you spam the restart button.
+1 GB free RAM recommended, though the game is not expected to exceed 300 MB of memory during normal usage.
 
 ### Prerequisites for WindBot Ignite (AI):
 - Windows: install .NET Framework 4 if you don't have it. This ships with Windows 10.
@@ -78,20 +76,20 @@ The following app shortcuts are also available in the app and dock menus:
 	returns all cards that have `string` in their name OR in the card text.
 	Example: `Hero`
 * `@string`
-	returns all cards that belong to the `string`  archetype.
+	returns all cards that belong to the `string` archetype. If no string is provided, returns all cards that are part of any archetype.
 	Example: `@Hero`
 * `$string`
 	returns all cards that have `string` in their name only, which ignores the card text.
 	Example: `$Heroic`
-* `string1||string2`
-	returns all cards that have `string1` OR `string2` in their name/text.
-	Example: `Trickstar||Bounzer`
 * `!!string`:
 	negative lookup (NOT)
 * `string1*string2`
 	replaces any character in any amount. Example: `Eyes*Dragon` will return cards Blue-Eyes White Dragon, Red-Eyes B. Dragon, Galaxy-Eyes Photon Dragon, etc.
+* `string1||string2`
+	returns all cards that have `string1` OR `string2` in their name/text. Any of the strings can have any of the modifiers above.
+	Example: `Trickstar||Bounzer`
 * `string1`&&`string2`
-	returns all cards that match `string1` and `string2`.
+	returns all cards that match `string1` and `string2`. Any of the strings can have any of the modifiers above.
 
 These can be combined. Example: `@blue-eyes||$eyes of blue` returns all cards that belong to either the `Blue-Eyes` archetype or have `Eyes of Blue` in their names.
 
@@ -145,7 +143,7 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 
 | Name     | Purpose | Example |
 | -------- | ------- | ------- |
-| driver_type  | graphic driver used for rendering. Valid values are: opengl, d3d9, ogles1, ogles2, default. The availability of those values is listed in the table below.  | |
+| driver_type  | graphic driver used for rendering. Valid values are: opengl, d3d9, d3d9on12, ogles1, ogles2, default. The availability of those values is listed in the table below.  | |
 | useWayland  | Linux only. 1 = use experimental wayland device; 0 = use x11 device. | |
 | textfont | path to the font used for texts and its size | fonts/NotoSansJP-Regular.otf 12 |
 | numfont  | path to the font used for numbers            | fonts/NotoSansJP-Regular.otf |
@@ -154,13 +152,13 @@ Configurations listed as "boolean" accept either 0 for 'disabled' or 1 for 'enab
 If a character cannot be found in the supplied font, it will not be displayed. The shipped font supports all characters that appear on Yu-Gi-Oh! cards in Latin alphabets and Japanese.
 
 ### supported values for driver_type based on the system
-|      | opengl | d3d9 | ogles1 | ogles2 | default |
-| -------- | :-------: | :-------: | :-------: | :-------: | :-------: |
-| Windows  | X | X | X (If supported by the driver) | X (If supported by the driver) | d3d9 |
-| Linux Wayland  | X (Only if LibGLx is present) | | X (only if libGLESv1_CM is present) | X | ogles2 |
-| Linux X11 | X |  | X (only if libGLESv1_CM is present) | X (only if libGLESv2 is present) | opengl |
-| MacOS | X |  |  |  | opengl |
-| Android |  | | X | X | ogles2 |
+|      | opengl | d3d9 | d3d9on12 | ogles1 | ogles2 | default |
+| -------- | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+| Windows  | X | X | X (If supported by the driver) | X (If supported by the driver) | X (If supported by the driver) | d3d9 |
+| Linux Wayland  | X (Only if LibGLx is present) | | | X (only if libGLESv1_CM is present) | X | ogles2 |
+| Linux X11 | X | | | X (only if libGLESv1_CM is present) | X (only if libGLESv2 is present) | opengl |
+| MacOS | X | | | | | opengl |
+| Android | | | | X | X | ogles2 |
 
 ### configs.json
 `config/configs.json` handles the servers the client is connected to, which include repositories for updates, servers for duels and pictures.
@@ -168,16 +166,17 @@ If a character cannot be found in the supplied font, it will not be displayed. T
 #### repos (array)
 * url: required, the complete url of the repository to check for updates.
 * repo_path: optional, the subdirectory in the client's directory where the contents will be saved. If not provided, the folder will be created in the expansions folder and will have the repository's name.
-* has_core: optional.
+* has_core: boolean, optional (defaults to false).
 * core_path: optional, used if has_core is true.
 * data_path: optional, the folder where the databases and the strings will be loaded from in the repository. If not provided, it will load from the main folder of the repository.
 * script_path: optional, the folder where the scripts will be loaded from in the repository. If not provided, it will load from the script folder of the repository.
 * pics_path: optional, the folder where the pics will be loaded from in the repository. If not provided, it will load from the pics folder of the repository.
 * lflist_path: optional, the path for lflists, if the repository contains any.
-* should_update: true/false, optional, if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
-* should_read: true/false, if set to false the game will ignore that repository. If not provided, it will be set to true.
-* is_language: true/false, optional, if set to true, declares that the current repository is a languages repository, which can be used to enable translations
+* should_update: boolean, optional (defaults to true), if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
+* should_read: boolean, optional (defaults to true), if set to false the game will ignore that repository. If not provided, it will be set to true.
+* is_language: boolean, optional (defaults to false), if set to true, declares that the current repository is a languages repository, which can be used to enable translations
 * language: optional, a string with the name of the language, if is_language is used.
+* not_git_repo: boolean, optional (defaults to false), if set to true, the entry will be considered as a local folder, in which case the url parameter is not needed.
 
 #### urls (array)
 * url: A URL format string for direct card image download, or "default". Should contain `{}` to be replaced by the client with the card's passcode.
