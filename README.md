@@ -8,7 +8,7 @@ On Linux, after moving the game install to your preferred location, you can run 
 Supported platforms:
 - Windows XP Service Pack 3 or later, 32-bit or 64-bit
 - macOS 10.9 or later
-- 64-bit GNU/Linux with X11 and glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros like Arch)
+- 64-bit/AArch64 GNU/Linux with glibc 2.27+ (e.g. Debian 10+, Ubuntu 18.04+, Fedora, CentOS 8+, rolling release distros like Arch)
 
 1 GB free disk space recommended for asset updates and images.
 
