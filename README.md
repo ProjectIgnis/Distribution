@@ -169,7 +169,7 @@ If a character cannot be found in the supplied font, it will not be displayed. T
 * has_core: boolean, optional (defaults to false).
 * core_path: optional, used if has_core is true.
 * data_path: optional, the folder where the databases and the strings will be loaded from in the repository. If not provided, it will load from the main folder of the repository.
-* script_path: optional, the folder where the scripts will be loaded from in the repository. If not provided, it will load from the script folder of the repository. If an `init.lua` script is present in this folder, it will automatically loaded after the main utility scripts.
+* script_path: optional, the folder where the scripts will be loaded from in the repository. If not provided, it will load from the script folder of the repository. If an `init.lua` script is present in this folder, it will be automatically loaded after the main utility scripts.
 * pics_path: optional, the folder where the pics will be loaded from in the repository. If not provided, it will load from the pics folder of the repository.
 * lflist_path: optional, the path for lflists, if the repository contains any.
 * should_update: boolean, optional (defaults to true), if the client will download the contents of the repository. If the repository is missing, it will still be downloaded only for the first time. If not provided, it will be set to true.
