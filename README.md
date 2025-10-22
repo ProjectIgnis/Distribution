@@ -129,6 +129,15 @@ You can switch skins in the settings (CTRL+O). For instructions on the supported
 See README in `sound`. There are many new features, including summon chants!
 Music and sound volume controls are also separated.
 
+### expansions
+If an `expansions` folder exists, the game will also read files from it. It supports the following files and subfolders:
+* `pics`: a subfolder containing card artworks
+* `script`: a subfolder containing card scripts
+* `.cdb` files: SQLite databases containing card data
+* `.zip` files: compressed archives containing cards
+* Forbidden/Limited lists with the .conf extension
+* Compiled versions of the OCGCore
+
 ### MSAA (antialiasing)
 Makes sharp/pixelated edges softer, but requires more performance.
 2D elements might look blurred at higher levels. Rendering results are hardware- and device-dependent.
